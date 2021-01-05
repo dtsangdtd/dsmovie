@@ -1,0 +1,427 @@
+@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap");
+header {
+  position: fixed;
+  z-index: 25;
+  width: 100%;
+  top: -1%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s;
+}
+
+header .bg-nav {
+  background-color: rgba(243, 239, 12, 0.918) !important;
+  background: none;
+}
+
+header .bg-nav:hover {
+  background: linear-gradient(to right, yellow, orange);
+}
+
+header .navbar {
+  padding-bottom: 0;
+}
+
+header .navbar .navbar-brand {
+  flex-grow: 2;
+}
+
+@media only screen and (max-width: 575px) {
+  header .navbar .navbar-brand {
+    flex-grow: 15;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  header .navbar .navbar-brand {
+    flex-grow: 15;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1199px) {
+  header .navbar .navbar-brand {
+    flex-grow: 4;
+  }
+}
+
+header .navbar .navbar-brand img {
+  position: fixed;
+  width: 115px;
+  height: 115px;
+  top: 0px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 419px) {
+  header .navbar .navbar-brand img {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media only screen and (min-width: 421px) and (max-width: 575px) {
+  header .navbar .navbar-brand img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+header .navbar .navbar-brand img:hover {
+  transition: 0.3s;
+  width: 140px;
+  height: 140px;
+}
+
+header .navbar .navbar-brand .text-logo {
+  color: #60c5ef;
+  font-family: "";
+}
+
+@media only screen and (min-width: 421px) and (max-width: 575px) {
+  header .navbar .navbar-brand .text-logo {
+    font-size: 15px;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (max-width: 419px) {
+  header .navbar .navbar-brand .text-logo {
+    font-size: 15px;
+    font-weight: 400;
+  }
+}
+
+header .navbar .header__mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 419px) {
+  header .navbar .header__mobile {
+    display: block;
+    margin-right: 0px;
+  }
+}
+
+@media only screen and (min-width: 421px) and (max-width: 575px) {
+  header .navbar .header__mobile {
+    display: block;
+    margin-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  header .navbar .header__mobile {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  header .navbar .header__mobile {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  header .navbar .header__mobile {
+    display: block;
+  }
+}
+
+header .navbar .header__mobile .header__login {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .navbar .header__mobile .header__login .login__link {
+  text-decoration: none;
+}
+
+header .navbar .header__mobile .header__login .login__link img {
+  width: 30px;
+  border-radius: 50%;
+  margin: 3px;
+}
+
+@media only screen and (max-width: 419px) {
+  header .navbar .header__mobile .header__login .login__link img {
+    width: 20px;
+  }
+}
+
+@media only screen and (min-width: 421px) and (max-width: 575px) {
+  header .navbar .header__mobile .header__login .login__link img {
+    width: 20px;
+  }
+}
+
+header .navbar .header__mobile .header__login .login__link .login__text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #949494;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 419px) {
+  header .navbar .header__mobile .header__login .login__link .login__text {
+    font-size: 13px;
+    font-weight: 400;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (min-width: 421px) and (max-width: 575px) {
+  header .navbar .header__mobile .header__login .login__link .login__text {
+    font-size: 13px;
+    font-weight: 400;
+    margin-right: 10px;
+  }
+}
+
+header .navbar .header__mobile .header__login .login__link .login__text a {
+  text-decoration: none;
+  color: #949494;
+}
+
+header .navbar .header__mobile .header__login .login__link .login__text::after {
+  content: "";
+  border-right: 0.5px dotted #29303b;
+  margin: 10px;
+  padding: 5px 1px;
+  color: #949494;
+  cursor: context-menu;
+}
+
+@media only screen and (max-width: 575px) {
+  header .navbar .header__mobile .header__login .login__link .login__text::after {
+    content: none;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  header .navbar .header__mobile .header__login .login__link .login__text::after {
+    content: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  header .navbar .header__mobile .header__login .login__link .login__text::after {
+    content: none;
+  }
+}
+
+header .navbar .navbar-toggler {
+  outline: none;
+  border: none;
+  background-color: #60c5ef;
+}
+
+header .navbar .navbar-collapse {
+  flex-grow: 2;
+}
+
+@media only screen and (max-width: 575px) {
+  header .navbar .navbar-collapse {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  header .navbar .navbar-collapse {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  header .navbar .navbar-collapse {
+    text-align: center;
+  }
+}
+
+header .navbar .navbar-collapse .navbar-nav .nav-item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 10px;
+  margin-left: 30px;
+  padding-top: 10px;
+  transition: all 0.2s;
+  border-bottom: none;
+}
+
+header .navbar .navbar-collapse .navbar-nav .nav-item:hover i {
+  color: #29303b;
+  font-size: 40px;
+}
+
+header .navbar .navbar-collapse .navbar-nav .nav-item:hover .nav-link {
+  color: #29303b;
+}
+
+header .navbar .navbar-collapse .navbar-nav .nav-item i {
+  color: #949494;
+  text-align: center;
+}
+
+header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+  text-decoration: none;
+  color: #949494;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 575px) {
+  header .navbar .navbar-collapse .header__login {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  header .navbar .navbar-collapse .header__login {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  header .navbar .navbar-collapse .header__login {
+    display: none;
+  }
+}
+
+header .navbar .navbar-collapse .header__login .login__link {
+  text-decoration: none;
+}
+
+header .navbar .navbar-collapse .header__login .login__link img {
+  width: 30px;
+  border-radius: 50%;
+  margin: 3px;
+}
+
+header .navbar .navbar-collapse .header__login .login__link .login__text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #949494;
+}
+
+header .navbar .navbar-collapse .header__login .login__link .login__text a {
+  text-decoration: none;
+  color: #949494;
+}
+
+header .navbar .navbar-collapse .header__login .login__link .login__text::after {
+  content: "";
+  border-right: 0.5px dotted #29303b;
+  margin: 10px;
+  padding: 5px 1px;
+  color: #949494;
+  cursor: context-menu;
+}
+
+@media only screen and (max-width: 575px) {
+  header .navbar .navbar-collapse .header__login .login__link .login__text::after {
+    content: none;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  header .navbar .navbar-collapse .header__login .login__link .login__text::after {
+    content: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  header .navbar .navbar-collapse .header__login .login__link .login__text::after {
+    content: none;
+  }
+}
+
+header .navbar .navbar-collapse .header__login .login__link .login__text:hover {
+  font-size: 18px;
+  color: #29303b;
+}
+
+header .navbar .navbar-collapse .header__login .logOut__btn {
+  border: 1px solid #60c5ef;
+  padding: 7px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+header .navbar .navbar-collapse .header__login .logOut__btn:hover {
+  box-shadow: 2px 2px 4px 1px #949494;
+}
+
+@media only screen and (max-width: 575px) {
+  header .navbar .navbar-collapse .header__login #province__dropdown {
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  header .navbar .navbar-collapse .header__login #province__dropdown {
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  header .navbar .navbar-collapse .header__login #province__dropdown {
+    margin-top: 5px;
+  }
+}
+
+header .navbar .navbar-collapse .header__login #province__dropdown .dropdown-toggle {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #949494;
+}
+
+header .navbar .navbar-collapse .header__login #province__dropdown .dropdown-toggle:after {
+  content: none;
+}
+
+header .navbar .navbar-collapse .header__login #province__dropdown .dropdown-toggle .dropdown__icon {
+  margin-right: 7px;
+}
+
+header .navbar .navbar-collapse .header__login #province__dropdown .dropdown-toggle .dropdown__text {
+  margin-right: 20px;
+}
+
+header .navbar .navbar-collapse .header__login #province__dropdown .dropdown-menu.show {
+  top: 26px !important;
+  left: -10% !important;
+  overflow-y: scroll;
+  height: 200px;
+  border-radius: 5px;
+}
+
+header .navbar .navbar-collapse .header__login #province__dropdown .dropdown-menu.show::-webkit-scrollbar {
+  width: 4px;
+  background-color: #d8d8d8;
+}
+
+header .navbar .navbar-collapse .header__login #province__dropdown .dropdown-menu.show::-webkit-scrollbar-thumb {
+  background-color: #949494;
+  border-radius: 5px;
+}
+
+header .navbar .navbar-collapse .header__login #province__dropdown .dropdown-menu .dropdown-item {
+  transition: all 0.2s;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+header .navbar .navbar-collapse .header__login #province__dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: #60c5ef;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=Header.css.map */

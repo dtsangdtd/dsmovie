@@ -1,0 +1,307 @@
+.bookMovie {
+  z-index: 18;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  max-width: 940px;
+  margin: auto;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 575px) {
+  .bookMovie {
+    padding: 10px;
+    transform: translate(-50%, 90%);
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .bookMovie {
+    padding: 10px;
+    transform: translate(-50%, 90%);
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .bookMovie {
+    padding: 10px;
+    transform: translate(-50%, 50%);
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1199px) {
+  .bookMovie {
+    padding: 10px;
+    transform: translate(-50%, 50%);
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .bookMovie .row .select__item {
+    width: 50%;
+    margin-bottom: 5px;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .bookMovie .row .select__item {
+    width: 50%;
+    margin-bottom: 5px;
+  }
+}
+
+.bookMovie .row .select__item.button__form {
+  width: 100%;
+  text-align: center;
+}
+
+.bookMovie .row .select__item .select__form {
+  position: relative;
+  width: 100%;
+  height: 3em;
+  line-height: 3;
+  background: none;
+  overflow: hidden;
+  border-radius: 0.25em;
+  border-right: 1px solid rgba(20, 23, 28, 0.05);
+  transition: 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 575px) {
+  .bookMovie .row .select__item .select__form {
+    font-size: 13px;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .bookMovie .row .select__item .select__form {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .bookMovie .row .select__item .select__form {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1199px) {
+  .bookMovie .row .select__item .select__form {
+    font-size: 15px;
+    font-weight: 400;
+  }
+}
+
+.bookMovie .row .select__item .select__form:hover::after {
+  color: #60c5ef;
+}
+
+.bookMovie .row .select__item .select__form:hover {
+  opacity: 0.5;
+}
+
+.bookMovie .row .select__item .select__form::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100%;
+  content: "";
+  background: linear-gradient(to right, transparent, white);
+  pointer-events: none;
+}
+
+.bookMovie .row .select__item .select__form select {
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: none;
+  background-image: none;
+  flex: 1;
+  color: #333;
+  cursor: pointer;
+}
+
+.bookMovie .row .select__item .select__form select::-ms-expand {
+  display: none;
+}
+
+.bookMovie .row .select__item .select__form select option {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bookMovie .row .select__item .draw-border {
+  box-shadow: inset 0 0 0 2px yellow;
+  color: yellow;
+  transition: color 0.25s 0.08333s;
+  position: relative;
+}
+
+.bookMovie .row .select__item .draw-border::before, .bookMovie .row .select__item .draw-border::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.bookMovie .row .select__item .draw-border::before {
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+}
+
+.bookMovie .row .select__item .draw-border::after {
+  border-top-width: 2px;
+  border-right-width: 2px;
+}
+
+.bookMovie .row .select__item .draw-border:hover {
+  color: orange;
+}
+
+.bookMovie .row .select__item .draw-border:hover::before, .bookMovie .row .select__item .draw-border:hover::after {
+  border-color: orange;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+
+.bookMovie .row .select__item .draw-border:hover::before {
+  transition-delay: 0s, 0s, 0.25s;
+}
+
+.bookMovie .row .select__item .draw-border:hover::after {
+  transition-delay: 0s, 0.25s, 0s;
+}
+
+.bookMovie .row .select__item .draw-border:hover {
+  background: linear-gradient(to right, yellow, orange);
+  color: white;
+}
+
+.bookMovie .row .select__item .btn-style {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem "Roboto Slab", sans-serif;
+  letter-spacing: 0.05rem;
+  width: 100%;
+  height: 100%;
+  color: #333;
+}
+
+@media only screen and (max-width: 575px) {
+  .bookMovie .row .select__item .btn-style {
+    padding: 10px;
+    width: 50%;
+    font-size: 13px;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .bookMovie .row .select__item .btn-style {
+    padding: 10px;
+    width: 50%;
+    font-size: 13px;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .bookMovie .row .select__item .btn-style {
+    padding: 10px;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1199px) {
+  .bookMovie .row .select__item .btn-style {
+    padding: 10px;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 600;
+  }
+}
+
+.bookMovie .row .select__item .btn-style:focus {
+  outline: none;
+}
+
+.bookMovie .row .select__item .btn-style-disable {
+  background: none;
+  border: none;
+  cursor: no-drop;
+  line-height: 1.5;
+  font: 700 1.2rem "Roboto Slab", sans-serif;
+  letter-spacing: 0.05rem;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  opacity: 0.3;
+  background-color: rgba(50, 50, 50, 0.9);
+}
+
+@media only screen and (max-width: 575px) {
+  .bookMovie .row .select__item .btn-style-disable {
+    padding: 10px;
+    width: 50%;
+    font-size: 13px;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .bookMovie .row .select__item .btn-style-disable {
+    padding: 10px;
+    width: 50%;
+    font-size: 13px;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .bookMovie .row .select__item .btn-style-disable {
+    padding: 10px;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1199px) {
+  .bookMovie .row .select__item .btn-style-disable {
+    padding: 10px;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 600;
+  }
+}
+
+.bookMovie .row .select__item .btn-style-disable:focus {
+  outline: none;
+}
+/*# sourceMappingURL=BookTicket.css.map */

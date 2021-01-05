@@ -1,0 +1,236 @@
+.profile {
+  margin-top: 64px;
+}
+
+.profile .row {
+  justify-content: space-between;
+}
+
+.profile .row .col-avt {
+  box-shadow: 1px 1px 9px 1px #949494;
+}
+
+.profile .row .col-avt .img-avt {
+  background: url("https://www.crushpixel.com/big-static15/preview4/cinema-background-concept-movie-theater-1838165.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 300px;
+  border-radius: 0 0 10px 10px;
+}
+
+.profile .row .col-avt .img-avt img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 1px 1px 9px 1px #29303b;
+}
+
+.profile .row .col-avt .tableInfo {
+  padding: 70px 20px;
+}
+
+.profile .row .col-avt .tableInfo .row .col-left {
+  box-shadow: 0 10px 40px 0 rgba(16, 36, 94, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  animation: slideToRight 1s linear;
+}
+
+@media only screen and (max-width: 575px) {
+  .profile .row .col-avt .tableInfo .row .col-left {
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .profile .row .col-avt .tableInfo .row .col-left {
+    margin-bottom: 15px;
+  }
+}
+
+.profile .row .col-avt .tableInfo .row .col-left .info-title {
+  color: #cacbcc;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .profile .row .col-avt .tableInfo .row .col-left .info-title {
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+
+.profile .row .col-avt .tableInfo .row .col-left .table {
+  color: #cacbcc;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .profile .row .col-avt .tableInfo .row .col-left .table tbody {
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+
+.profile .row .col-avt .tableInfo .row .col-left .btn__admin {
+  background-color: darkgrey;
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: 0 0 5px 5px;
+}
+
+.profile .row .col-avt .tableInfo .row .col-left .btn__admin:hover {
+  background: linear-gradient(to right, yellow, orange);
+  color: white;
+}
+
+.profile .row .col-avt .tableInfo .row .col-left .btn__admin:hover .admin__link {
+  color: #fff;
+}
+
+.profile .row .col-avt .tableInfo .row .col-left .btn__admin .admin__link {
+  text-decoration: none;
+  color: #29303b;
+}
+
+.profile .row .col-avt .tableInfo .row .col-right {
+  box-shadow: 0 10px 40px 0 rgba(16, 36, 94, 0.2);
+  border-radius: 5px;
+  min-width: 65%;
+  padding: 20px;
+  animation: slideToLeft 1s linear;
+  color: rgba(20, 23, 28, 0.05);
+}
+
+.profile .row .col-avt .tableInfo .row .col-right #accordion .card .collapse .card-body {
+  overflow-y: scroll;
+  max-height: 300px;
+  padding: 0;
+}
+
+.profile .row .col-avt .tableInfo .row .col-right #accordion .card .collapse .card-body::-webkit-scrollbar {
+  width: 4px;
+  background-color: #d8d8d8;
+}
+
+.profile .row .col-avt .tableInfo .row .col-right #accordion .card .collapse .card-body::-webkit-scrollbar-thumb {
+  background-color: #949494;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 575px) {
+  .profile .row .col-avt .tableInfo .row .col-right #accordion .card .collapse .card-body .table thead {
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .profile .row .col-avt .tableInfo .row .col-right #accordion .card .collapse .card-body .table thead {
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .profile .row .col-avt .tableInfo .row .col-right #accordion .card .collapse .card-body .table thead {
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1199px) {
+  .profile .row .col-avt .tableInfo .row .col-right #accordion .card .collapse .card-body .table thead {
+    font-size: 15px;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .profile .row .col-avt .tableInfo .row .col-right #accordion .card .collapse .card-body .table tbody {
+    font-size: 9px;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .profile .row .col-avt .tableInfo .row .col-right #accordion .card .collapse .card-body .table tbody {
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .profile .row .col-avt .tableInfo .row .col-right #accordion .card .collapse .card-body .table tbody {
+    font-size: 10px;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1199px) {
+  .profile .row .col-avt .tableInfo .row .col-right #accordion .card .collapse .card-body .table tbody {
+    font-size: 15px;
+    font-weight: 400;
+  }
+}
+
+.profile .row .col-avt .tableInfo .row .col-right #accordion .card .collapse .formRegister {
+  border-radius: 10px;
+}
+
+.profile .row .col-avt .tableInfo .row .col-right #accordion .card .collapse .formRegister .form-group .input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 0;
+  color: #3e3e3e;
+  background-color: rgba(20, 23, 28, 0.05);
+}
+
+.profile .row .col-avt .tableInfo .row .col-right #accordion .card .collapse .formRegister .form-group .input::placeholder {
+  font-family: "Lato", sans-serif;
+}
+
+.profile .row .col-avt .tableInfo .row .col-right #accordion .card .collapse .formRegister .form-group .btnEdit {
+  background-color: rgba(36, 41, 44, 0.9);
+  border: none;
+  width: 100%;
+  text-align: center;
+  padding: 14px;
+  border-radius: 4px;
+  color: white;
+  transition: 0.5s all;
+}
+
+.profile .row .col-avt .tableInfo .row .col-right #accordion .card .collapse .formRegister .form-group .btnEdit:hover {
+  background-color: #60c5ef;
+}
+
+.profile .row .col-avt .tableInfo .row .col-right #accordion .card .collapse .moviebookedCarousel .item .item__img img {
+  width: 200px;
+  height: 230px;
+  border-radius: 10px;
+}
+
+@keyframes slideToRight {
+  from {
+    transform: translateX(-250px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideToLeft {
+  from {
+    transform: translateX(350px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+/*# sourceMappingURL=UserInformation.css.map */

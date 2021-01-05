@@ -1,0 +1,400 @@
+.tabBookMovie {
+  padding: 0px 200px;
+  padding-bottom: 50px;
+  background-color: #0a2029;
+}
+
+@media only screen and (max-width: 575px) {
+  .tabBookMovie {
+    padding: 0px 15px;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .tabBookMovie {
+    padding: 30px 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .tabBookMovie {
+    padding: 30px 20px;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1199px) {
+  .tabBookMovie {
+    padding: 30px 50px;
+  }
+}
+
+.tabBookMovie .container-fluid .nav-pills {
+  justify-content: center;
+}
+
+.tabBookMovie .container-fluid .nav-pills .nav-item {
+  transition: all 0.2s;
+  border: none;
+}
+
+.tabBookMovie .container-fluid .nav-pills .nav-item .nav-link {
+  color: #fff;
+  background: none;
+  font-size: 20px;
+  font-weight: 500;
+  transition: all 0.1s;
+  border: none;
+  transform: scale(1);
+}
+
+@media only screen and (max-width: 575px) {
+  .tabBookMovie .container-fluid .nav-pills .nav-item .nav-link {
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .tabBookMovie .container-fluid .nav-pills .nav-item .nav-link {
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+
+.tabBookMovie .container-fluid .nav-pills .nav-item .nav-link.active {
+  background: none;
+  color: yellow;
+}
+
+.tabBookMovie .container-fluid .nav-pills .nav-item .nav-link:hover {
+  transform: scale(1.1);
+}
+
+.tabBookMovie .container-fluid #movieTheater {
+  padding-bottom: 30px;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row {
+  padding: 0;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .row__left {
+  padding: 0;
+  max-width: 29.333333%;
+  border-right: 0.5px solid #d8d8d8;
+}
+
+@media only screen and (max-width: 575px) {
+  .tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .row__left {
+    min-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .row__left {
+    min-width: 100%;
+  }
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .row__left .nav .nav-link {
+  padding: 20px;
+  opacity: 0.5;
+  border-bottom: 1px solid rgba(20, 23, 28, 0.05);
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .row__left .nav .nav-link.active {
+  background: none;
+  opacity: 1;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .row__left .nav .nav-link:hover {
+  opacity: 1;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .row__left .nav .nav-link .img__content {
+  position: relative;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .row__left .nav .nav-link .img__content img {
+  width: 50px;
+  height: 50px;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .row__left .nav .nav-link .img__content .img__text {
+  position: absolute;
+  left: 60px;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .row__left .nav .nav-link .img__content .img__text .img__name {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  color: #4a4a4a;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 575px) {
+  .tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .row__left .nav .nav-link .img__content .img__text .img__name {
+    font-size: 13px;
+    font-weight: 500;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .row__left .nav .nav-link .img__content .img__text .img__name {
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .row__left .nav .nav-link .img__content .img__text .img__discount {
+  display: flex;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .row__left .nav .nav-link .img__content .img__text .img__discount .img__icon {
+  font-size: 13px;
+  font-weight: 600;
+  color: #4a4a4a;
+  padding-top: 4px;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .row__left .nav .nav-link .img__content .img__text .img__discount .img__description {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fb4226;
+  padding-left: 4px;
+}
+
+@media only screen and (max-width: 575px) {
+  .tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .row__left .nav .nav-link .img__content .img__text .img__discount .img__description {
+    font-size: 11px;
+    font-weight: 500;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .row__left .nav .nav-link .img__content .img__text .img__discount .img__description {
+    font-size: 13px;
+    font-weight: 500;
+  }
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .nav__container {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .nav__container::-webkit-scrollbar {
+  height: 4px;
+  background-color: #d8d8d8;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .nav__container::-webkit-scrollbar-thumb {
+  background-color: #949494;
+  border-radius: 5px;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .nav__container .nav {
+  justify-content: start;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .nav__container .nav .nav-item {
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 575px) {
+  .tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .nav__container .nav .nav-item {
+    margin-right: 9px;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .nav__container .nav .nav-item {
+    margin-right: 9px;
+  }
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .nav__container .nav .nav-item.disable {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .nav__container .nav .nav-item .nav-link {
+  font-size: 15px;
+  font-weight: 400;
+  padding-top: 20px;
+  color: #4a4a4a;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .nav__container .nav .nav-item .nav-link.active {
+  color: yellow;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .nav__container .nav .nav-item .nav-link:hover {
+  transform: none;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .nav__container .nav .nav-item .nav-link .days__item .dayOfWeek {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 575px) {
+  .tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .nav__container .nav .nav-item .nav-link .days__item .dayOfWeek {
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .nav__container .nav .nav-item .nav-link .days__item .day {
+  text-align: center;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 575px) {
+  .tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .nav__container .nav .nav-item .nav-link .days__item .day {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .tab-pane .theater__content .list__theater .list__item {
+  border-bottom: 1px solid rgba(20, 23, 28, 0.05);
+  list-style: none;
+  padding: 20px 5px;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .tab-pane .theater__content .list__theater .list__item:last-child {
+  border-bottom: none;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .tab-pane .theater__content .list__theater .list__item .theater__link {
+  text-decoration: none;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .tab-pane .theater__content .list__theater .list__item .theater__link .row .theater__img {
+  max-width: 12%;
+  padding-right: 0;
+  padding-left: 20px;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .tab-pane .theater__content .list__theater .list__item .theater__link .row .theater__img img {
+  width: 100%;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .tab-pane .theater__content .list__theater .list__item .theater__link .row .theater__title .theater__name {
+  font-size: 15px;
+  font-weight: 500;
+  display: block;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .tab-pane .theater__content .list__theater .list__item .theater__link .row .theater__title .theater__name.cgv-color {
+  color: #fb4226;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .tab-pane .theater__content .list__theater .list__item .theater__link .row .theater__title .theater__name.bhd-color {
+  color: #8bc541;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .tab-pane .theater__content .list__theater .list__item .theater__link .row .theater__title .theater__name.glx-color {
+  color: #f60;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .tab-pane .theater__content .list__theater .list__item .theater__link .row .theater__title .theater__name.lotte-color {
+  color: #ce3017;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .tab-pane .theater__content .list__theater .list__item .theater__link .row .theater__title .theater__name .theater__subname {
+  color: #4a4a4a;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .tab-pane .theater__content .list__theater .list__item .theater__link .row .theater__title .theater__address {
+  font-size: 13px;
+  font-weight: 400;
+  color: #949494;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .tab-pane .theater__content .list__theater .list__item .theater__link .row .theater__title .theater__address .theater__map {
+  color: #fb4226;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .tab-pane .theater__content .list__theater .list__item .collapse .collapse__content .film__version {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .tab-pane .theater__content .list__theater .list__item .collapse .collapse__content .film__timeshow ul {
+  height: 100px;
+  overflow-y: scroll;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .tab-pane .theater__content .list__theater .list__item .collapse .collapse__content .film__timeshow ul::-webkit-scrollbar {
+  width: 4px;
+  background-color: #d8d8d8;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .tab-pane .theater__content .list__theater .list__item .collapse .collapse__content .film__timeshow ul::-webkit-scrollbar-thumb {
+  background-color: #949494;
+  border-radius: 5px;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .tab-pane .theater__content .list__theater .list__item .collapse .collapse__content .film__timeshow ul .timeshow__item {
+  display: inline;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .tab-pane .theater__content .list__theater .list__item .collapse .collapse__content .film__timeshow ul .timeshow__item .timeshow__link {
+  text-decoration: none;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .tab-pane .theater__content .list__theater .list__item .collapse .collapse__content .film__timeshow ul .timeshow__item .timeshow__link .time__begin {
+  background-color: #f7f8fa;
+  border: 1px solid #d8d8d8;
+  padding: 10px 10px;
+  margin-right: 10px;
+  border-radius: 7px;
+  color: #00ac4d;
+  display: inline-grid;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .tab-pane .theater__content .list__theater .list__item .collapse .collapse__content .film__timeshow ul .timeshow__item .timeshow__link .time__begin p {
+  margin-bottom: 0;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .tab-pane .theater__content .list__theater .list__item .collapse .collapse__content .film__timeshow ul .timeshow__item .timeshow__link .time__begin:hover {
+  color: yellow;
+}
+
+.tabBookMovie .container-fluid #movieTheater #pills-comment {
+  padding: 0 130px;
+}
+
+@media only screen and (max-width: 575px) {
+  .tabBookMovie .container-fluid #movieTheater #pills-comment {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .tabBookMovie .container-fluid #movieTheater #pills-comment {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .tabBookMovie .container-fluid #movieTheater #pills-comment {
+    padding: 0 80px;
+  }
+}
+/*# sourceMappingURL=ShowTime.css.map */

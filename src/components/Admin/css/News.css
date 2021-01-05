@@ -1,0 +1,7 @@
+.news__description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/*# sourceMappingURL=News.css.map */

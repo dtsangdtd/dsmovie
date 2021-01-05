@@ -1,0 +1,229 @@
+.hotMovie {
+  margin-top: 62px;
+  position: relative;
+}
+
+.hotMovie .hotMovie__content .myHotMovieCarousel.owl-carousel {
+  display: block;
+}
+
+@media only screen and (max-width: 575px) {
+  .hotMovie .hotMovie__content .myHotMovieCarousel .owl-nav {
+    display: none;
+  }
+}
+
+.hotMovie .hotMovie__content .myHotMovieCarousel .owl-nav .owl-next {
+  position: absolute;
+  right: 0;
+  top: 20%;
+  color: #949494;
+  outline: none;
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .hotMovie .hotMovie__content .myHotMovieCarousel .owl-nav .owl-next {
+    top: 10%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .hotMovie .hotMovie__content .myHotMovieCarousel .owl-nav .owl-next {
+    top: 8%;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1199px) {
+  .hotMovie .hotMovie__content .myHotMovieCarousel .owl-nav .owl-next {
+    top: 10%;
+  }
+}
+
+.hotMovie .hotMovie__content .myHotMovieCarousel .owl-nav .owl-next:hover {
+  background: none;
+  color: #949494;
+}
+
+.hotMovie .hotMovie__content .myHotMovieCarousel .owl-nav .owl-next span {
+  font-size: 150px;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .hotMovie .hotMovie__content .myHotMovieCarousel .owl-nav .owl-next span {
+    font-size: 100px;
+    font-weight: 300;
+  }
+}
+
+.hotMovie .hotMovie__content .myHotMovieCarousel .owl-nav .owl-prev {
+  position: absolute;
+  left: 0;
+  top: 20%;
+  color: #949494;
+  outline: none;
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .hotMovie .hotMovie__content .myHotMovieCarousel .owl-nav .owl-prev {
+    top: 10%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .hotMovie .hotMovie__content .myHotMovieCarousel .owl-nav .owl-prev {
+    top: 8%;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1199px) {
+  .hotMovie .hotMovie__content .myHotMovieCarousel .owl-nav .owl-prev {
+    top: 10%;
+  }
+}
+
+.hotMovie .hotMovie__content .myHotMovieCarousel .owl-nav .owl-prev:hover {
+  background: none;
+  color: #949494;
+}
+
+.hotMovie .hotMovie__content .myHotMovieCarousel .owl-nav .owl-prev span {
+  font-size: 150px;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .hotMovie .hotMovie__content .myHotMovieCarousel .owl-nav .owl-prev span {
+    font-size: 100px;
+    font-weight: 300;
+  }
+}
+
+.hotMovie .hotMovie__content .myHotMovieCarousel .owl-dots {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-40%);
+}
+
+@media only screen and (max-width: 575px) {
+  .hotMovie .hotMovie__content .myHotMovieCarousel .owl-dots {
+    bottom: 5%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .hotMovie .hotMovie__content .myHotMovieCarousel .owl-dots {
+    bottom: 15%;
+  }
+}
+
+.hotMovie .hotMovie__content .myHotMovieCarousel .owl-dots .owl-dot span {
+  width: 15px;
+  height: 15px;
+}
+
+@media only screen and (max-width: 575px) {
+  .hotMovie .hotMovie__content .myHotMovieCarousel .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .hotMovie .hotMovie__content .myHotMovieCarousel .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .hotMovie .hotMovie__content .myHotMovieCarousel .owl-dots .owl-dot span {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.hotMovie .hotMovie__content .myHotMovieCarousel .owl-dots .owl-dot.active span {
+  background: #60c5ef;
+}
+
+.hotMovie .hotMovie__content .myHotMovieCarousel:hover .item .item__img .background__overlay {
+  opacity: 1;
+}
+
+.hotMovie .hotMovie__content .myHotMovieCarousel .item .item__img {
+  cursor: pointer;
+}
+
+.hotMovie .hotMovie__content .myHotMovieCarousel .item .item__img img {
+  width: 100%;
+}
+
+.hotMovie .hotMovie__content .myHotMovieCarousel .item .item__img .background__overlay {
+  z-index: 1000;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-30%, -50%);
+  opacity: 0;
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+  border: 2px solid #f2f3f5;
+  line-height: 80px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all 0.2s;
+}
+
+@media only screen and (max-width: 575px) {
+  .hotMovie .hotMovie__content .myHotMovieCarousel .item .item__img .background__overlay {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .hotMovie .hotMovie__content .myHotMovieCarousel .item .item__img .background__overlay {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .hotMovie .hotMovie__content .myHotMovieCarousel .item .item__img .background__overlay {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+  }
+}
+
+.hotMovie .hotMovie__content .myHotMovieCarousel .item .item__img .background__overlay .carousel__button {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  color: #f2f3f5;
+}
+
+@media only screen and (max-width: 575px) {
+  .hotMovie .hotMovie__content .myHotMovieCarousel .item .item__img .background__overlay .carousel__button {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .hotMovie .hotMovie__content .myHotMovieCarousel .item .item__img .background__overlay .carousel__button {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+.hotMovie .hotMovie__content .myHotMovieCarousel .item .item__img .background__overlay:hover {
+  opacity: 0.7;
+}
+/*# sourceMappingURL=Carousel.css.map */

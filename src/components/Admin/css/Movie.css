@@ -1,0 +1,29 @@
+.text__description--ellipse {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btnAdd {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #60c5ef;
+  outline: none;
+  transition: all 0.3s ease;
+  position: fixed;
+  left: 10px;
+  background-color: rgba(50, 50, 50, 0.9);
+  bottom: 10px;
+  border: 2px solid rgba(50, 50, 50, 0.9);
+  z-index: 105;
+}
+
+.btnAdd:hover {
+  border: 2px solid #60c5ef;
+  background: #60c5ef;
+  color: whitesmoke;
+  box-shadow: 0 5px 12px 0 rgba(96, 197, 239, 0.5);
+}
+/*# sourceMappingURL=Movie.css.map */

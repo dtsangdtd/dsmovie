@@ -1,0 +1,71 @@
+@mixin btn__style__1 {
+    $colors: #ff8b94, #02a7e1, #98cb4a, #ae5a41, #f7d842;
+
+    @for $i from 1 through length($colors) {
+        .container .button-wrapper:nth-child(#{length($colors)}n + #{$i}) div:before {
+            border-color: nth($colors, $i);
+        }
+        .container .button-wrapper:nth-child(#{length($colors)}n + #{$i}) div {
+            border-color: nth($colors, $i);
+        }
+    }
+
+    .container {
+        z-index: 99;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 0;
+        flex-wrap: wrap;
+
+        .button-wrapper {
+            overflow: hidden;
+            .button {
+                position: relative;
+                text-transform: uppercase;
+                color: #fff;
+                border: solid 2px #02a7e1;
+                padding: 10px 30px;
+                z-index: 1;
+                &::before {
+                    position: absolute;
+                    border-bottom: solid 3px;
+                    content: "";
+                    min-height: 10px;
+                    min-width: 100px;
+                    z-index: 200;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: 60%;
+                    opacity: 1;
+                    transition-duration: 0.5s;
+                }
+                &::after {
+                    pointer-events: none;
+                    position: absolute;
+                    content: "";
+                    width: 600px;
+                    height: 160px;
+                    border-radius: 50%;
+                    background-color: #555555;
+                    //background-color: red;
+
+                    //border: solid 2px red;
+                    top: -120%;
+                    left: -30%;
+                    z-index: -10;
+                    //transform: rotate(30deg);
+                    transition-duration: 2s;
+                }
+                &:hover:after {
+                    width: 0;
+                    height: 50px;
+                }
+                &:hover:before {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}

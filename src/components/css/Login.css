@@ -1,0 +1,142 @@
+.background__user {
+  background: url("https://i.ibb.co/Ybnw70Q/homeappbg.jpg");
+  display: flex;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background__user .container-fluid {
+  padding: 100px 50px;
+  max-width: 500px;
+}
+
+.background__user .container-fluid .loginForm {
+  animation-name: slidedown;
+  animation-duration: 2s;
+  position: relative;
+  background: linear-gradient(to right, yellow, orange);
+  text-align: center;
+  padding: 30px;
+}
+
+.background__user .container-fluid .loginForm .img__link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.background__user .container-fluid .loginForm .img__link .img__logo {
+  margin-bottom: 40px;
+  padding-top: 10px;
+}
+
+.background__user .container-fluid .loginForm .img__link .img__logo img {
+  position: absolute;
+  width: 300px;
+  top: -33%;
+  left: 16%;
+}
+
+.background__user .container-fluid .loginForm .img__link .img__logo .text-logo {
+  color: #60c5ef;
+  font-family: "Metal Mania", cursive;
+  font-size: 29px;
+  font-weight: 400;
+}
+
+.background__user .container-fluid .loginForm .formMessage {
+  color: darkgrey;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.background__user .container-fluid .loginForm .formSocial .formLogin {
+  border-radius: 10px;
+}
+
+.background__user .container-fluid .loginForm .formSocial .formLogin .form-group .text-light {
+  color: darkgrey !important;
+}
+
+.background__user .container-fluid .loginForm .formSocial .formLogin .form-group .text-light:hover {
+  color: black !important;
+}
+
+.background__user .container-fluid .loginForm .formSocial .formLogin .form-group .input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 4px;
+  border: 0;
+  color: #3e3e3e;
+}
+
+.background__user .container-fluid .loginForm .formSocial .formLogin .form-group .input::placeholder {
+  font-family: "Lato", sans-serif;
+}
+
+.background__user .container-fluid .loginForm .formSocial .formLogin .form-group .btnLogin {
+  background-color: rgba(36, 41, 44, 0.9);
+  border: none;
+  width: 100%;
+  text-align: center;
+  padding: 14px;
+  border-radius: 4px;
+  color: white;
+  transition: 0.5s all;
+}
+
+.background__user .container-fluid .loginForm .formSocial .formLogin .form-group .btnLogin:hover {
+  background-color: yellow;
+  font-size: 20px;
+  color: darkgrey;
+}
+
+.background__user .container-fluid .loginForm .close__btn {
+  position: absolute;
+  content: "";
+  top: -18px;
+  right: -18px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: yellow;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.background__user .container-fluid .loginForm .close__btn::before {
+  position: absolute;
+  content: "";
+  display: block;
+  border-left: 2px solid #455570;
+  width: 2px;
+  height: 30px;
+  top: 2px;
+  left: 17.5px;
+  transform: rotate(-45deg);
+}
+
+.background__user .container-fluid .loginForm .close__btn::after {
+  content: "";
+  display: block;
+  border-left: 2px solid #455570;
+  width: 2px;
+  height: 30px;
+  position: absolute;
+  top: 3px;
+  left: 17.5px;
+  transform: rotate(45deg);
+}
+
+@keyframes slidedown {
+  from {
+    transform: translateY(-500px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=Login.css.map */

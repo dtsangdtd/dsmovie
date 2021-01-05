@@ -1,0 +1,120 @@
+.forMobile {
+  padding: 50px 150px;
+}
+
+@media only screen and (max-width: 575px) {
+  .forMobile {
+    padding: 80px 20px;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .forMobile {
+    padding: 80px 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .forMobile {
+    padding: 80px 20px;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1199px) {
+  .forMobile {
+    padding: 80px 20px;
+  }
+}
+
+.forMobile .container .forMobile__content .row .forMobile__left {
+  padding-top: 30px;
+}
+
+@media only screen and (max-width: 575px) {
+  .forMobile .container .forMobile__content .row .forMobile__left {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .forMobile .container .forMobile__content .row .forMobile__left {
+    text-align: center;
+  }
+}
+
+.forMobile .container .forMobile__content .row .forMobile__left .text__app {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.forMobile .container .forMobile__content .row .forMobile__left .text__description {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.forMobile .container .forMobile__content .row .forMobile__left .btn__app {
+  color: #f2f3f5;
+  background-color: #60c5ef;
+  border: 1px solid #60c5ef;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 7px 15px;
+  margin-bottom: 10px;
+}
+
+.forMobile .container .forMobile__content .row .forMobile__left .text__appversion {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.forMobile .container .forMobile__content .row .forMobile__left .text__appversion .appforos__link {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.forMobile .container .forMobile__content .row .forMobile__right {
+  padding: 0 130px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .forMobile .container .forMobile__content .row .forMobile__right {
+    padding: 40px 100px;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1199px) {
+  .forMobile .container .forMobile__content .row .forMobile__right {
+    padding: 0px 130px;
+  }
+}
+
+.forMobile .container .forMobile__content .row .forMobile__right .mobile__frame {
+  position: relative;
+}
+
+.forMobile .container .forMobile__content .row .forMobile__right .mobile__frame .mobileCarousel {
+  position: absolute;
+  width: 100%;
+  padding: 5px;
+  top: 0;
+}
+
+.forMobile .container .forMobile__content .row .forMobile__right .mobile__frame .mobileCarousel.owl-loaded {
+  display: block;
+}
+
+.forMobile .container .forMobile__content .row .forMobile__right .mobile__frame .mobileCarousel .item img {
+  border-radius: 20px;
+}
+
+.background__homeapp {
+  background: url("https://i.ibb.co/R0MPTqS/background.jpg");
+  background-size: contain;
+}
+/*# sourceMappingURL=AppMobile.css.map */

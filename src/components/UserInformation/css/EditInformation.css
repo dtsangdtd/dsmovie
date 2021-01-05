@@ -1,0 +1,16 @@
+.form-group .input {
+  background: white !important;
+  border: solid black !important;
+}
+
+.form-group .btnChange.btn-block {
+  color: white;
+  background-color: darkgray;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.form-group .btnChange.btn-block:hover {
+  background: linear-gradient(to right, yellow, orange);
+}
+/*# sourceMappingURL=EditInformation.css.map */

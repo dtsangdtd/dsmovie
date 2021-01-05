@@ -1,0 +1,117 @@
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .CreditModal .modal-dialog {
+    max-width: 70%;
+  }
+}
+
+.CreditModal .modal-dialog .modal-content {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.CreditModal .modal-dialog .modal-content .modal-header {
+  border: none;
+}
+
+.CreditModal .modal-dialog .modal-content .modal-body #PaymentForm .row .info-card .info-form .textb {
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.CreditModal .modal-dialog .modal-content .modal-body #PaymentForm .row .info-card .info-form .textb input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  background-color: #cacbcc;
+  border-radius: 4px;
+  color: #333;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 14px 60px 0 10px;
+}
+
+.CreditModal .modal-dialog .modal-content .modal-body #PaymentForm .row .info-card .info-form .textb input:focus ~ .placeholder,
+.CreditModal .modal-dialog .modal-content .modal-body #PaymentForm .row .info-card .info-form .textb input:valid ~ .placeholder {
+  left: 10px;
+  top: -16px;
+}
+
+.CreditModal .modal-dialog .modal-content .modal-body #PaymentForm .row .info-card .info-form .textb .placeholder {
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 50px;
+  top: 0;
+  left: 20px;
+  color: #333;
+  user-select: none;
+  pointer-events: none;
+  transition: all 0.2s;
+}
+
+.CreditModal .modal-dialog .modal-content .modal-footer {
+  border: none;
+}
+
+.CreditModal .modal-dialog .modal-content .modal-footer .draw-border {
+  box-shadow: inset 0 0 0 4px #8bc541;
+  color: #8bc541;
+  transition: color 0.25s 0.08333s;
+  position: relative;
+}
+
+.CreditModal .modal-dialog .modal-content .modal-footer .draw-border::before, .CreditModal .modal-dialog .modal-content .modal-footer .draw-border::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.CreditModal .modal-dialog .modal-content .modal-footer .draw-border::before {
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+}
+
+.CreditModal .modal-dialog .modal-content .modal-footer .draw-border::after {
+  border-top-width: 4px;
+  border-right-width: 4px;
+}
+
+.CreditModal .modal-dialog .modal-content .modal-footer .draw-border:hover {
+  color: #60c5ef;
+}
+
+.CreditModal .modal-dialog .modal-content .modal-footer .draw-border:hover::before, .CreditModal .modal-dialog .modal-content .modal-footer .draw-border:hover::after {
+  border-color: #60c5ef;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+
+.CreditModal .modal-dialog .modal-content .modal-footer .draw-border:hover::before {
+  transition-delay: 0s, 0s, 0.25s;
+}
+
+.CreditModal .modal-dialog .modal-content .modal-footer .draw-border:hover::after {
+  transition-delay: 0s, 0.25s, 0s;
+}
+
+.CreditModal .modal-dialog .modal-content .modal-footer .btn-style {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem "Roboto Slab", sans-serif;
+  padding: 1em 2em;
+  letter-spacing: 0.05rem;
+}
+
+.CreditModal .modal-dialog .modal-content .modal-footer .btn-style:focus {
+  outline: 2px dotted #55d7dc;
+}
+/*# sourceMappingURL=CreditModal.css.map */

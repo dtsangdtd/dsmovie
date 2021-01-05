@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../CardCinema/CardCinema.scss"
+    ],
+    "names": [],
+    "file": "CardCinema.css"
+}

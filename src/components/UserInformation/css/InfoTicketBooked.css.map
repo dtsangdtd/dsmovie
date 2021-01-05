@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../InfoTicketBooked/InfoTicketBooked.scss"
+    ],
+    "names": [],
+    "file": "InfoTicketBooked.css"
+}

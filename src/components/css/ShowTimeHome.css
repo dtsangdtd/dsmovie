@@ -1,0 +1,420 @@
+.schedule {
+  margin: 0 160px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 575px) {
+  .schedule {
+    margin: 0 30px;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .schedule {
+    margin: 0 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .schedule {
+    margin: 0 30px;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1199px) {
+  .schedule {
+    margin: 0 50px;
+  }
+}
+
+.schedule .schedule__title {
+  color: yellow;
+}
+
+.schedule .schedule__content .container .schedule__row {
+  border: 1px solid #949494;
+  border-radius: 5px;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tab {
+  padding: 0;
+  max-width: 9%;
+  border-right: 0.5px solid #d8d8d8;
+}
+
+@media only screen and (max-width: 575px) {
+  .schedule .schedule__content .container .schedule__row .main__tab {
+    min-width: 100%;
+    border-right: none;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .schedule .schedule__content .container .schedule__row .main__tab {
+    min-width: 100%;
+    border-right: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .schedule .schedule__content .container .schedule__row .main__tab {
+    max-width: 12%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .schedule .schedule__content .container .schedule__row .main__tab .nav {
+    flex-direction: row !important;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .schedule .schedule__content .container .schedule__row .main__tab .nav {
+    flex-direction: row !important;
+  }
+}
+
+.schedule .schedule__content .container .schedule__row .main__tab .nav .nav-link {
+  padding: 1rem 1rem;
+  opacity: 0.5;
+  border-bottom: 1px solid #fff;
+  display: inline;
+  max-width: 100%;
+  transition: linear 0.2s;
+}
+
+@media only screen and (max-width: 575px) {
+  .schedule .schedule__content .container .schedule__row .main__tab .nav .nav-link {
+    padding: 1.2rem 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .schedule .schedule__content .container .schedule__row .main__tab .nav .nav-link {
+    padding: 1.2rem 1.2rem;
+  }
+}
+
+.schedule .schedule__content .container .schedule__row .main__tab .nav .nav-link.active {
+  background: none;
+  opacity: 1;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tab .nav .nav-link:hover {
+  opacity: 1;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tab .nav .nav-link img {
+  width: 50px;
+  height: 50px;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent {
+  max-width: 90.9%;
+  flex: 0 0 100%;
+}
+
+@media only screen and (max-width: 575px) {
+  .schedule .schedule__content .container .schedule__row .main__tabContent {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .schedule .schedule__content .container .schedule__row .main__tabContent {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .schedule .schedule__content .container .schedule__row .main__tabContent {
+    max-width: 87.9%;
+    flex: 0 0 100%;
+  }
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab {
+  border-right: 1px solid #d8d8d8;
+  padding: 0;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab::-webkit-scrollbar {
+  width: 4px;
+  background-color: #d8d8d8;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab::-webkit-scrollbar-thumb {
+  background-color: #949494;
+  border-radius: 5px;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab .nav .nav-link {
+  color: #fff;
+  display: flex;
+  border-bottom: 1px solid #949494;
+  padding: 15px;
+  opacity: 0.5;
+  transition: linear 0.3s;
+  padding-bottom: 2px;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab .nav .nav-link:last-child {
+  border-bottom: none;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab .nav .nav-link:last-child:hover {
+  border-bottom: none;
+}
+
+@media only screen and (max-width: 575px) {
+  .schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab .nav .nav-link {
+    padding: 3px;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab .nav .nav-link {
+    padding: 3px;
+  }
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab .nav .nav-link.active {
+  opacity: 1;
+  border-bottom: 1px solid yellow;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab .nav .nav-link:hover {
+  opacity: 1;
+  border-bottom: 1px solid yellow;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab .nav .nav-link:hover .text__theater .name__theater {
+  overflow: auto;
+  -webkit-line-clamp: 2;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab .nav .nav-link .img__theater {
+  margin: 6px 9px;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab .nav .nav-link .img__theater img {
+  width: 50px;
+  height: 50px;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab .nav .nav-link.active {
+  background: none;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab .nav .nav-link .text__theater .name__theater {
+  font-size: 15px;
+  font-weight: 400;
+  color: #ce3017;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab .nav .nav-link .text__theater .name__theater.theater--BHD {
+  color: green;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab .nav .nav-link .text__theater .name__theater.theater--GLX {
+  color: #f60;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab .nav .nav-link .text__theater .name__theater .name__aftertheater {
+  color: #29303b;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab .nav .nav-link .text__theater .address__theater {
+  font-size: 13px;
+  font-weight: 400;
+  color: #949494;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  margin: 0;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab .nav .nav-link .text__theater .detail__theater {
+  font-size: 13px;
+  font-weight: 400;
+  color: #fb4226;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent {
+  padding: 0;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content {
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content::-webkit-scrollbar {
+  width: 4px;
+  background-color: #d8d8d8;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content::-webkit-scrollbar-thumb {
+  background-color: #949494;
+  border-radius: 5px;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane:last-child {
+  border-bottom: none;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item {
+  padding: 15px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #d8d8d8;
+  transition: linear 0.5s;
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item {
+    padding: 5px;
+  }
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item:hover {
+  border-bottom: 1px solid yellow;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .film__link {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 575px) {
+  .schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .film__link .row .film__img {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .film__link .row .film__img {
+    max-width: 100%;
+  }
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .film__link .row .film__img img {
+  width: 50px;
+  height: 50px;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .film__link .row .film__title {
+  padding-left: 0;
+}
+
+@media only screen and (max-width: 575px) {
+  .schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .film__link .row .film__title {
+    padding-left: 15px;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .film__link .row .film__title {
+    padding-left: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .film__link .row .film__title {
+    padding-left: 15px;
+  }
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .film__link .row .film__title .age--P {
+  background-color: #00ac4d;
+  padding: 2px 12px;
+  color: #f2f3f5;
+  border-radius: 5px;
+  margin-right: 5px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .film__link .row .film__title .age--C {
+  background-color: yellow;
+  padding: 2px 5px;
+  color: #f2f3f5;
+  border-radius: 5px;
+  margin-right: 5px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .film__link .row .film__title .film__name {
+  font-size: 15px;
+  font-weight: 500;
+  color: #29303b;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .film__link .row .film__title .film__timming {
+  font-size: 13px;
+  font-weight: 500;
+  color: #949494;
+  margin: 5px;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .collapse {
+  white-space: nowrap;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .collapse .film__version {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .collapse .collapse__content {
+  display: inline-flex;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .collapse .collapse__content .film__timeshow {
+  margin-top: 20px;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .collapse .collapse__content .film__timeshow ul .timeshow__item {
+  margin-bottom: 25px;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .collapse .collapse__content .film__timeshow ul .timeshow__item .timeshow__link {
+  text-decoration: none;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .collapse .collapse__content .film__timeshow ul .timeshow__item .timeshow__link .time__begin {
+  background-color: #f7f8fa;
+  border: 1px solid #d8d8d8;
+  padding: 10px 10px;
+  margin-right: 10px;
+  border-radius: 7px;
+  color: #00ac4d;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .collapse .collapse__content .film__timeshow ul .timeshow__item .timeshow__link .time__begin:hover {
+  color: yellow;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .collapse .collapse__content .film__timeshow ul .timeshow__item .timeshow__link .time__begin .time__end {
+  font-size: 13px;
+  font-weight: 500;
+  color: #949494;
+}
+/*# sourceMappingURL=ShowTimeHome.css.map */

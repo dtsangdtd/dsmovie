@@ -1,0 +1,129 @@
+@charset "UTF-8";
+#CommentModal .modal-dialog .modal-content .modal-body .comment-form {
+  width: calc(100% - 20px);
+  max-width: 800px;
+  background-color: #fff;
+  z-index: 300;
+}
+
+#CommentModal .modal-dialog .modal-content .modal-body .comment-form .rating {
+  margin: 0 auto 100px auto;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  width: 100%;
+}
+
+#CommentModal .modal-dialog .modal-content .modal-body .comment-form .rating > * {
+  float: right;
+}
+
+@keyframes pulse {
+  50% {
+    color: #5e5e5e;
+    text-shadow: 0 0 15px #777777;
+  }
+}
+
+#CommentModal .modal-dialog .modal-content .modal-body .comment-form .rating label {
+  height: 40px;
+  width: 20%;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+#CommentModal .modal-dialog .modal-content .modal-body .comment-form .rating label:nth-of-type(5):after {
+  animation-delay: 0.25s;
+}
+
+#CommentModal .modal-dialog .modal-content .modal-body .comment-form .rating label:nth-of-type(4):after {
+  animation-delay: 0.2s;
+}
+
+#CommentModal .modal-dialog .modal-content .modal-body .comment-form .rating label:nth-of-type(3):after {
+  animation-delay: 0.15s;
+}
+
+#CommentModal .modal-dialog .modal-content .modal-body .comment-form .rating label:nth-of-type(2):after {
+  animation-delay: 0.1s;
+}
+
+#CommentModal .modal-dialog .modal-content .modal-body .comment-form .rating label:nth-of-type(1):after {
+  animation-delay: 0.05s;
+}
+
+#CommentModal .modal-dialog .modal-content .modal-body .comment-form .rating label:after {
+  transition: all 0.4s ease-out;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  content: "☆";
+  color: #444;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 80px;
+  animation: 1s pulse ease;
+}
+
+#CommentModal .modal-dialog .modal-content .modal-body .comment-form .rating label:hover:after {
+  color: #5e5e5e;
+  text-shadow: 0 0 15px #5e5e5e;
+}
+
+#CommentModal .modal-dialog .modal-content .modal-body .comment-form .rating input {
+  display: none;
+}
+
+#CommentModal .modal-dialog .modal-content .modal-body .comment-form .rating input:checked + label:after,
+#CommentModal .modal-dialog .modal-content .modal-body .comment-form .rating input:checked ~ label:after {
+  content: "★";
+  color: #60c5ef;
+  text-shadow: 0 0 20px #60c5ef;
+}
+
+#CommentModal .modal-dialog .modal-content .modal-body .comment-form .textb {
+  margin-top: 50px;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+#CommentModal .modal-dialog .modal-content .modal-body .comment-form .textb textarea {
+  width: 100%;
+  height: 100px;
+  border: none;
+  background-color: #ededed;
+  border-radius: 4px;
+  color: #333;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 14px 60px 0 10px;
+}
+
+#CommentModal .modal-dialog .modal-content .modal-body .comment-form .textb textarea:focus ~ .placeholder,
+#CommentModal .modal-dialog .modal-content .modal-body .comment-form .textb textarea:valid ~ .placeholder {
+  left: 10px;
+  top: -14px;
+}
+
+#CommentModal .modal-dialog .modal-content .modal-body .comment-form .textb .placeholder {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  position: absolute;
+  line-height: 50px;
+  top: 0;
+  left: 20px;
+  color: #9d9d9d;
+  user-select: none;
+  pointer-events: none;
+  transition: all 0.2s;
+}
+
+#CommentModal .modal-dialog .modal-content .modal-footer .button-post {
+  background-color: #60c5ef;
+  color: #fff;
+}
+/*# sourceMappingURL=ModalComment.css.map */
