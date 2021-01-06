@@ -1,21 +1,21 @@
-import React, { useEffect, useState } from "react";
-import PropTypes from "prop-types";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
-import AppBar from "@material-ui/core/AppBar";
-import Tabs from "@material-ui/core/Tabs";
-import Tab from "@material-ui/core/Tab";
-import Typography from "@material-ui/core/Typography";
-import Box from "@material-ui/core/Box";
-import CardCinema from "../CardCinema/CardCinema";
-import SwipeableViews from "react-swipeable-views";
-import SpinnerLoading from "../SpinnerLoading/SpinnerLoading";
-import { qLyPhimService } from "../../services/QuanLyPhimServices";
+import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
+import { makeStyles, useTheme } from '@material-ui/core/styles';
+import AppBar from '@material-ui/core/AppBar';
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
+import Typography from '@material-ui/core/Typography';
+import Box from '@material-ui/core/Box';
+import CardCinema from '../CardCinema/CardCinema';
+import SwipeableViews from 'react-swipeable-views';
+import Loader from '../Loader';
+import { qLyPhimService } from '../../services/QuanLyPhimServices';
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
   return (
     <div
-      role="tabpanel"
+      role='tabpanel'
       hidden={value !== index}
       id={`simple-tabpanel-${index}`}
       aria-labelledby={`simple-tab-${index}`}
@@ -39,7 +39,7 @@ TabPanel.propTypes = {
 function a11yProps(index) {
   return {
     id: `simple-tab-${index}`,
-    "aria-controls": `simple-tabpanel-${index}`,
+    'aria-controls': `simple-tabpanel-${index}`,
   };
 }
 
@@ -83,7 +83,7 @@ export default function CinemaSystem(props) {
           label={rap.tenHeThongRap}
           {...a11yProps(`${index}`)}
           key={index}
-          style={{ outline: "none", color: "#333", paddingBottom: "35px" }}
+          style={{ outline: 'none', color: '#333', paddingBottom: '35px' }}
         ></Tab>
       );
     });
@@ -108,32 +108,32 @@ export default function CinemaSystem(props) {
     setValue(index);
   };
   if (loading) {
-    return <SpinnerLoading />;
+    return <Loader />;
   } else {
     return (
-      <div className={classes.root} style={{ marginTop: "60px" }}>
+      <div className={classes.root} style={{ marginTop: '60px' }}>
         <AppBar
-          position="static"
-          color="default"
+          position='static'
+          color='default'
           style={{
-            backgroundColor: "#fff",
+            backgroundColor: '#fff',
           }}
         >
           <Tabs
             value={value}
             onChange={handleChange}
-            indicatorColor="primary"
-            textColor="primary"
-            aria-label="simple tabs example"
+            indicatorColor='primary'
+            textColor='primary'
+            aria-label='simple tabs example'
           >
             {renderHeThongRap()}
           </Tabs>
         </AppBar>
         <SwipeableViews
-          axis={theme.direction === "rtl" ? "x-reverse" : "x"}
+          axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
           index={value}
           onChangeIndex={handleChangeIndex}
-          style={{ backgroundColor: "#333" }}
+          style={{ backgroundColor: '#333' }}
         >
           {renderCumRap()}
         </SwipeableViews>

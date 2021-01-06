@@ -1,7 +1,7 @@
-@import "../connect";
+@import '../connect';
 footer {
   padding: spacing(0) spacing(15) spacing(2);
-  background-color:darkgray;
+  background-color: darkgray;
   @include responsive_mobile {
     padding: spacing(0) spacing(3) spacing(2);
   }
@@ -46,7 +46,6 @@ footer {
               text-align: center;
             }
             .above__title {
-             
               &.non--title {
                 @include responsive_mobile {
                   margin: 0;
@@ -117,7 +116,6 @@ footer {
                 transition: all 0.3s;
                 &:hover {
                   color: yellow;
-           
                 }
               }
             }
@@ -186,7 +184,8 @@ footer {
           @include responsive_tablet {
             margin-bottom: spacing(1);
           }
-          img {   margin-top: -70px;
+          img {
+            margin-top: -70px;
             width: 200px;
             height: 175px;
             @include responsive_laptop--mini {
@@ -194,10 +193,8 @@ footer {
               height: 65px;
             }
           }
-        
         }
         .below__middle {
-     
           color: white;
           font-size: 16px;
           @include Text($fs-1, $fw-regular);
@@ -207,7 +204,6 @@ footer {
             @include Text($fs-1 - 5, $fw-regular);
           }
           span {
-            
             white-space: nowrap;
             .cutLine {
               display: block;

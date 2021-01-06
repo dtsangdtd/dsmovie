@@ -35,8 +35,12 @@
   top: 0;
   left: 20px;
   color: #9d9d9d;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   pointer-events: none;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -66,12 +70,13 @@
   width: 150px;
   height: 80px;
   margin: 10px auto;
-  background-color: #60c5ef;
+  background-color: yellow;
   color: #fff;
   font-size: 40px;
   border: none;
   border-radius: 30px;
   cursor: pointer;
+  -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
 }
 
@@ -83,18 +88,35 @@
   border-radius: 0 0 20px 20px;
   width: 100%;
   height: 50vh;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  animation: showoff 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -webkit-animation: showoff 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+          animation: showoff 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+@-webkit-keyframes showoff {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 @keyframes showoff {
   from {
     opacity: 0;
-    transform: translateY(-200px);
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 /*# sourceMappingURL=CreateShowTimeForm.css.map */

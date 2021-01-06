@@ -29,10 +29,13 @@
 }
 
 .tabBookMovie .container-fluid .nav-pills {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .tabBookMovie .container-fluid .nav-pills .nav-item {
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
   border: none;
 }
@@ -42,9 +45,11 @@
   background: none;
   font-size: 20px;
   font-weight: 500;
+  -webkit-transition: all 0.1s;
   transition: all 0.1s;
   border: none;
-  transform: scale(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 @media only screen and (max-width: 575px) {
@@ -67,7 +72,8 @@
 }
 
 .tabBookMovie .container-fluid .nav-pills .nav-item .nav-link:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .tabBookMovie .container-fluid #movieTheater {
@@ -127,7 +133,8 @@
   left: 60px;
   right: 20px;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .row__left .nav .nav-link .img__content .img__text .img__name {
@@ -155,6 +162,8 @@
 }
 
 .tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .row__left .nav .nav-link .img__content .img__text .img__discount {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -202,7 +211,9 @@
 }
 
 .tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .nav__container .nav {
-  justify-content: start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 
 .tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .nav__container .nav .nav-item {
@@ -238,7 +249,8 @@
 }
 
 .tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .nav__container .nav .nav-item .nav-link:hover {
-  transform: none;
+  -webkit-transform: none;
+          transform: none;
 }
 
 .tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .nav__container .nav .nav-item .nav-link .days__item .dayOfWeek {
@@ -363,6 +375,7 @@
   margin-right: 10px;
   border-radius: 7px;
   color: #00ac4d;
+  display: -ms-inline-grid;
   display: inline-grid;
   font-size: 16px;
   font-weight: 500;

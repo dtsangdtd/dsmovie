@@ -3,9 +3,15 @@
   min-height: 300px;
   background-color: #0a2029;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   overflow: hidden;
 }
 
@@ -31,22 +37,26 @@
 
 .movieInfo .full__background img {
   width: 100%;
-  filter: blur(15px);
+  -webkit-filter: blur(15px);
+          filter: blur(15px);
 }
 
 @media only screen and (max-width: 575px) {
   .movieInfo .full__background img {
-    filter: blur(5px);
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
   }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 767px) {
   .movieInfo .full__background img {
-    filter: blur(5px);
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
   }
 }
 
 .movieInfo .full__background .overlay__gradient {
+  background: -webkit-gradient(linear, left bottom, left top, from(#0a2029), to(transparent));
   background: linear-gradient(to top, #0a2029, transparent 100%);
   position: absolute;
   height: 100%;
@@ -68,6 +78,7 @@
   border: 2px solid #fff;
   background-color: rgba(255, 255, 255, 0.15);
   cursor: pointer;
+  -webkit-transition: linear 0.2s;
   transition: linear 0.2s;
 }
 
@@ -202,6 +213,7 @@
   border: 2px solid #fff;
   background-color: rgba(255, 255, 255, 0.15);
   cursor: pointer;
+  -webkit-transition: linear 0.2s;
   transition: linear 0.2s;
 }
 
@@ -265,9 +277,11 @@
 }
 
 .movieInfo .form__info .row .movie__info .bookTicket-btn {
-  box-shadow: inset 0 0 0 2px yellow;
+  -webkit-box-shadow: inset 0 0 0 2px yellow;
+          box-shadow: inset 0 0 0 2px yellow;
   color: yellow;
   font-size: 20px;
+  -webkit-transition: color 0.25s 0.08333s;
   transition: color 0.25s 0.08333s;
   position: relative;
   margin-top: 10px;
@@ -277,12 +291,14 @@
   border: 1px solid yellow;
   border-radius: 4px;
   outline: none;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 .movieInfo .form__info .row .movie__info .bookTicket-btn::before, .movieInfo .form__info .row .movie__info .bookTicket-btn::after {
   border: 0 solid transparent;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   content: "";
   pointer-events: none;
   position: absolute;
@@ -308,20 +324,24 @@
 
 .movieInfo .form__info .row .movie__info .bookTicket-btn:hover::before, .movieInfo .form__info .row .movie__info .bookTicket-btn:hover::after {
   border-color: orange;
+  -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
   transition: border-color 0s, width 0.25s, height 0.25s;
   width: 100%;
   height: 100%;
 }
 
 .movieInfo .form__info .row .movie__info .bookTicket-btn:hover::before {
-  transition-delay: 0s, 0s, 0.25s;
+  -webkit-transition-delay: 0s, 0s, 0.25s;
+          transition-delay: 0s, 0s, 0.25s;
 }
 
 .movieInfo .form__info .row .movie__info .bookTicket-btn:hover::after {
-  transition-delay: 0s, 0.25s, 0s;
+  -webkit-transition-delay: 0s, 0.25s, 0s;
+          transition-delay: 0s, 0.25s, 0s;
 }
 
 .movieInfo .form__info .row .movie__info .bookTicket-btn:hover {
+  background: -webkit-gradient(linear, left top, right top, from(yellow), to(orange));
   background: linear-gradient(to right, yellow, orange);
   color: white;
 }
@@ -331,7 +351,8 @@
 }
 
 .movieInfo .form__info .row .movie__rating {
-  transform: translateY(20%);
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
   padding: 0;
 }
 
@@ -359,7 +380,8 @@
   top: -7px;
   left: -7px;
   clip: rect(0, 1.7em, 3em, 0);
-  transform: rotate(200deg);
+  -webkit-transform: rotate(200deg);
+          transform: rotate(200deg);
 }
 
 .movieInfo .form__info .row .movie__rating .rating__stars {

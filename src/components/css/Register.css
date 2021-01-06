@@ -1,7 +1,11 @@
 .background__user {
   background: url("https://i.ibb.co/Ybnw70Q/homeappbg.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-repeat: no-repeat;
 }
 
@@ -11,9 +15,12 @@
 }
 
 .background__user .container-fluid .registerForm {
-  animation-name: slidedown;
-  animation-duration: 2s;
+  -webkit-animation-name: slidedown;
+          animation-name: slidedown;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   position: relative;
+  background: -webkit-gradient(linear, left top, right top, from(yellow), to(orange));
   background: linear-gradient(to right, yellow, orange);
   text-align: center;
   padding: 30px;
@@ -64,6 +71,18 @@
   color: #3e3e3e;
 }
 
+.background__user .container-fluid .registerForm .formSocial .formRegister .form-group .input::-webkit-input-placeholder {
+  font-family: "Lato", sans-serif;
+}
+
+.background__user .container-fluid .registerForm .formSocial .formRegister .form-group .input:-ms-input-placeholder {
+  font-family: "Lato", sans-serif;
+}
+
+.background__user .container-fluid .registerForm .formSocial .formRegister .form-group .input::-ms-input-placeholder {
+  font-family: "Lato", sans-serif;
+}
+
 .background__user .container-fluid .registerForm .formSocial .formRegister .form-group .input::placeholder {
   font-family: "Lato", sans-serif;
 }
@@ -76,6 +95,7 @@
   padding: 14px;
   border-radius: 4px;
   color: white;
+  -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
@@ -94,7 +114,8 @@
   height: 36px;
   border-radius: 50%;
   background-color: yellow;
-  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 
@@ -107,7 +128,8 @@
   height: 30px;
   top: 2px;
   left: 17.5px;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .background__user .container-fluid .registerForm .close__btn::after {
@@ -119,16 +141,32 @@
   position: absolute;
   top: 3px;
   left: 17.5px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+@-webkit-keyframes slidedown {
+  from {
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes slidedown {
   from {
-    transform: translateY(-500px);
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
     opacity: 0;
   }
   to {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
   }
 }
