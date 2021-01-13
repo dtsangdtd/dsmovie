@@ -187,10 +187,8 @@ footer {
           img {
             margin-top: -70px;
             width: 200px;
-            height: 175px;
             @include responsive_laptop--mini {
               width: 75px;
-              height: 65px;
             }
           }
         }
@@ -210,7 +208,7 @@ footer {
             }
             .middle__link {
               text-decoration: none;
-              color: rgba(243, 239, 12, 0.918);
+              color: #ffffff;
               margin-left: 10px;
             }
           }

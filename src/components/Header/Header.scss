@@ -9,7 +9,7 @@ header {
   box-shadow: 0 0 15px $color-black-dark-3;
   transition: all 0.2s;
   .bg-nav {
-    background-color: rgba(243, 239, 12, 0.918) !important;
+    background-color: rgba(19, 22, 24, 0.35) !important;
     background: none;
 
     &:hover {
@@ -34,16 +34,13 @@ header {
       img {
         position: fixed;
         width: 115px;
-        height: 115px;
-        top: 0px;
-        border-radius: 5px;
+        top: 3%;
+        left: 2%;
         @include responsive_mobile--stiny {
-          width: 35px;
-          height: 35px;
+          width: 35px; 
         }
         @include responsive_mobile--tiny {
           width: 40px;
-          height: 40px;
         }
         &:hover {
           transition: 0.3s;
@@ -95,8 +92,9 @@ header {
               width: 20px;
             }
             width: 30px;
-            border-radius: 50%;
-            margin: spacing(0.3);
+            border-radius: 999px;
+            margin: 10px;
+            transform: scale(1.2);
           }
           .login__text {
             @include responsive_mobile--stiny {
@@ -108,7 +106,7 @@ header {
               margin-right: spacing(1);
             }
             @include Text($fs-0 - 1, $fw-regular);
-            color: $color-gray-2;
+            color: $color-white-0;
             margin-right: spacing(2);
             a {
               text-decoration: none;
@@ -192,7 +190,7 @@ header {
           }
           .nav-link {
             text-decoration: none;
-            color: $color-gray-2;
+            color: $color-white-0;
             @include Text($fs-0 - 1, $fw-bold);
           }
         }
@@ -211,12 +209,13 @@ header {
           text-decoration: none;
           img {
             width: 30px;
-            border-radius: 50%;
-            margin: spacing(0.3);
+            border-radius: 999px;
+            margin: 10px;
+            transform: scale(1.2);
           }
           .login__text {
             @include Text($fs-0 - 1, $fw-regular);
-            color: $color-gray-2;
+            color: $color-white-0;
             a {
               text-decoration: none;
               color: $color-gray-2;
@@ -251,7 +250,7 @@ header {
           cursor: pointer;
           transition: 0.5s ease-in-out;
           &:hover {
-            box-shadow: 2px 2px 4px 1px $color-gray-2;
+            box-shadow: 2px 2px 4px 1px $color-white-0;
           }
         }
         #province__dropdown {
@@ -267,10 +266,8 @@ header {
           .dropdown-toggle {
             text-decoration: none;
             @include Text($fs-0 - 1, $fw-regular);
-            color: $color-gray-2;
-            &:after {
-              content: none;
-            }
+            color: $color-white-0;
+
             .dropdown__icon {
               margin-right: spacing(0.7);
             }
@@ -290,7 +287,7 @@ header {
                 background-color: $color-gray-6;
               }
               &::-webkit-scrollbar-thumb {
-                background-color: $color-gray-2;
+                background-color: $color-white-0;
                 border-radius: 5px;
               }
             }

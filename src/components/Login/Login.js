@@ -6,6 +6,7 @@ import { userLogin, token } from "../../config/setting";
 import { qlyNguoiDung } from "../../services/QuanLyNguoiDungServices";
 import { dangNhapAction } from "../../redux/actions/QuanLyNguoiDungActions";
 import swal from "sweetalert";
+import Logo_login from "../../images/Logo_login.png"
 const Login = (props) => {
   let { navigator } = props;
   const dispatch = useDispatch();
@@ -61,7 +62,7 @@ const Login = (props) => {
           <NavLink className="img__link" to="/">
             <div className="img__logo">
               <img
-                src="https://i.ibb.co/NxT851P/1111.png"
+                src={Logo_login}
                 alt="logo"
               />
             </div>

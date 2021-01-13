@@ -5,7 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: darkgray !important;
+  /* background: #ffffff !important; */
+  background: url("https://thumbs.gfycat.com/FortunateInexperiencedIbex-size_restricted.gif") !important;
 }
 
 code {
