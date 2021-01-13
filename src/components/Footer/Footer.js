@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../Footer/Footer.scss";
+import Logo_footer from "../../images/Logo_footer.png"
 export default class Footer extends Component {
   render() {
     return (
@@ -8,7 +9,7 @@ export default class Footer extends Component {
           <div className="footer__above">
             <div className="above__row row">
               <div className="above__item col-2 foxmovie__info">
-                <p className="above__title">Fox Movie</p>
+                <p className="above__title">Digital Storm Movie</p>
                 <ul className="above__list">
                   <li className="list__item">
                     <a className="list__link" href="/#">
@@ -173,11 +174,11 @@ export default class Footer extends Component {
           <div className="footer__below">
             <div className="below__row row">
               <div className="below__left col-md-3 col-xs-12 col-sm-12">
-                <img src="https://i.ibb.co/Jn3fVx4/1111.png" alt="logo" />
+                <img src={Logo_footer} alt="logo" />
               </div>
               <div className="below__middle col-md-7 col-sm-12 col-xs-12">
                 <div className="middle__title">
-                  Fox Movie – DỰ ÁN ĐẶT VÉ XEM PHIM
+                  Digital Storm Movie – DỰ ÁN ĐẶT VÉ XEM PHIM
                 </div>
                 <span>
                   <span>Số Điện Thoại (Hotline): 1900 123 456</span>

@@ -13,7 +13,7 @@ import Paper from "@material-ui/core/Paper";
 import Popper from "@material-ui/core/Popper";
 import MenuItem from "@material-ui/core/MenuItem";
 import MenuList from "@material-ui/core/MenuList";
-
+import Logo_branch from "../../images/Logo_branch.png"
 
 export default function Header(props) {
   const [open, setOpen] = React.useState(false);
@@ -137,7 +137,7 @@ export default function Header(props) {
       <nav className="navbar navbar-expand-lg navbar-light bg-nav">
         <div className="navbar-brand">
           <NavLink to="/" style={{ textDecoration: "none" }}>
-            <img src="https://i.imgur.com/Ct0rm5H.png" alt="logo" />
+            <img src={Logo_branch} alt="logo" />
             <span className="text-logo"></span>
           </NavLink>
         </div>
