@@ -176,14 +176,14 @@
 
       .draw-border {
         @include btn-border-drawing(
-          yellow,
-          orange,
+          #25aae1,
+          #2bb673,
           2px,
           bottom,
           right
         );
         &:hover{
-          background: linear-gradient(to right,yellow,orange);
+          background: linear-gradient(to right,#25aae1,#2bb673);
          color: white
         }
       }

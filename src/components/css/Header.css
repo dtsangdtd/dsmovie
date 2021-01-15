@@ -14,7 +14,7 @@ header .bg-nav {
 }
 
 header .bg-nav:hover {
-  background: linear-gradient(to right, yellow, orange);
+  background: linear-gradient(to right, #25aae1, orange);
 }
 
 header .navbar {

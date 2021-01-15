@@ -77,14 +77,14 @@
 }
 
 .profile .row .col-avt .tableInfo .row .col-left .btn__admin {
-  background-color: darkgrey;
+  background-color: #ffffff;
   font-size: 24px;
   font-weight: 600;
   border-radius: 0 0 5px 5px;
 }
 
 .profile .row .col-avt .tableInfo .row .col-left .btn__admin:hover {
-  background: linear-gradient(to right, yellow, orange);
+  background: linear-gradient(to right, #25aae1, orange);
   color: white;
 }
 

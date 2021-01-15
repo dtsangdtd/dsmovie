@@ -10,6 +10,7 @@ import CardCinema from "../CardCinema/CardCinema";
 import SwipeableViews from "react-swipeable-views";
 import SpinnerLoading from "../SpinnerLoading/SpinnerLoading";
 import { qLyPhimService } from "../../services/QuanLyPhimServices";
+import "./CinemaSystem.scss"
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
