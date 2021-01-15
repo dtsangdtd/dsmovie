@@ -2,6 +2,16 @@ import React, { Component } from "react";
 import "./AppMobile.scss";
 import OwlCarousel from "react-owl-carousel";
 import ScrollAnimation from "react-animate-on-scroll";
+// import mobile
+import mobile_1 from "../../images/mobile/mobile_1.png";
+import mobile_2 from "../../images/mobile/mobile_2.jpg";
+import mobile_3 from "../../images/mobile/mobile_3.jpg";
+import mobile_4 from "../../images/mobile/mobile_4.jpg";
+import mobile_5 from "../../images/mobile/mobile_5.jpg";
+import mobile_6 from "../../images/mobile/mobile_6.jpg";
+import mobile_7 from "../../images/mobile/mobile_7.jpg";
+import mobile_8 from "../../images/mobile/mobile_8.jpg";
+import mobile_9 from "../../images/mobile/mobile_9.jpg";
 export default class AppMobile extends Component {
   render() {
     return (
@@ -22,7 +32,7 @@ export default class AppMobile extends Component {
                     App miễn phí - Tải về ngay
                   </button>
                   <p className="text__appversion">
-                    Đã có hai phiên bản
+                   DS Movie có 2 phiên bản
                     <a className="appforos__link" href="/#">
                       {" "}
                       iOS
@@ -39,7 +49,7 @@ export default class AppMobile extends Component {
                   <div className="mobile__frame">
                     <img
                       className="img-fluid"
-                      src="https://i.ibb.co/smKg7xh/mobile.png"
+                      src={mobile_1}
                       alt="hinhanh"
                     />
                     {/* MOBILE CAROUSEL */}
@@ -54,56 +64,56 @@ export default class AppMobile extends Component {
                       <div className="item">
                         <img
                           className="img-fluid"
-                          src="https://tix.vn/app/assets/img/icons/slide/slide4.jpg"
+                          src={mobile_2}
                           alt="hinhanh"
                         />
                       </div>
                       <div className="item">
                         <img
                           className="img-fluid"
-                          src="https://tix.vn/app/assets/img/icons/slide/slide5.jpg"
+                          src={mobile_3}
                           alt="hinhanh"
                         />
                       </div>
                       <div className="item">
                         <img
                           className="img-fluid"
-                          src="https://tix.vn/app/assets/img/icons/slide/slide8.jpg"
+                          src={mobile_4}
                           alt="hinhanh"
                         />
                       </div>
                       <div className="item">
                         <img
                           className="img-fluid"
-                          src="https://tix.vn/app/assets/img/icons/slide/slide10.jpg"
+                          src={mobile_5}
                           alt="hinhanh"
                         />
                       </div>
                       <div className="item">
                         <img
                           className="img-fluid"
-                          src="https://tix.vn/app/assets/img/icons/slide/slide13.jpg"
+                          src={mobile_6}
                           alt="hinhanh"
                         />
                       </div>
                       <div className="item">
                         <img
                           className="img-fluid"
-                          src="https://tix.vn/app/assets/img/icons/slide/slide14.jpg"
+                          src={mobile_7}
                           alt="hinhanh"
                         />
                       </div>
                       <div className="item">
                         <img
                           className="img-fluid"
-                          src="https://tix.vn/app/assets/img/icons/slide/slide16.jpg"
+                          src={mobile_8}
                           alt="hinhanh"
                         />
                       </div>
                       <div className="item">
                         <img
                           className="img-fluid"
-                          src="https://tix.vn/app/assets/img/icons/slide/slide3.jpg"
+                          src={mobile_9}
                           alt="hinhanh"
                         />
                       </div>

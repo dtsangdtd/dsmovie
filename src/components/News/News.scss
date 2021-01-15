@@ -151,8 +151,9 @@ $open-sans: "Open Sans", sans-serif;
               // First example styles
               .example-1 {
                 .wrapper {
-                  background: url("https://kfcvietnam.com.vn/uploads/content/74e73bd6cfd7567c1039ed6ae9cdc0d2.png") 55% /
-                    cover no-repeat;
+                  background: url("../../images/news/news1.jpg");
+                  background-size: 500px 338px;
+                  background-repeat: no-repeat;
                 }
                 .datepost {
                   position: absolute;
@@ -258,8 +259,9 @@ $open-sans: "Open Sans", sans-serif;
               // Second example styles
               .example-2 {
                 .wrapper {
-                  background: url("https://zalopay.com/wp-content/uploads/2020/12/132785033_3660135364053444_3127979982368482890_o-400x240.jpg") -9px -2px /
-                    cover;
+                  background: url("../../images/news/news2.png");
+                  background-repeat: no-repeat;
+    background-size: 500px 338px;
                   &:hover {
                     .menu-content {
                       span {
@@ -290,6 +292,7 @@ $open-sans: "Open Sans", sans-serif;
                   }
                 }
                 .datanews {
+                  background: #000;
                   color: $color-white-0;
                   transform: translateY(calc(70px + 4em));
                 }
@@ -415,7 +418,7 @@ $open-sans: "Open Sans", sans-serif;
                       text-overflow: ellipsis;
                       margin-bottom: spacing(0.7);
                       &:hover {
-                        color: $color-blue;
+                        color:#25aae1;
                       }
                     }
                     .item__description {
@@ -477,7 +480,7 @@ $open-sans: "Open Sans", sans-serif;
                       transition: all 0.3s;
                       @include Text($fs-0 + 1, $fw-regular);
                       &:hover {
-                        color: $color-blue;
+                        color: #25aae1;
                       }
                     }
                   }
@@ -495,8 +498,8 @@ $open-sans: "Open Sans", sans-serif;
                 padding: spacing(0.5) spacing(2);
                 box-shadow: none;
                 &:hover {
-                  border: 1px solid $color-blue;
-                  background-color: $color-blue;
+                  border: 1px solid #25aae1;
+                  background: linear-gradient(to right,#2bb673, #25aae1);
                   color: $color-white-0;
                 }
               }
