@@ -28,7 +28,7 @@
 }
 
 .schedule .schedule__title {
-  color: yellow;
+  color: #25aae1;
 }
 
 .schedule .schedule__content .container .schedule__row {
@@ -184,12 +184,12 @@
 
 .schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab .nav .nav-link.active {
   opacity: 1;
-  border-bottom: 1px solid yellow;
+  border-bottom: 1px solid #25aae1;
 }
 
 .schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab .nav .nav-link:hover {
   opacity: 1;
-  border-bottom: 1px solid yellow;
+  border-bottom: 1px solid #25aae1;
 }
 
 .schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab .nav .nav-link:hover .text__theater .name__theater {
@@ -291,7 +291,7 @@
 }
 
 .schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item:hover {
-  border-bottom: 1px solid yellow;
+  border-bottom: 1px solid #25aae1;
 }
 
 .schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .film__link {
@@ -348,7 +348,7 @@
 }
 
 .schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .film__link .row .film__title .age--C {
-  background-color: yellow;
+  background-color: #25aae1;
   padding: 2px 5px;
   color: #f2f3f5;
   border-radius: 5px;
@@ -409,7 +409,7 @@
 }
 
 .schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .collapse .collapse__content .film__timeshow ul .timeshow__item .timeshow__link .time__begin:hover {
-  color: yellow;
+  color: #25aae1;
 }
 
 .schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .collapse .collapse__content .film__timeshow ul .timeshow__item .timeshow__link .time__begin .time__end {

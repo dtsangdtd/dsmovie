@@ -22,7 +22,7 @@
   font-weight: 100;
   border: none;
   outline: none;
-  color: yellow;
+  color: #25aae1;
   padding: 3px;
   padding-right: 60px;
   width: 0px;
@@ -73,7 +73,7 @@
 
 .all-movie .search #wrap input[type="text"]::placeholder {
   font-family: "Maven Pro", sans-serif;
-  color: yellow;
+  color: #25aae1;
 }
 
 @media only screen and (max-width: 575px) {
@@ -160,7 +160,7 @@
 }
 
 .all-movie .movielist-content .movie-card .card-link .card-content .content-left .left-header-movie .group-id {
-  color: yellow;
+  color: #25aae1;
   font-size: 20px;
   font-weight: 500;
   margin-top: 8px;

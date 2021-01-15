@@ -52,7 +52,7 @@
 }
 
 .listMovie .container #listMovieTab .nav .nav-item .nav-link.active {
-  color: yellow;
+  color: #25aae1;
   font-size: 24px;
   font-weight: 500;
 }

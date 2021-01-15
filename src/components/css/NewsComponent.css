@@ -28,7 +28,7 @@
 }
 
 .news__container .news__content .news__left .news__title {
-  color: yellow !important;
+  color: #25aae1 !important;
   position: relative;
   font-style: italic;
   font-weight: bold;
@@ -43,7 +43,7 @@
   left: 5px;
   width: 100px;
   height: 4px;
-  background-color: yellow;
+  background-color: #25aae1;
 }
 
 .news__container .news__content .news__left .news__items {
@@ -51,7 +51,7 @@
   display: flex;
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   background-color: #2d2d2d;
-  border-bottom: 1px solid yellow;
+  border-bottom: 1px solid #25aae1;
   padding: 10px 10px;
   margin: 20px 0px;
   border-radius: 5px;
@@ -68,7 +68,7 @@
 }
 
 .news__container .news__content .news__left .news__items:hover .items__text .items__text-title .items__text-link {
-  color: yellow;
+  color: #25aae1;
   text-decoration: underline;
 }
 
@@ -214,7 +214,7 @@
 }
 
 .news__container .news__content .news__right .news__title {
-  color: yellow !important;
+  color: #25aae1 !important;
   position: relative;
   font-style: italic;
   text-transform: uppercase;
@@ -229,7 +229,7 @@
   left: 5px;
   width: 100px;
   height: 4px;
-  background-color: yellow !important;
+  background-color: #25aae1 !important;
 }
 
 .news__container .news__content .news__right .news__items {
@@ -237,7 +237,7 @@
   display: flex;
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   background-color: #2d2d2d;
-  border-bottom: 1px solid yellow;
+  border-bottom: 1px solid #25aae1;
   flex-direction: column;
   padding: 10px 10px;
   margin: 20px 0px;
@@ -249,7 +249,7 @@
 }
 
 .news__container .news__content .news__right .news__items:hover .items__text .items__text-title .items__text-link {
-  color: yellow !important;
+  color: #25aae1 !important;
   text-decoration: underline;
 }
 
@@ -306,8 +306,8 @@
 }
 
 .news__container .readMore .btn__readmore:hover {
-  border: 1px solid yellow !important;
-  background-color: yellow !important;
+  border: 1px solid #25aae1 !important;
+  background-color: #25aae1 !important;
   color: #fff;
 }
 /*# sourceMappingURL=NewsComponent.css.map */

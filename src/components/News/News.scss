@@ -59,7 +59,7 @@ $open-sans: "Open Sans", sans-serif;
             }
             &.active {
               background: none;
-              color: yellow;
+              color: #25aae1;
             }
             &:hover {
               transform: scale(1.1);
@@ -158,7 +158,7 @@ $open-sans: "Open Sans", sans-serif;
                   position: absolute;
                   top: 0;
                   left: 0;
-                  background-color: orange;
+                  background-color: #2bb673;
                   color: $white;
                   padding: 0.8em;
                   span {
@@ -187,7 +187,7 @@ $open-sans: "Open Sans", sans-serif;
                     color: lighten($color-black-0, 50%);
                     text-decoration: none;
                     &:hover {
-                      color: yellow;
+                      color: #25aae1;
                     }
                   }
                 }
@@ -237,7 +237,7 @@ $open-sans: "Open Sans", sans-serif;
                   .menu-content-item {
                     width: 33.333333%;
                     float: left;
-                    background-color: orange;
+                    background-color: #2bb673;
                     height: 60px;
                     position: relative;
                   }
@@ -297,7 +297,7 @@ $open-sans: "Open Sans", sans-serif;
                   .title__link {
                     color: $color-white-0;
                     &:hover {
-                      color: yellow;
+                      color: #25aae1;
                     }
                   }
                 }
@@ -358,7 +358,7 @@ $open-sans: "Open Sans", sans-serif;
                     text-overflow: ellipsis;
                     margin-bottom: spacing(0.7);
                     &:hover {
-                      color: yellow;
+                      color: #25aae1;
                     }
                   }
                   .item__description {

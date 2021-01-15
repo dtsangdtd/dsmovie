@@ -133,14 +133,14 @@
 }
 
 .movieInfo .full__background .rating__point .rating__stars {
-  color: yellow;
+  color: #25aae1;
 }
 
 @media only screen and (max-width: 575px) {
   .movieInfo .full__background .rating__point .rating__stars {
     font-size: 7px;
     font-weight: 600;
-    color: yellow;
+    color: #25aae1;
   }
 }
 
@@ -148,7 +148,7 @@
   .movieInfo .full__background .rating__point .rating__stars {
     font-size: 7px;
     font-weight: 600;
-    color: yellow;
+    color: #25aae1;
   }
 }
 
@@ -265,16 +265,16 @@
 }
 
 .movieInfo .form__info .row .movie__info .bookTicket-btn {
-  box-shadow: inset 0 0 0 2px yellow;
-  color: yellow;
+  box-shadow: inset 0 0 0 2px #25aae1;
+  color: #25aae1;
   font-size: 20px;
   transition: color 0.25s 0.08333s;
   position: relative;
   margin-top: 10px;
   color: #fff;
   padding: 5px 25px;
-  background-color: yellow;
-  border: 1px solid yellow;
+  background-color: #25aae1;
+  border: 1px solid #25aae1;
   border-radius: 4px;
   outline: none;
   transition: all 0.2s;
@@ -322,7 +322,7 @@
 }
 
 .movieInfo .form__info .row .movie__info .bookTicket-btn:hover {
-  background: linear-gradient(to right, yellow, orange);
+  background: linear-gradient(to right, #25aae1, orange);
   color: white;
 }
 
@@ -363,7 +363,7 @@
 }
 
 .movieInfo .form__info .row .movie__rating .rating__stars {
-  color: yellow;
+  color: #25aae1;
   font-size: 20px;
   font-weight: 600;
   padding-left: 15px;

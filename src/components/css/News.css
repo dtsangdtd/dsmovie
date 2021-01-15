@@ -73,7 +73,7 @@
 
 .news .container #newsTab .nav .nav-item .nav-link.active {
   background: none;
-  color: yellow;
+  color: #25aae1;
 }
 
 .news .container #newsTab .nav .nav-item .nav-link:hover {
@@ -229,7 +229,7 @@
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .example-1 .titlenews .title__link:hover {
-  color: yellow;
+  color: #25aae1;
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .example-1 .menu-button {
@@ -354,7 +354,7 @@
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .example-2 .titlenews .title__link:hover {
-  color: yellow;
+  color: #25aae1;
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .example-2 .button-watch {
@@ -423,7 +423,7 @@
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .row__above .row__item .item__text .item__title:hover {
-  color: yellow;
+  color: #25aae1;
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .row__above .row__item .item__text .item__description {

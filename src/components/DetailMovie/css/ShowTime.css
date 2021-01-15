@@ -63,7 +63,7 @@
 
 .tabBookMovie .container-fluid .nav-pills .nav-item .nav-link.active {
   background: none;
-  color: yellow;
+  color: #25aae1;
 }
 
 .tabBookMovie .container-fluid .nav-pills .nav-item .nav-link:hover {
@@ -234,7 +234,7 @@
 }
 
 .tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .nav__container .nav .nav-item .nav-link.active {
-  color: yellow;
+  color: #25aae1;
 }
 
 .tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .nav__container .nav .nav-item .nav-link:hover {
@@ -373,7 +373,7 @@
 }
 
 .tabBookMovie .container-fluid #movieTheater #pills-schedule .movieTheater__row .tab-content .tab-pane .theater__content .list__theater .list__item .collapse .collapse__content .film__timeshow ul .timeshow__item .timeshow__link .time__begin:hover {
-  color: yellow;
+  color: #25aae1;
 }
 
 .tabBookMovie .container-fluid #movieTheater #pills-comment {
