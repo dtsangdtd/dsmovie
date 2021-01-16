@@ -221,6 +221,10 @@ header .navbar .navbar-collapse .navbar-nav .nav-item {
   border-bottom: none;
 }
 
+header .navbar .navbar-collapse .navbar-nav .nav-item__icon {
+  text-align: center;
+}
+
 header .navbar .navbar-collapse .navbar-nav .nav-item:hover i {
   background: -webkit-linear-gradient(#25aae1, #2bb673);
   -webkit-background-clip: text;
