@@ -1,73 +1,90 @@
-import React, { Component } from "react";
-
-import { BrowserRouter, Switch } from "react-router-dom";
-import "./App.scss";
-import { HomeTemplate } from "./templates/HomeTemplate/HomeTemplate";
-import Home from "./pages/Home";
-import AllMovie from "./pages/AllMovie";
-import Profile from "./pages/Profile";
-import DetailMovie from "./pages/DetailMovie";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
-import BookingTicket from "./pages/BookingTicket";
-import { AdminTemplate } from "./templates/AdminTemplate/AdminTemplate";
-import Dashboard from "./pages/Dashboard";
-import UserManagement from "./pages/UserManagement";
-import MovieManagement from "./pages/MovieManagement";
-import CreateShowTime from "./pages/CreateShowTime";
-import ClusterCinema from "./pages/ClusterCinema";
-import News from "./pages/News";
-import DetailNews from "./pages/DetailNews";
-import NewsManagement from "./pages/NewsManagement";
+import React, { Component } from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import './App.scss';
+import { routesHome, routesAdmin } from './routes';
+import { HomeTemplate } from './templates/HomeTemplate/HomeTemplate';
+import { AdminTemplate } from './templates/AdminTemplate/AdminTemplate';
 class App extends Component {
   render() {
+    const showLayoutHome = (routes) => {
+      if (routes && routes.length > 0) {
+        return routes.map((item, index) => {
+          return (
+            <HomeTemplate
+              key={index}
+              exact={item.exact}
+              path={item.path}
+              Component={item.component}
+            />
+          );
+        });
+      }
+    };
+
+    const showLayoutAdmin = (routes) => {
+      if (routes && routes.length > 0) {
+        return routes.map((item, index) => {
+          return (
+            <AdminTemplate
+              key={index}
+              exact={item.exact}
+              path={item.path}
+              Component={item.component}
+            />
+          );
+        });
+      }
+    };
+
     return (
       <BrowserRouter>
         <Switch>
-          <HomeTemplate exact path="/" Component={Home} />
-          <HomeTemplate exact path="/home" Component={Home} />
-          <HomeTemplate exact path="/allmovie" Component={AllMovie} />
+          {showLayoutAdmin(routesAdmin)}
+          {showLayoutHome(routesHome)}
+          {/* <HomeTemplate exact path='/' Component={Home} />
+          <HomeTemplate exact path='/home' Component={Home} />
+          <HomeTemplate exact path='/allmovie' Component={AllMovie} />
           <HomeTemplate
             exact
-            path="/moviedetail/:maphim"
+            path='/moviedetail/:maphim'
             Component={DetailMovie}
           />
           <HomeTemplate
             exact
-            path="/booking/:maLichChieu"
+            path='/booking/:maLichChieu'
             Component={BookingTicket}
           />
-          <HomeTemplate exact path="/login" Component={Login} />
-          <HomeTemplate exact path="/register" Component={Register} />
-          <HomeTemplate exact path="/profile" Component={Profile} />
-          <HomeTemplate exact path="/clustercinema" Component={ClusterCinema} />
-          <HomeTemplate exact path="/news" Component={News} />
+          <HomeTemplate exact path='/login' Component={Login} />
+          <HomeTemplate exact path='/register' Component={Register} />
+          <HomeTemplate exact path='/profile' Component={Profile} />
+          <HomeTemplate exact path='/clustercinema' Component={ClusterCinema} />
+          <HomeTemplate exact path='/news' Component={News} />
           <HomeTemplate
             exact
-            path="/detailnews/:matintuc"
+            path='/detailnews/:matintuc'
             Component={DetailNews}
           />
-          <AdminTemplate exact path="/dashboard" Component={Dashboard} />
+          <AdminTemplate exact path='/dashboard' Component={Dashboard} />
           <AdminTemplate
             exact
-            path="/usermanagement"
+            path='/usermanagement'
             Component={UserManagement}
           />
           <AdminTemplate
             exact
-            path="/moviemanagement"
+            path='/moviemanagement'
             Component={MovieManagement}
           />
           <AdminTemplate
             exact
-            path="/createshowtime"
+            path='/createshowtime'
             Component={CreateShowTime}
           />
           <AdminTemplate
             exact
-            path="/newsmanagement"
+            path='/newsmanagement'
             Component={NewsManagement}
-          />
+          /> */}
         </Switch>
       </BrowserRouter>
     );
