@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Link} from "react-router-dom"
 import "./ErrorPage.scss";
 
 export default class ErrorPage extends Component {
@@ -15,9 +16,9 @@ export default class ErrorPage extends Component {
             . The page you were looking for could not be found
           </p>
           <p className="p-b">... Back to previous page</p>
-          <a href="#" className="back">
+          <Link to="/" className="back">
             ... Back to previous page
-          </a>
+          </Link>
         </div>
       </div>
     );

@@ -15,6 +15,8 @@ import ClusterCinema from './../pages/ClusterCinema';
 import News from './../pages/News';
 import DetailNews from './../pages/DetailNews';
 import NewsManagement from './../pages/NewsManagement';
+// PageNotFound
+
 const routesHome = [
   {
     exact: true,
