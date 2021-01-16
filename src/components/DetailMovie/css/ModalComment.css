@@ -8,14 +8,26 @@
 
 #CommentModal .modal-dialog .modal-content .modal-body .comment-form .rating {
   margin: 0 auto 100px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   width: 100%;
   width: 100%;
 }
 
 #CommentModal .modal-dialog .modal-content .modal-body .comment-form .rating > * {
   float: right;
+}
+
+@-webkit-keyframes pulse {
+  50% {
+    color: #5e5e5e;
+    text-shadow: 0 0 15px #777777;
+  }
 }
 
 @keyframes pulse {
@@ -34,26 +46,32 @@
 }
 
 #CommentModal .modal-dialog .modal-content .modal-body .comment-form .rating label:nth-of-type(5):after {
-  animation-delay: 0.25s;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
 }
 
 #CommentModal .modal-dialog .modal-content .modal-body .comment-form .rating label:nth-of-type(4):after {
-  animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 
 #CommentModal .modal-dialog .modal-content .modal-body .comment-form .rating label:nth-of-type(3):after {
-  animation-delay: 0.15s;
+  -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
 }
 
 #CommentModal .modal-dialog .modal-content .modal-body .comment-form .rating label:nth-of-type(2):after {
-  animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
 }
 
 #CommentModal .modal-dialog .modal-content .modal-body .comment-form .rating label:nth-of-type(1):after {
-  animation-delay: 0.05s;
+  -webkit-animation-delay: 0.05s;
+          animation-delay: 0.05s;
 }
 
 #CommentModal .modal-dialog .modal-content .modal-body .comment-form .rating label:after {
+  -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
   -webkit-font-smoothing: antialiased;
   position: absolute;
@@ -65,7 +83,8 @@
   height: 100%;
   text-align: center;
   font-size: 80px;
-  animation: 1s pulse ease;
+  -webkit-animation: 1s pulse ease;
+          animation: 1s pulse ease;
 }
 
 #CommentModal .modal-dialog .modal-content .modal-body .comment-form .rating label:hover:after {
@@ -117,8 +136,12 @@
   top: 0;
   left: 20px;
   color: #9d9d9d;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   pointer-events: none;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 

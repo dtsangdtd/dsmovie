@@ -42,8 +42,12 @@
   top: 0;
   left: 20px;
   color: #9d9d9d;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   pointer-events: none;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -61,12 +65,13 @@
   width: 150px;
   height: 80px;
   margin: 10px auto;
-  background-color: #60c5ef;
+  background-color: #25aae1;
   color: #fff;
   font-size: 40px;
   border: none;
   border-radius: 30px;
   cursor: pointer;
+  -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
 }
 

@@ -11,6 +11,7 @@
 }
 
 .form-group .btnChange.btn-block:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#25aae1), to(#2bb673));
   background: linear-gradient(to right, #25aae1, #2bb673);
 }
 /*# sourceMappingURL=EditInformation.css.map */
