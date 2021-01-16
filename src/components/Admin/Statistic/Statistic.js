@@ -27,6 +27,7 @@ export default function Statistic() {
             />
           </span>
         </dd>
+        
       );
     });
   };

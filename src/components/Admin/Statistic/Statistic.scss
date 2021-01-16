@@ -39,14 +39,6 @@ dt {
   text-transform: uppercase;
   height: 40px;
   margin-left: 200px;
-  background: repeating-linear-gradient(
-    to right,
-    #ddd,
-    #ddd 1px,
-    #fff 1px,
-    #fff 5%
-  );
-
   &:after {
     content: "";
     display: block;

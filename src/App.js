@@ -4,6 +4,7 @@ import './App.scss';
 import { routesHome, routesAdmin } from './routes';
 import { HomeTemplate } from './templates/HomeTemplate/HomeTemplate';
 import { AdminTemplate } from './templates/AdminTemplate/AdminTemplate';
+import PageNotFound from './pages/PageNotFound'
 class App extends Component {
   render() {
     const showLayoutHome = (routes) => {
@@ -41,50 +42,7 @@ class App extends Component {
         <Switch>
           {showLayoutAdmin(routesAdmin)}
           {showLayoutHome(routesHome)}
-          {/* <HomeTemplate exact path='/' Component={Home} />
-          <HomeTemplate exact path='/home' Component={Home} />
-          <HomeTemplate exact path='/allmovie' Component={AllMovie} />
-          <HomeTemplate
-            exact
-            path='/moviedetail/:maphim'
-            Component={DetailMovie}
-          />
-          <HomeTemplate
-            exact
-            path='/booking/:maLichChieu'
-            Component={BookingTicket}
-          />
-          <HomeTemplate exact path='/login' Component={Login} />
-          <HomeTemplate exact path='/register' Component={Register} />
-          <HomeTemplate exact path='/profile' Component={Profile} />
-          <HomeTemplate exact path='/clustercinema' Component={ClusterCinema} />
-          <HomeTemplate exact path='/news' Component={News} />
-          <HomeTemplate
-            exact
-            path='/detailnews/:matintuc'
-            Component={DetailNews}
-          />
-          <AdminTemplate exact path='/dashboard' Component={Dashboard} />
-          <AdminTemplate
-            exact
-            path='/usermanagement'
-            Component={UserManagement}
-          />
-          <AdminTemplate
-            exact
-            path='/moviemanagement'
-            Component={MovieManagement}
-          />
-          <AdminTemplate
-            exact
-            path='/createshowtime'
-            Component={CreateShowTime}
-          />
-          <AdminTemplate
-            exact
-            path='/newsmanagement'
-            Component={NewsManagement}
-          /> */}
+  <Route path='' component={PageNotFound} />
         </Switch>
       </BrowserRouter>
     );
