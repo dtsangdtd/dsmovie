@@ -1,5 +1,5 @@
-@import "../connect";
-@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap");
+@import '../connect';
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
 
 header {
   position: fixed;
@@ -12,8 +12,6 @@ header {
     background-color: rgba(19, 22, 24, 0.35) !important;
     background: none;
   }
-  
-
 
   .navbar {
     padding-bottom: 0;
@@ -35,15 +33,14 @@ header {
         top: 3%;
         left: 2%;
         @include responsive_mobile--stiny {
-          width: 35px; 
+          width: 35px;
         }
         @include responsive_mobile--tiny {
           width: 40px;
         }
-        &:hover{
+        &:hover {
           transition: 0.3s linear;
-       transform: scale(1.2);
-        
+          transform: scale(1.2);
         }
       }
     }
@@ -129,22 +126,23 @@ header {
           padding-top: spacing(1);
           transition: all 0.2s;
           border-bottom: none;
-          
+          &__icon {
+            text-align: center;
+          }
+
           &:hover i {
-            background: -webkit-linear-gradient(#25aae1,#2bb673);
+            background: -webkit-linear-gradient(#25aae1, #2bb673);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-           
+
             transform: scale(2.5);
           }
           &:hover .nav-link {
-    
-        background: -webkit-linear-gradient(#25aae1,#2bb673);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+            background: -webkit-linear-gradient(#25aae1, #2bb673);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
           }
           i {
-
             color: $color-white-0;
             text-align: center;
           }
@@ -180,8 +178,7 @@ header {
               text-decoration: none;
               color: $color-white-0;
             }
-            &:hover{
-             
+            &:hover {
               color: $color-black-0;
             }
           }
