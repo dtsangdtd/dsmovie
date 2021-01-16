@@ -3,8 +3,12 @@
 }
 
 .youthink .youthink__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: #fff;
   padding: 15px 20px;
   border-radius: 5px;
@@ -71,12 +75,18 @@
 }
 
 .list__comment .comment__items .comment__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .list__comment .comment__items .comment__info .items__img {
-  flex-grow: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
   margin-right: 7px;
 }
 
@@ -86,7 +96,9 @@
 }
 
 .list__comment .comment__items .comment__info .items__info {
-  flex-grow: 5;
+  -webkit-box-flex: 5;
+      -ms-flex-positive: 5;
+          flex-grow: 5;
 }
 
 .list__comment .comment__items .comment__info .items__info .info--name {
@@ -119,6 +131,7 @@
 }
 
 .list__comment .comment__items .comment__icon i {
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   margin-right: 7px;
   color: #949494;
@@ -126,7 +139,8 @@
 }
 
 .list__comment .comment__items .comment__icon i:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .list__comment .comment__items .comment__icon .count--number {
@@ -140,8 +154,12 @@
 }
 
 .readMore {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 30px;
   margin-bottom: 20px;
 }
@@ -150,7 +168,8 @@
   border: 1px solid #949494;
   color: #949494;
   padding: 5px 20px;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .readMore .btn__readmore:hover {

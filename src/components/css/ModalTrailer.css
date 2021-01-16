@@ -9,6 +9,7 @@
   text-align: center;
   line-height: 40px;
   cursor: pointer;
+  -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 

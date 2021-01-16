@@ -1,19 +1,25 @@
 dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: white;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   position: relative;
   padding: 10px;
 }
 
 dt {
-  align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   max-width: 100%;
   font-weight: 700;
   display: block;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: 700;
   margin-bottom: 20px;
   margin-left: 0px;
@@ -21,14 +27,20 @@ dt {
 
 .text {
   font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 40px;
   width: 200px;
   background-color: white;
   position: absolute;
   left: 0;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .percentage {
@@ -43,19 +55,22 @@ dt {
 .percentage:after {
   content: "";
   display: block;
-  background-color: #60c5ef;
+  background-color: #25aae1;
   width: 50px;
   margin-bottom: 10px;
   height: 90%;
   position: relative;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
   cursor: pointer;
 }
 
 .percentage:hover:after, .percentage:focus:after {
-  background-color: #aaa;
+  background: -webkit-gradient(linear, left top, right top, from(#25aae1), to(#2bb673));
+  background: linear-gradient(to right, #25aae1, #2bb673);
 }
 
 .percentage-1:after {

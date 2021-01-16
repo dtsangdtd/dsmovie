@@ -27,10 +27,13 @@
 }
 
 .news .container #newsTab .nav {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .news .container #newsTab .nav .nav-item {
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
   border: none;
 }
@@ -40,9 +43,11 @@
   background: none;
   font-size: 24px;
   font-weight: 500;
+  -webkit-transition: all 0.1s;
   transition: all 0.1s;
   border: none;
-  transform: scale(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 @media only screen and (max-width: 575px) {
@@ -77,12 +82,17 @@
 }
 
 .news .container #newsTab .nav .nav-item .nav-link:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 10px auto 0;
 }
 
@@ -135,7 +145,8 @@
   font-size: 10px;
   font-weight: 700;
   font-family: "Open Sans";
-  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .card .wrapper {
@@ -143,19 +154,25 @@
   min-height: 540px;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 19px 38px rgba(41, 48, 59, 0.3), 0 15px 12px rgba(41, 48, 59, 0.2);
+  -webkit-box-shadow: 0 19px 38px rgba(41, 48, 59, 0.3), 0 15px 12px rgba(41, 48, 59, 0.2);
+          box-shadow: 0 19px 38px rgba(41, 48, 59, 0.3), 0 15px 12px rgba(41, 48, 59, 0.2);
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .card .wrapper:hover .datanews {
-  transform: translateY(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .card .datanews {
   position: absolute;
   bottom: 0;
   width: 100%;
-  transform: translateY(calc(70px + 1em));
+  -webkit-transform: translateY(calc(70px + 1em));
+          transform: translateY(calc(70px + 1em));
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .card .datanews .contentnews {
@@ -182,18 +199,21 @@
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .card input[type="checkbox"]:checked + .menu-content {
-  transform: translateY(-60px);
+  -webkit-transform: translateY(-60px);
+          transform: translateY(-60px);
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .example-1 .wrapper {
-  background: url("https://kfcvietnam.com.vn/uploads/content/74e73bd6cfd7567c1039ed6ae9cdc0d2.png") 55%/cover no-repeat;
+  background: url("../../images/news/news1.jpg");
+  background-size: 500px 338px;
+  background-repeat: no-repeat;
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .example-1 .datepost {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: orange;
+  background-color: #2bb673;
   color: #fff;
   padding: 0.8em;
 }
@@ -220,7 +240,8 @@
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .example-1 .contentnews {
   background-color: #fff;
-  box-shadow: 0 5px 30px 10px rgba(41, 48, 59, 0.3);
+  -webkit-box-shadow: 0 5px 30px 10px rgba(41, 48, 59, 0.3);
+          box-shadow: 0 5px 30px 10px rgba(41, 48, 59, 0.3);
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .example-1 .titlenews .title__link {
@@ -277,14 +298,18 @@
   left: 0;
   width: 100%;
   z-index: -1;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
-  transform: translateY(0);
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .example-1 .menu-content .menu-content-item {
   width: 33.333333%;
   float: left;
-  background-color: orange;
+  background-color: #2bb673;
   height: 60px;
   position: relative;
 }
@@ -293,7 +318,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   font-size: 24px;
   text-decoration: none;
 }
@@ -303,11 +329,14 @@
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .example-2 .wrapper {
-  background: url("https://zalopay.com/wp-content/uploads/2020/12/132785033_3660135364053444_3127979982368482890_o-400x240.jpg") -9px -2px/cover;
+  background: url("../../images/news/news2.png");
+  background-repeat: no-repeat;
+  background-size: 500px 338px;
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .example-2 .wrapper:hover .menu-content span {
-  transform: translate(-50%, -10px);
+  -webkit-transform: translate(-50%, -10px);
+          transform: translate(-50%, -10px);
   opacity: 1;
 }
 
@@ -340,13 +369,16 @@
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .example-2 .menu-content .item-data {
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   opacity: 0;
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .example-2 .datanews {
+  background: #000;
   color: #fff;
-  transform: translateY(calc(70px + 4em));
+  -webkit-transform: translateY(calc(70px + 4em));
+          transform: translateY(calc(70px + 4em));
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .example-2 .titlenews .title__link {
@@ -375,12 +407,15 @@
   position: absolute;
   right: 0;
   top: 50%;
-  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .example-2 .button-watch:hover::after {
-  transform: translate(5px, -50%);
+  -webkit-transform: translate(5px, -50%);
+          transform: translate(5px, -50%);
   opacity: 1;
 }
 
@@ -412,11 +447,13 @@
 .news .container #newsTab .tab-content .tab-pane .tab__content .row__above .row__item .item__text .item__title {
   color: #fff;
   text-decoration: none;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   font-size: 15px;
   font-weight: 500;
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
   margin-bottom: 7px;
@@ -442,12 +479,14 @@
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .row__above .row__item .item__icon i {
   margin-right: 5px;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   color: #cacbcc;
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .row__above .row__item .item__icon i:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .row__above .row__item .item__icon .count__number {
@@ -477,18 +516,20 @@
 .news .container #newsTab .tab-content .tab-pane .tab__content .row__below .row__left .left__item .item__text .item__title {
   color: #fff;
   text-decoration: none;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   font-size: 15px;
   font-weight: 500;
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
   margin-bottom: 7px;
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .row__below .row__left .left__item .item__text .item__title:hover {
-  color: #60c5ef;
+  color: #25aae1;
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .row__below .row__left .left__item .item__text .item__description {
@@ -507,12 +548,14 @@
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .row__below .row__left .left__item .item__icon i {
   margin-right: 5px;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   color: #cacbcc;
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .row__below .row__left .left__item .item__icon i:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .row__below .row__left .left__item .item__icon .count__number {
@@ -538,6 +581,8 @@
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .row__below .row__right ul .item__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-decoration: none;
   margin-bottom: 10px;
@@ -558,19 +603,25 @@
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   color: #fff;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   font-size: 16px;
   font-weight: 400;
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .row__below .row__right ul .item__link .item__title:hover {
-  color: #60c5ef;
+  color: #25aae1;
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .readMore {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 30px 0;
   margin-bottom: 20px;
 }
@@ -579,12 +630,14 @@
   border: 1px solid #949494;
   color: #949494;
   padding: 5px 20px;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .readMore .btn__readmore:hover {
-  border: 1px solid #60c5ef;
-  background-color: #60c5ef;
+  border: 1px solid #25aae1;
+  background: -webkit-gradient(linear, left top, right top, from(#2bb673), to(#25aae1));
+  background: linear-gradient(to right, #2bb673, #25aae1);
   color: #fff;
 }
 /*# sourceMappingURL=News.css.map */

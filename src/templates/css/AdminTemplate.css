@@ -1,0 +1,5 @@
+.MuiAppBar-colorPrimary {
+  background-image: -webkit-gradient(linear, left top, right top, from(#2bb673), to(#25aae1)) !important;
+  background-image: linear-gradient(to right, #2bb673, #25aae1) !important;
+}
+/*# sourceMappingURL=AdminTemplate.css.map */
