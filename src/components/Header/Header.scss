@@ -1,5 +1,5 @@
-@import '../connect';
-@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import "../connect";
+@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap");
 
 header {
   position: fixed;
@@ -11,11 +11,9 @@ header {
   .bg-nav {
     background-color: rgba(19, 22, 24, 0.35) !important;
     background: none;
-
-    &:hover {
-      background: linear-gradient(to right, yellow, orange);
-    }
   }
+  
+
 
   .navbar {
     padding-bottom: 0;
@@ -42,21 +40,10 @@ header {
         @include responsive_mobile--tiny {
           width: 40px;
         }
-        &:hover {
-          transition: 0.3s;
-          width: 140px;
-          height: 140px;
-        }
-      }
-      .text-logo {
-        color: $color-blue;
-        // Chỉnh font chữ cho logo
-        font-family: '';
-        @include responsive_mobile--tiny {
-          @include Text($fs-0, $fw-regular);
-        }
-        @include responsive_mobile--stiny {
-          @include Text($fs-0, $fw-regular);
+        &:hover{
+          transition: 0.3s linear;
+       transform: scale(1.2);
+        
         }
       }
     }
@@ -110,24 +97,7 @@ header {
             margin-right: spacing(2);
             a {
               text-decoration: none;
-              color: $color-gray-2;
-            }
-            &::after {
-              content: '';
-              border-right: 0.5px dotted $color-black-0;
-              margin: spacing(1);
-              padding: spacing(0.5) spacing(0.1);
-              color: $color-gray-2;
-              cursor: context-menu;
-              @include responsive_mobile {
-                content: none;
-              }
-              @include responsive_tablet {
-                content: none;
-              }
-              @include responsive_laptop--mini {
-                content: none;
-              }
+              color: $color-white-0;
             }
           }
         }
@@ -159,33 +129,23 @@ header {
           padding-top: spacing(1);
           transition: all 0.2s;
           border-bottom: none;
-          background-clip: text !important;
+          
           &:hover i {
-            background: linear-gradient(to bottom, #e72c83 0%, #a742c6 100%);
-            -webkit-text-fill-color: transparent;
+            background: -webkit-linear-gradient(#25aae1,#2bb673);
             -webkit-background-clip: text;
-            -moz-background-clip: text;
-            background-clip: text;
-            // color: $color-green;
-            // color: $color-black-0;
-            font-size: 40px;
+            -webkit-text-fill-color: transparent;
+           
+            transform: scale(2.5);
           }
           &:hover .nav-link {
-            background: linear-gradient(to bottom, #e72c83 0%, #a742c6 100%);
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
-            -moz-background-clip: text;
-            background-clip: text;
-            // color: $color-green;
-            // color: $color-black-0;
+    
+        background: -webkit-linear-gradient(#25aae1,#2bb673);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
           }
           i {
-            // background: linear-gradient(to bottom, #e72c83 0%, #a742c6 100%);
-            // -webkit-text-fill-color: transparent;
-            // -webkit-background-clip: text;
-            // -moz-background-clip: text;
-            // background-clip: text;
-            // color: $color-gray-2;
+
+            color: $color-white-0;
             text-align: center;
           }
           .nav-link {
@@ -218,27 +178,10 @@ header {
             color: $color-white-0;
             a {
               text-decoration: none;
-              color: $color-gray-2;
+              color: $color-white-0;
             }
-            &::after {
-              content: '';
-              border-right: 0.5px dotted $color-black-0;
-              margin: spacing(1);
-              padding: spacing(0.5) spacing(0.1);
-              color: $color-gray-2;
-              cursor: context-menu;
-              @include responsive_mobile {
-                content: none;
-              }
-              @include responsive_tablet {
-                content: none;
-              }
-              @include responsive_laptop--mini {
-                content: none;
-              }
-            }
-            &:hover {
-              font-size: 18px;
+            &:hover{
+             
               color: $color-black-0;
             }
           }

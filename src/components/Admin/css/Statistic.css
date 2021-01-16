@@ -55,7 +55,7 @@ dt {
 .percentage:after {
   content: "";
   display: block;
-  background-color: yellow;
+  background-color: #25aae1;
   width: 50px;
   margin-bottom: 10px;
   height: 90%;
@@ -69,8 +69,8 @@ dt {
 }
 
 .percentage:hover:after, .percentage:focus:after {
-  background: -webkit-gradient(linear, left top, right top, from(yellow), to(orange));
-  background: linear-gradient(to right, yellow, orange);
+  background: -webkit-gradient(linear, left top, right top, from(#25aae1), to(#2bb673));
+  background: linear-gradient(to right, #25aae1, #2bb673);
 }
 
 .percentage-1:after {

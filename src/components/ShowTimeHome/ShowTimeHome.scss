@@ -17,7 +17,7 @@
         margin: 0 spacing(5);
     }
     .schedule__title {
-        color: yellow;
+        color: #25aae1;
     }
     .schedule__content {
         .container {
@@ -136,11 +136,11 @@
                                             }
                                             &.active {
                                                 opacity: 1;
-                                                border-bottom: 1px solid yellow;
+                                                border-bottom: 1px solid #25aae1;
                                             }
                                             &:hover {
                                                 opacity: 1;
-                                                border-bottom: 1px solid yellow;
+                                                border-bottom: 1px solid #25aae1;
                                             }
                                             &:hover .text__theater .name__theater {
                                                 overflow: auto;
@@ -224,7 +224,7 @@
                                                         border-bottom: 1px solid $color-gray-6;
                                                         transition: linear 0.5s;
                                                         &:hover {
-                                                            border-bottom: 1px solid yellow;
+                                                            border-bottom: 1px solid #25aae1;
                                                         }
                                                         .film__link {
                                                             text-decoration: none;
@@ -261,7 +261,7 @@
                                                                         @include Text($fs-0 - 2, $fw-medium);
                                                                     }
                                                                     .age--C {
-                                                                        background-color: yellow;
+                                                                        background-color: #25aae1;
                                                                         padding: spacing(0.2) spacing(0.5);
                                                                         color: $color-white-cream;
                                                                         border-radius: 5px;
@@ -308,7 +308,7 @@
                                                                                     );
                                                                                     transition: all 0.3s;
                                                                                     &:hover {
-                                                                                        color: yellow;
+                                                                                        color: #25aae1;
                                                                                     }
                                                                                     .time__end {
                                                                                         @include Text(

@@ -50,7 +50,7 @@ dt {
   &:after {
     content: "";
     display: block;
-    background-color: yellow;
+    background-color: #25aae1;
     width: 50px;
     margin-bottom: 10px;
     height: 90%;
@@ -63,7 +63,7 @@ dt {
   &:hover,
   &:focus {
     &:after {
-      background: linear-gradient(to right, yellow, orange);
+      background: linear-gradient(to right, #25aae1, #2bb673);
     }
   }
 }

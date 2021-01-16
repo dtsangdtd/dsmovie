@@ -22,7 +22,7 @@
   font-weight: 100;
   border: none;
   outline: none;
-  color: yellow;
+  color: #25aae1;
   padding: 3px;
   padding-right: 60px;
   width: 0px;
@@ -74,22 +74,22 @@
 
 .all-movie .search #wrap input[type="text"]::-webkit-input-placeholder {
   font-family: "Maven Pro", sans-serif;
-  color: yellow;
+  color: #25aae1;
 }
 
 .all-movie .search #wrap input[type="text"]:-ms-input-placeholder {
   font-family: "Maven Pro", sans-serif;
-  color: yellow;
+  color: #25aae1;
 }
 
 .all-movie .search #wrap input[type="text"]::-ms-input-placeholder {
   font-family: "Maven Pro", sans-serif;
-  color: yellow;
+  color: #25aae1;
 }
 
 .all-movie .search #wrap input[type="text"]::placeholder {
   font-family: "Maven Pro", sans-serif;
-  color: yellow;
+  color: #25aae1;
 }
 
 @media only screen and (max-width: 575px) {
@@ -131,16 +131,17 @@
 }
 
 .all-movie .search #wrap input[type="submit"] {
-  height: 67px;
-  width: 63px;
+  height: 300px;
+  width: 300px;
+  -webkit-transform: scale(0.4);
+          transform: scale(0.4);
   display: inline-block;
-  color: red;
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADNQTFRFU1NT9fX1lJSUXl5e1dXVfn5+c3Nz6urqv7+/tLS0iYmJqampn5+fysrK39/faWlp////Vi4ZywAAABF0Uk5T/////////////////////wAlrZliAAABLklEQVR42rSWWRbDIAhFHeOUtN3/ags1zaA4cHrKZ8JFRHwoXkwTvwGP1Qo0bYObAPwiLmbNAHBWFBZlD9j0JxflDViIObNHG/Do8PRHTJk0TezAhv7qloK0JJEBh+F8+U/hopIELOWfiZUCDOZD1RADOQKA75oq4cvVkcT+OdHnqqpQCITWAjnWVgGQUWz12lJuGwGoaWgBKzRVBcCypgUkOAoWgBX/L0CmxN40u6xwcIJ1cOzWYDffp3axsQOyvdkXiH9FKRFwPRHYZUaXMgPLeiW7QhbDRciyLXJaKheCuLbiVoqx1DVRyH26yb0hsuoOFEPsoz+BVE0MRlZNjGZcRQyHYkmMp2hBTIzdkzCTc/pLqOnBrk7/yZdAOq/q5NPBH1f7x7fGP4C3AAMAQrhzX9zhcGsAAAAASUVORK5CYII=) center center no-repeat;
+  background: url("../../images/Logo_search.png") center center no-repeat;
   text-indent: -10000px;
   border: none;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -135px;
+  right: -120px;
   z-index: 2;
   cursor: pointer;
   opacity: 0.4;
@@ -206,7 +207,7 @@
 }
 
 .all-movie .movielist-content .movie-card .card-link .card-content .content-left .left-header-movie .group-id {
-  color: yellow;
+  color: #25aae1;
   font-size: 20px;
   font-weight: 500;
   margin-top: 8px;

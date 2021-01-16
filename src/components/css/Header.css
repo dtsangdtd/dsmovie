@@ -11,13 +11,8 @@ header {
 }
 
 header .bg-nav {
-  background-color: rgba(243, 239, 12, 0.918) !important;
+  background-color: rgba(19, 22, 24, 0.35) !important;
   background: none;
-}
-
-header .bg-nav:hover {
-  background: -webkit-gradient(linear, left top, right top, from(yellow), to(orange));
-  background: linear-gradient(to right, yellow, orange);
 }
 
 header .navbar {
@@ -57,49 +52,27 @@ header .navbar .navbar-brand {
 header .navbar .navbar-brand img {
   position: fixed;
   width: 115px;
-  height: 115px;
-  top: 0px;
-  border-radius: 5px;
+  top: 3%;
+  left: 2%;
 }
 
 @media only screen and (max-width: 419px) {
   header .navbar .navbar-brand img {
     width: 35px;
-    height: 35px;
   }
 }
 
 @media only screen and (min-width: 421px) and (max-width: 575px) {
   header .navbar .navbar-brand img {
     width: 40px;
-    height: 40px;
   }
 }
 
 header .navbar .navbar-brand img:hover {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  width: 140px;
-  height: 140px;
-}
-
-header .navbar .navbar-brand .text-logo {
-  color: #60c5ef;
-  font-family: "";
-}
-
-@media only screen and (min-width: 421px) and (max-width: 575px) {
-  header .navbar .navbar-brand .text-logo {
-    font-size: 15px;
-    font-weight: 400;
-  }
-}
-
-@media only screen and (max-width: 419px) {
-  header .navbar .navbar-brand .text-logo {
-    font-size: 15px;
-    font-weight: 400;
-  }
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 header .navbar .header__mobile {
@@ -153,8 +126,10 @@ header .navbar .header__mobile .header__login .login__link {
 
 header .navbar .header__mobile .header__login .login__link img {
   width: 30px;
-  border-radius: 50%;
-  margin: 3px;
+  border-radius: 999px;
+  margin: 10px;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 @media only screen and (max-width: 419px) {
@@ -172,7 +147,7 @@ header .navbar .header__mobile .header__login .login__link img {
 header .navbar .header__mobile .header__login .login__link .login__text {
   font-size: 14px;
   font-weight: 400;
-  color: #949494;
+  color: #fff;
   margin-right: 20px;
 }
 
@@ -194,34 +169,7 @@ header .navbar .header__mobile .header__login .login__link .login__text {
 
 header .navbar .header__mobile .header__login .login__link .login__text a {
   text-decoration: none;
-  color: #949494;
-}
-
-header .navbar .header__mobile .header__login .login__link .login__text::after {
-  content: "";
-  border-right: 0.5px dotted #29303b;
-  margin: 10px;
-  padding: 5px 1px;
-  color: #949494;
-  cursor: context-menu;
-}
-
-@media only screen and (max-width: 575px) {
-  header .navbar .header__mobile .header__login .login__link .login__text::after {
-    content: none;
-  }
-}
-
-@media only screen and (min-width: 577px) and (max-width: 767px) {
-  header .navbar .header__mobile .header__login .login__link .login__text::after {
-    content: none;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-  header .navbar .header__mobile .header__login .login__link .login__text::after {
-    content: none;
-  }
+  color: #fff;
 }
 
 header .navbar .navbar-toggler {
@@ -274,22 +222,27 @@ header .navbar .navbar-collapse .navbar-nav .nav-item {
 }
 
 header .navbar .navbar-collapse .navbar-nav .nav-item:hover i {
-  color: #29303b;
-  font-size: 40px;
+  background: -webkit-linear-gradient(#25aae1, #2bb673);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transform: scale(2.5);
+          transform: scale(2.5);
 }
 
 header .navbar .navbar-collapse .navbar-nav .nav-item:hover .nav-link {
-  color: #29303b;
+  background: -webkit-linear-gradient(#25aae1, #2bb673);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 header .navbar .navbar-collapse .navbar-nav .nav-item i {
-  color: #949494;
+  color: #fff;
   text-align: center;
 }
 
 header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
   text-decoration: none;
-  color: #949494;
+  color: #fff;
   font-size: 14px;
   font-weight: 600;
 }
@@ -318,50 +271,24 @@ header .navbar .navbar-collapse .header__login .login__link {
 
 header .navbar .navbar-collapse .header__login .login__link img {
   width: 30px;
-  border-radius: 50%;
-  margin: 3px;
+  border-radius: 999px;
+  margin: 10px;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 header .navbar .navbar-collapse .header__login .login__link .login__text {
   font-size: 14px;
   font-weight: 400;
-  color: #949494;
+  color: #fff;
 }
 
 header .navbar .navbar-collapse .header__login .login__link .login__text a {
   text-decoration: none;
-  color: #949494;
-}
-
-header .navbar .navbar-collapse .header__login .login__link .login__text::after {
-  content: "";
-  border-right: 0.5px dotted #29303b;
-  margin: 10px;
-  padding: 5px 1px;
-  color: #949494;
-  cursor: context-menu;
-}
-
-@media only screen and (max-width: 575px) {
-  header .navbar .navbar-collapse .header__login .login__link .login__text::after {
-    content: none;
-  }
-}
-
-@media only screen and (min-width: 577px) and (max-width: 767px) {
-  header .navbar .navbar-collapse .header__login .login__link .login__text::after {
-    content: none;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-  header .navbar .navbar-collapse .header__login .login__link .login__text::after {
-    content: none;
-  }
+  color: #fff;
 }
 
 header .navbar .navbar-collapse .header__login .login__link .login__text:hover {
-  font-size: 18px;
   color: #29303b;
 }
 
@@ -375,8 +302,8 @@ header .navbar .navbar-collapse .header__login .logOut__btn {
 }
 
 header .navbar .navbar-collapse .header__login .logOut__btn:hover {
-  -webkit-box-shadow: 2px 2px 4px 1px #949494;
-          box-shadow: 2px 2px 4px 1px #949494;
+  -webkit-box-shadow: 2px 2px 4px 1px #fff;
+          box-shadow: 2px 2px 4px 1px #fff;
 }
 
 @media only screen and (max-width: 575px) {
@@ -401,11 +328,7 @@ header .navbar .navbar-collapse .header__login #province__dropdown .dropdown-tog
   text-decoration: none;
   font-size: 14px;
   font-weight: 400;
-  color: #949494;
-}
-
-header .navbar .navbar-collapse .header__login #province__dropdown .dropdown-toggle:after {
-  content: none;
+  color: #fff;
 }
 
 header .navbar .navbar-collapse .header__login #province__dropdown .dropdown-toggle .dropdown__icon {
@@ -430,7 +353,7 @@ header .navbar .navbar-collapse .header__login #province__dropdown .dropdown-men
 }
 
 header .navbar .navbar-collapse .header__login #province__dropdown .dropdown-menu.show::-webkit-scrollbar-thumb {
-  background-color: #949494;
+  background-color: #fff;
   border-radius: 5px;
 }
 

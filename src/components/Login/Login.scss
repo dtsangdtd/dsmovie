@@ -37,7 +37,7 @@
         }
       }
       .formMessage {
-       color: darkgrey;
+       color: #ffffff;
         @include Text($fs-0, $fw-regular);
         margin-bottom: spacing(1);
       }
@@ -46,7 +46,7 @@
           border-radius: 10px;
           .form-group {
             .text-light{
-              color: darkgrey !important;
+              color: #ffffff !important;
               &:hover{
                 color: black !important;
               }

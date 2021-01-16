@@ -1,7 +1,7 @@
-@import '../connect';
+@import "../connect";
 footer {
   padding: spacing(0) spacing(15) spacing(2);
-  background-color: darkgray;
+  background-color: black;
   @include responsive_mobile {
     padding: spacing(0) spacing(3) spacing(2);
   }
@@ -115,7 +115,9 @@ footer {
                 color: $color-white-0;
                 transition: all 0.3s;
                 &:hover {
-                  color: yellow;
+                  background: -webkit-linear-gradient(#25aae1,#2bb673);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
                 }
               }
             }
@@ -185,7 +187,7 @@ footer {
             margin-bottom: spacing(1);
           }
           img {
-            margin-top: -70px;
+            margin-top: -15px;
             width: 200px;
             @include responsive_laptop--mini {
               width: 75px;

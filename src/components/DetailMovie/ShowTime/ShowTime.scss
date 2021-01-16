@@ -37,7 +37,7 @@
           }
           &.active {
             background: none;
-            color:yellow;
+            color:#25aae1;
           }
           &:hover {
             // @include Text($fs-3, $fw-medium);
@@ -156,7 +156,7 @@
                     padding-top: spacing(2);
                     color: $color-black-1;
                     &.active {
-                      color:yellow;
+                      color:#25aae1;
                     }
                     &:hover {
                       transform: none;
@@ -267,7 +267,7 @@
                                   }
                                   @include Text($fs-0 + 1, $fw-medium);
                                   &:hover {
-                                    color:yellow;
+                                    color:#25aae1;
                                   }
                                 }
                               }

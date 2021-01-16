@@ -91,8 +91,8 @@
 }
 
 .profile .row .col-avt .tableInfo .row .col-left .btn__admin:hover {
-  background: -webkit-gradient(linear, left top, right top, from(yellow), to(orange));
-  background: linear-gradient(to right, yellow, orange);
+  background: -webkit-gradient(linear, left top, right top, from(#25aae1), to(#2bb673));
+  background: linear-gradient(to right, #25aae1, #2bb673);
   color: white;
 }
 

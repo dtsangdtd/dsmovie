@@ -93,14 +93,14 @@
         }
       }
       .rating__stars {
-        color: yellow;
+        color: #e1d425;
         @include responsive_mobile {
           @include Text($fs-1 - 6, $fw-bold);
-          color: yellow;
+          color: #e1d425;
         }
         @include responsive_tablet {
           @include Text($fs-1 - 6, $fw-bold);
-          color: yellow;
+          color:#e1d425;
         }
       }
     }
@@ -247,21 +247,21 @@
           }
         }
         @include btn-border-drawing(
-          yellow,
-          orange,
+          #25aae1,
+          #2bb673,
           2px,
           bottom,
           right
         );
         &:hover{
-          background: linear-gradient(to right,yellow,orange);
+          background: linear-gradient(to right,#25aae1,#2bb673);
          color: white
         }
           margin-top: spacing(1);
           color: $color-white-0;
           padding: spacing(0.5) spacing(2.5);
-          background-color: yellow;
-          border: 1px solid yellow;
+          background-color: #25aae1;
+          border: 1px solid #25aae1;
           border-radius: 4px;
           outline: none;
           transition: all 0.2s;
@@ -299,7 +299,7 @@
         }
         .rating__stars {
           //   text-align: center;
-          color: yellow;
+          color: #e1d425;
           @include Text($fs-2, $fw-bold);
           padding-left: spacing(1.5);
         }

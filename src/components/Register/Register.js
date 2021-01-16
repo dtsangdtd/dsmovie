@@ -4,6 +4,7 @@ import "../Register/Register.scss";
 import { qlyNguoiDung } from "../../services/QuanLyNguoiDungServices";
 import { groupID } from "../../config/setting";
 import swal from "sweetalert";
+import Logo_sign_up from "../../images/Logo_sign_up.png"
 export default class Register extends Component {
   state = {
     values: {
@@ -99,7 +100,7 @@ export default class Register extends Component {
             <div className="img__logo">
               <NavLink className="img__link" to="/">
                 <img
-                  src="https://i.ibb.co/NxT851P/1111.png"
+                  src={Logo_sign_up}
                   alt="logo"
              
                 />

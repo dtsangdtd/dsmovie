@@ -1,6 +1,6 @@
 footer {
   padding: 0px 150px 20px;
-  background-color: darkgray;
+  background-color: black;
 }
 
 @media only screen and (max-width: 575px) {
@@ -180,7 +180,9 @@ footer .footer__content .footer__above .above__row .above__item .above__list .li
 }
 
 footer .footer__content .footer__above .above__row .above__item .above__list .list__item .list__link:hover {
-  color: yellow;
+  background: -webkit-linear-gradient(#25aae1, #2bb673);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 footer .footer__content .footer__above .above__row .above__item .img__list {
@@ -271,15 +273,13 @@ footer .footer__content .gachchan {
 }
 
 footer .footer__content .footer__below .below__row .below__left img {
-  margin-top: -70px;
+  margin-top: -15px;
   width: 200px;
-  height: 175px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   footer .footer__content .footer__below .below__row .below__left img {
     width: 75px;
-    height: 65px;
   }
 }
 
@@ -309,7 +309,7 @@ footer .footer__content .footer__below .below__row .below__middle span .cutLine 
 
 footer .footer__content .footer__below .below__row .below__middle span .middle__link {
   text-decoration: none;
-  color: rgba(243, 239, 12, 0.918);
+  color: #ffffff;
   margin-left: 10px;
 }
 

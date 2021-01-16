@@ -10,7 +10,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  color: yellow;
+  color: #25aae1;
   outline: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -23,10 +23,10 @@
 }
 
 .btnAdd:hover {
-  border: 2px solid yellow;
-  background: yellow;
+  border: 2px solid #25aae1;
+  background: #25aae1;
   color: whitesmoke;
-  -webkit-box-shadow: 0 5px 12px 0 rgba(255, 255, 0, 0.5);
-          box-shadow: 0 5px 12px 0 rgba(255, 255, 0, 0.5);
+  -webkit-box-shadow: 0 5px 12px 0 rgba(37, 170, 225, 0.5);
+          box-shadow: 0 5px 12px 0 rgba(37, 170, 225, 0.5);
 }
 /*# sourceMappingURL=Movie.css.map */

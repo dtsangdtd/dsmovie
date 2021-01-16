@@ -161,9 +161,9 @@
 }
 
 .bookMovie .row .select__item .draw-border {
-  -webkit-box-shadow: inset 0 0 0 2px yellow;
-          box-shadow: inset 0 0 0 2px yellow;
-  color: yellow;
+  -webkit-box-shadow: inset 0 0 0 2px #25aae1;
+          box-shadow: inset 0 0 0 2px #25aae1;
+  color: #25aae1;
   -webkit-transition: color 0.25s 0.08333s;
   transition: color 0.25s 0.08333s;
   position: relative;
@@ -193,11 +193,11 @@
 }
 
 .bookMovie .row .select__item .draw-border:hover {
-  color: orange;
+  color: #2bb673;
 }
 
 .bookMovie .row .select__item .draw-border:hover::before, .bookMovie .row .select__item .draw-border:hover::after {
-  border-color: orange;
+  border-color: #2bb673;
   -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
   transition: border-color 0s, width 0.25s, height 0.25s;
   width: 100%;
@@ -215,8 +215,8 @@
 }
 
 .bookMovie .row .select__item .draw-border:hover {
-  background: -webkit-gradient(linear, left top, right top, from(yellow), to(orange));
-  background: linear-gradient(to right, yellow, orange);
+  background: -webkit-gradient(linear, left top, right top, from(#25aae1), to(#2bb673));
+  background: linear-gradient(to right, #25aae1, #2bb673);
   color: white;
 }
 

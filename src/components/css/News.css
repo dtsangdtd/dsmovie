@@ -78,7 +78,7 @@
 
 .news .container #newsTab .nav .nav-item .nav-link.active {
   background: none;
-  color: yellow;
+  color: #25aae1;
 }
 
 .news .container #newsTab .nav .nav-item .nav-link:hover {
@@ -204,14 +204,16 @@
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .example-1 .wrapper {
-  background: url("https://kfcvietnam.com.vn/uploads/content/74e73bd6cfd7567c1039ed6ae9cdc0d2.png") 55%/cover no-repeat;
+  background: url("../../images/news/news1.jpg");
+  background-size: 500px 338px;
+  background-repeat: no-repeat;
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .example-1 .datepost {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: orange;
+  background-color: #2bb673;
   color: #fff;
   padding: 0.8em;
 }
@@ -248,7 +250,7 @@
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .example-1 .titlenews .title__link:hover {
-  color: yellow;
+  color: #25aae1;
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .example-1 .menu-button {
@@ -307,7 +309,7 @@
 .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .example-1 .menu-content .menu-content-item {
   width: 33.333333%;
   float: left;
-  background-color: orange;
+  background-color: #2bb673;
   height: 60px;
   position: relative;
 }
@@ -327,7 +329,9 @@
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .example-2 .wrapper {
-  background: url("https://zalopay.com/wp-content/uploads/2020/12/132785033_3660135364053444_3127979982368482890_o-400x240.jpg") -9px -2px/cover;
+  background: url("../../images/news/news2.png");
+  background-repeat: no-repeat;
+  background-size: 500px 338px;
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .example-2 .wrapper:hover .menu-content span {
@@ -371,6 +375,7 @@
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .example-2 .datanews {
+  background: #000;
   color: #fff;
   -webkit-transform: translateY(calc(70px + 4em));
           transform: translateY(calc(70px + 4em));
@@ -381,7 +386,7 @@
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .example-2 .titlenews .title__link:hover {
-  color: yellow;
+  color: #25aae1;
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .example-2 .button-watch {
@@ -455,7 +460,7 @@
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .row__above .row__item .item__text .item__title:hover {
-  color: yellow;
+  color: #25aae1;
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .row__above .row__item .item__text .item__description {
@@ -524,7 +529,7 @@
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .row__below .row__left .left__item .item__text .item__title:hover {
-  color: #60c5ef;
+  color: #25aae1;
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .row__below .row__left .left__item .item__text .item__description {
@@ -607,7 +612,7 @@
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .row__below .row__right ul .item__link .item__title:hover {
-  color: #60c5ef;
+  color: #25aae1;
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .readMore {
@@ -630,8 +635,9 @@
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .readMore .btn__readmore:hover {
-  border: 1px solid #60c5ef;
-  background-color: #60c5ef;
+  border: 1px solid #25aae1;
+  background: -webkit-gradient(linear, left top, right top, from(#2bb673), to(#25aae1));
+  background: linear-gradient(to right, #2bb673, #25aae1);
   color: #fff;
 }
 /*# sourceMappingURL=News.css.map */

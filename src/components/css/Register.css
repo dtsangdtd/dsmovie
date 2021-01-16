@@ -20,8 +20,8 @@
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
   position: relative;
-  background: -webkit-gradient(linear, left top, right top, from(yellow), to(orange));
-  background: linear-gradient(to right, yellow, orange);
+  background: -webkit-gradient(linear, left top, right top, from(#25aae1), to(#2bb673));
+  background: linear-gradient(to right, #25aae1, #2bb673);
   text-align: center;
   padding: 30px;
 }
@@ -39,9 +39,9 @@
 .background__user .container-fluid .registerForm .img__logo .img__link img {
   pointer-events: none;
   position: absolute;
-  width: 300px;
-  top: -27%;
-  left: 16%;
+  width: 204px;
+  top: -3.4%;
+  left: 23%;
 }
 
 .background__user .container-fluid .registerForm .img__logo .img__link .text-logo {
@@ -56,7 +56,7 @@
 }
 
 .background__user .container-fluid .registerForm .formSocial .formRegister .form-group .text-light {
-  color: darkgrey !important;
+  color: #ffffff !important;
 }
 
 .background__user .container-fluid .registerForm .formSocial .formRegister .form-group .text-light:hover {
@@ -100,9 +100,9 @@
 }
 
 .background__user .container-fluid .registerForm .formSocial .formRegister .form-group .btnLogin:hover {
-  background-color: yellow;
+  background-color: black;
   font-size: 20px;
-  color: darkgrey;
+  color: white;
 }
 
 .background__user .container-fluid .registerForm .close__btn {
@@ -113,7 +113,7 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background-color: yellow;
+  background-color: #25aae1;
   -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
   cursor: pointer;

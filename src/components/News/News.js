@@ -1,5 +1,21 @@
 import React, { Component } from "react";
 import "./News.scss";
+import news3 from "../../images/news/news3.png";
+import news4 from "../../images/news/news4.png";
+import news5 from "../../images/news/news5.png";
+import news6 from "../../images/news/news6.jpg";
+import news7 from "../../images/news/news7.jpg";
+import news8 from "../../images/news/news8.jpg";
+import news9 from "../../images/news/news9.jpg";
+import news10 from "../../images/news/news10.jpg";
+import news11 from "../../images/news/news11.png";
+import news12 from "../../images/news/news12.jpg";
+import news13 from "../../images/news/news13.png";
+import news14 from "../../images/news/news14.jpg";
+import news15 from "../../images/news/news15.jpg";
+import news16 from "../../images/news/news16.jpg";
+
+
 export default class News extends Component {
   render() {
     return (
@@ -70,18 +86,16 @@ export default class News extends Component {
                               <a
                                 // target="_blank"
                                 className="title__link"
-                                href="https://kfcvietnam.com.vn/vi/khuyen-mai/81/tet-den-xuan-sang-phuc-loc-an-khang.html"
+                                href="https://tix.vn/goc-dien-anh/7960-boc-tem-to-hop-giai-tri-moi-toanh-cua-gioi-ha-thanh"
                               >
-                                TẾT ĐẾN XUÂN SANG - PHÚC LỘC AN KHANG!!
+                                “Bóc tem” tổ hợp giải trí mới toanh của giới Hà
+                                Thành
                               </a>
                             </h1>
                             <p className="text-description">
-                              Cơ hội nhận miễn phí hàng ngàn bộ quà tặng 6 lon
-                              Pepsi Tết 2021!!! Chỉ cần gọi ngay 19006886 hoặc
-                              đặt hàng trực tuyến qua website
-                              www.kfcvietnam.com.vn, ứng dụng “KFC Vietnam” (cho
-                              cả điện thoại iPhone và Android) để thưởng thức
-                              ngay những combo với giá cực ưu đãi
+                              Vào đúng ngày Nhà giáo Việt Nam 20/11, khu vui
+                              chơi sống ảo độc-lạ-chill nhất từ trước đến giờ sẽ
+                              chính thức khai trương tại 360 Giải Phóng!
                             </p>
                             <label htmlFor="show-menu" className="menu-button">
                               <span />
@@ -140,18 +154,18 @@ export default class News extends Component {
                             <h1 className="titlenews">
                               <a
                                 className="title__link"
-                                href="https://zalopay.com/%f0%9f%92%99-cung-zalopay-chung-tay-noi-than-thuong.html"
+                                href="https://tix.vn/goc-dien-anh/7957-tiec-trang-mau-chinh-thuc-can-moc-100-ty-chi-sau-2-tuan-cong-chieu"
                               >
-                                CÙNG ZALOPAY CHUNG TAY NỐI THÂN THƯƠNG
+                                Tiệc Trăng Máu chính thức cán mốc 100 tỷ chỉ sau
+                                2 tuần công chiếu
                               </a>
                             </h1>
                             <p className="text-description">
-                              Trong những năm qua, chương trình thiện nguyện
-                              ‘Như chưa hề có cuộc chia ly’ đã mang đến những
-                              cuộc đoàn tụ đầy xúc động; chúng ta đã từng chứng
-                              kiến người anh gặp lại các em của mình sau 45 năm
-                              li tán, người mẹ già lần đầu tiên gặp lại con trai
-                              sau 81 năm đằng đẵng ngóng trông…
+                              Sau 2 tuần ra mắt, Tiệc Trăng Máu chính thức gia
+                              nhập câu lạc bộ phim điện ảnh đạt 100 tỷ đồng
+                              doanh thu phòng vé. Dàn ngôi sao “bạc tỷ” của phim
+                              cũng lần đầu tiên hội tụ đầy đủ trong một khung
+                              hình để ăn mừng thành tích ấn tượng
                             </p>
                             <a href="/#" className="button-watch">
                               Xem thêm
@@ -253,19 +267,22 @@ export default class News extends Component {
                           <div className="item__img">
                             <img
                               className="img-fluid"
-                              src="https://s3img.vcdn.vn/123phim/2020/03/covid-19-la-ban-chinh-thuc-cua-mev-1-phim-contagion-2011-15843500427339.jpg"
-                              alt="hinhansdsddh"
+                              src={news3}
+                              alt="news3"
                             />
                           </div>
                           <div className="item__text">
-                            <a className="item__title" href="/#">
-                              [Review] Cậu Bé Ma 2 - Bạn trai của 'bé Beo' là
-                              đây chứ đâu xa
+                            <a
+                              className="item__title"
+                              href="https://tix.vn/review/7924-blackkklansman-coc-nuoc-lanh-de-nguoi-my-thuc-tinh"
+                            >
+                              ‘BlacKkKlansman’ - cốc nước lạnh để người Mỹ thức
+                              tỉnh
                             </a>
                             <p className="item__description">
-                              Brahms: The Boy II có những màn hù dọa ấn tượng
-                              nhưng cái kết lại không tương xứng với phần mở đầu
-                              hứa hẹn.
+                              Tác phẩm nhận đề cử Phim truyện xuất sắc tại Oscar
+                              2019 của đạo diễn Spike Lee là một lát cắt nữa về
+                              nạn phân biệt chủng tộc - nỗi đau gây nhức
                             </p>
                           </div>
                           <div className="item__icon">
@@ -283,19 +300,21 @@ export default class News extends Component {
                           <div className="item__img">
                             <img
                               className="img-fluid"
-                              src="https://s3img.vcdn.vn/123phim/2020/02/review-nhim-sonic-cuoi-tha-ga-cung-chang-nhim-sieu-thanh-lay-loi-15821907845631.jpg"
-                              alt="hinhaa212anh"
+                              src={news4}
+                              alt="news4"
                             />
                           </div>
                           <div className="item__text">
-                            <a className="item__title" href="/#">
-                              [Review] Nhím Sonic - Cười thả ga cùng chàng nhím
-                              siêu thanh lầy lội
+                            <a
+                              className="item__title"
+                              href="https://tix.vn/review/7918-american-sniper-chinh-nghia-hay-phi-nghia"
+                            >
+                              American Sniper - Chính nghĩa hay phi nghĩa?
                             </a>
                             <p className="item__description">
-                              Nhờ tiếp thu ý kiến của fan mà Nhím Sonic đã trở
-                              thành một trong những bộ phim chuyển thể từ trò
-                              chơi điện tử xuất sắc nhất.
+                              American Sniper khắc họa một tay súng bắn tỉa
+                              “huyền thoại” của Hải quân Mỹ với 4 lần tham chiến
+                              ở Trung Đông. Câu chuyện phim chậm rãi đưa người
                             </p>
                           </div>
                           <div className="item__icon">
@@ -314,58 +333,57 @@ export default class News extends Component {
                     <div className="row__right col-md-4 col-sm-12">
                       <ul>
                         <li className="right__item">
-                          <a className="item__link" href="/#">
+                          <a
+                            className="item__link"
+                            href="https://tix.vn/review/7894-review-spider-man-into-the-spider-vesre"
+                          >
                             <div className="item__img">
-                              <img
-                                src="https://s3img.vcdn.vn/123phim/2020/02/review-birds-of-prey-15809871977193.jpg"
-                                alt="ad223"
-                              />
+                              <img src={news5} alt="news5" />
                             </div>
                             <div className="item__title">
-                              [Review] Tháng Năm Hạnh Phúc Ta Từng Có - Buông bỏ
-                              chưa bao giờ là việc dễ dàng
+                              Review: Spider-Man: Into The Spider-Vesre
                             </div>
                           </a>
                         </li>
                         <li className="right__item">
-                          <a className="item__link" href="/#">
+                          <a
+                            className="item__link"
+                            href="https://tix.vn/review/7886-covid-19-la-ban-chinh-thuc-cua-mev-1-phim-contagion-2011"
+                          >
                             <div className="item__img">
-                              <img
-                                src="https://s3img.vcdn.vn/123phim/2020/02/review-bi-mat-cua-gio-cau-chuyen-tinh-nguoi-duyen-ma-day-nuoc-mat-15806427358700.jpg"
-                                alt="hinhanh"
-                              />
+                              <img src={news6} alt="news6" />
                             </div>
                             <div className="item__title">
-                              [Review] Sắc Đẹp Dối Trá - Hương Giang kể chuyện
-                              đời mình qua phim ảnh
+                              COVID-19 là bản chính thức của MEV-1 phim
+                              contagion (2011)
                             </div>
                           </a>
                         </li>
                         <li className="right__item">
-                          <a className="item__link" href="/#">
+                          <a
+                            className="item__link"
+                            href="https://tix.vn/review/7882-review-sieu-ve-si-so-vo-giai-cuu-tong-thong-chua-bao-gio-lay-loi-va-hai-huoc-den-the"
+                          >
                             <div className="item__img">
-                              <img
-                                src="https://s3img.vcdn.vn/123phim/2020/01/gai-gia-lam-chieu-3-cuoc-chien-me-chong-nang-dau-cua-gioi-sieu-giau-xu-hue-15798623446424.jpg"
-                                alt="gai-gia-lam-chieu"
-                              />
+                              <img src={news7} alt="news7" />
                             </div>
                             <div className="item__title">
-                              [Review] Birds of Prey - Màn lột xác hoành tráng
-                              của Harley Quinn và DC
+                              [Review] Siêu Vệ Sĩ Sợ Vợ - Giải cứu Tổng thống
+                              chưa bao giờ lầy lội và hài hước đến thế
                             </div>
                           </a>
                         </li>
                         <li className="right__item">
-                          <a className="item__link" href="/#">
+                          <a
+                            className="item__link"
+                            href="https://tix.vn/review/7881-review-bloodshot-mo-man-an-tuong-cho-vu-tru-sieu-anh-hung-valiant"
+                          >
                             <div className="item__img">
-                              <img
-                                src="https://s3img.vcdn.vn/123phim/2020/01/30-chua-phai-tet-phim-vong-lap-thoi-gian-thuong-hieu-viet-15797534706701.jpg"
-                                alt="30chualatet"
-                              />
+                              <img src={news8} alt="news8" />
                             </div>
                             <div className="item__title">
-                              [Review] Bí Mật Của Gió - Câu chuyện “tình người
-                              duyên ma” đầy nước mắt
+                              [Review] Bloodshot - Mở màn ấn tượng cho Vũ trụ
+                              Siêu anh hùng Valiant
                             </div>
                           </a>
                         </li>
@@ -390,19 +408,19 @@ export default class News extends Component {
                         <a href="/#">
                           <img
                             className="img-fluid"
-                            src="http://s3img.vcdn.vn/123phim/2017/06/bhd-star-gia-ve-45k-tai-bhd-star-quang-trung-14974982146099.jpg"
-                            alt="bhdkhuyenami"
+                            src={news11}
+                            alt="news11"
                           />
                         </a>
                       </div>
                       <div className="item__text">
-                        <a className="item__title" href="/#">
-                          CGV &amp; BHD Star – Mua 2 vé tính tiền 1 khi thanh
-                          toán qua ZaloPay
+                        <a className="item__title" href="https://tix.vn/khuyen-mai/7954-dong-gia-1k-ve-khi-mua-ve-qua-tix">
+                          ĐỒNG GIÁ 1K/VÉ KHI MUA VÉ QUA TIX
                         </a>
                         <p className="item__description">
-                          Áp dụng cho khách hàng mới của ZaloPay khi mua tại CGV
-                          HOẶC BHD Star các suất chiếu Thứ 6, Thứ 7, Chủ Nhật.
+                          ĐỒNG GIÁ 1K/VÉ KHI MUA VÉ QUA TIX Hành trình tìm Ròm
+                          và Phúc chỉ với 1k cả tuần + nhận thêm 02 voucher khi
+                          đặt vé qua TIX.
                         </p>
                       </div>
                       <div className="item__icon">
@@ -421,18 +439,17 @@ export default class News extends Component {
                         <a href="/#">
                           <img
                             className="img-fluid"
-                            src="https://s3img.vcdn.vn/123phim/2017/09/bhd-star-goi-phim-trang-yeu-thuong-15065869628551.jpg"
-                            alt="bhdstarthay"
+                            src={news12}
+                            alt="news12"
                           />
                         </a>
                       </div>
                       <div className="item__text">
-                        <a className="item__title" href="/#">
-                          Mua vé phim BHD Star - Nhận ngay Hoàn Tiền 20%
+                        <a className="item__title" href="https://tix.vn/khuyen-mai/7919-bhd-star-ve-chi-59-000d-ca-tuan">
+                        BHD STAR VÉ CHỈ 59.000Đ CẢ TUẦN!
                         </a>
                         <p className="item__description">
-                          Mua vé BHD Star thả ga, nhận ngay hoàn tiền xả láng
-                          20% khi thanh toán qua ZaloPay.
+                        Tận hưởng Ưu Đãi lên đến 3 VÉ BHD Star mỗi tuần chỉ với giá 59k/vé khi mua vé trên TIX và thanh toán bằng ZaloPay hoặc Mục Vé Phim trên ZaloPay.
                         </p>
                       </div>
                       <div className="item__icon">
@@ -454,17 +471,16 @@ export default class News extends Component {
                           <div className="item__img">
                             <img
                               className="img-fluid"
-                              src="http://s3img.vcdn.vn/123phim/2017/05/bhd-uu-dai-grab-14943206847693.jpg"
-                              alt="212grapb"
+                              src={news9}
+                              alt="news9"
                             />
                           </div>
                           <div className="item__text">
-                            <a className="item__title" href="/#">
-                              Chào bạn mới - BHD Star Mua 2 Tính Tiền 1
+                            <a className="item__title" href="https://tix.vn/khuyen-mai/7958-bhd-59k-ve-ca-tuan">
+                            BHD 59K/VÉ CẢ TUẦN !!!
                             </a>
                             <p className="item__description">
-                              Ưu đãi cực chất: Mua 2 vé BHD Star chỉ cần trả
-                              tiền 1 vé khi thanh toán qua ZaloPay.
+                            Tận hưởng Ưu Đãi lên đến 3 VÉ BHD Star mỗi tuần chỉ với giá 59k/vé khi mua vé trên TIX hoặc Mục Vé Phim trên ZaloPay.
                             </p>
                           </div>
                           <div className="item__icon">
@@ -482,17 +498,16 @@ export default class News extends Component {
                           <div className="item__img">
                             <img
                               className="img-fluid"
-                              src="http://s3img.vcdn.vn/123phim/2017/06/zalo-pay-phim-hot-gia-hoi-14975106730615.jpg"
-                              alt="zaloshs"
+                              src={news10}
+                              alt="news10"
                             />
                           </div>
                           <div className="item__text">
-                            <a className="item__title" href="/#">
-                              Vui Tết cùng ZaloPay - CGV Mua 1 Tặng 1
+                            <a className="item__title" href="https://tix.vn/khuyen-mai/7955-tix-1k-ve-ngai-chi-gia-ve">
+                            TIX 1K/VÉ NGẠI CHI GIÁ VÉ
                             </a>
                             <p className="item__description">
-                              Ưu đãi mua 1 tặng 1 vé xem phim tại CGV cho khách
-                              hàng mới khi thanh toán bằng ZaloPay.
+                            Đồng giá 1k/vé cả tuần tất cả các rạp trên TIX + Nhận thêm 02 voucher thanh toán ZaloPay thả ga
                             </p>
                           </div>
                           <div className="item__icon">
@@ -511,16 +526,41 @@ export default class News extends Component {
                     <div className="row__right col-md-4 col-sm-12">
                       <ul>
                         <li className="right__item">
-                          <a className="item__link" href="/#">
+                          <a className="item__link" href="https://tix.vn/khuyen-mai/7908-beta-cineplex-tro-lai-voi-hang-loat-uu-dai-lon">
                             <div className="item__img">
                               <img
-                                src="http://s3img.vcdn.vn/123phim/2017/03/galaxy-hoa-than-sieu-nhan-nhan-nhieu-uu-dai-14906148212096.jpg"
-                                alt="galaxys2"
+                                src={news13}
+                                alt="news13"
                               />
                             </div>
                             <div className="item__title">
-                              CGV – 79.000Đ/vé cuối tuần khi thanh toán bằng
-                              ZaloPay!
+                            Beta Cineplex trở lại với hàng loạt ưu đãi lớn
+                            </div>
+                          </a>
+                        </li>
+                        <li className="right__item">
+                          <a className="item__link" href="https://tix.vn/khuyen-mai/7806-123phim-thu-6-khong-den-toi-uu-dai-huy-diet-11k-ve-anh-trai-yeu-quai">
+                            <div className="item__img">
+                              <img
+                                src={news14}
+                                alt="news14"
+                              />
+                            </div>
+                            <div className="item__title">
+                            [123Phim] Thứ 6 Không Đen Tối -  Ưu đãi huỷ diệt 11k/vé Anh Trai Yêu Quái
+                            </div>
+                          </a>
+                        </li>
+                        <li className="right__item">
+                          <a className="item__link" href="https://tix.vn/khuyen-mai/7801-123phim-nhap-ma-psm30k-giam-ngay-30k-khi-dat-ve-phap-su-mu-ai-chet-gio-tay">
+                            <div className="item__img">
+                              <img
+                                src={news15}
+                                alt="news15"
+                              />
+                            </div>
+                            <div className="item__title">
+                            [123Phim] NHẬP MÃ 'PSM30K' - Giảm ngay 30k khi đặt vé Pháp Sư Mù: Ai Chết Giơ Tay
                             </div>
                           </a>
                         </li>
@@ -528,40 +568,12 @@ export default class News extends Component {
                           <a className="item__link" href="/#">
                             <div className="item__img">
                               <img
-                                src="http://s3img.vcdn.vn/123phim/2017/06/123phim-ddc-mua-ve-online-nhan-qua-lien-tay-14969118909584.jpg"
-                                alt="ddcs22"
+                                src={news16}
+                                alt="news16"
                               />
                             </div>
                             <div className="item__title">
-                              [123Phim] Thứ 6 Không Đen Tối - Ưu đãi huỷ diệt
-                              11k/vé Anh Trai Yêu Quái
-                            </div>
-                          </a>
-                        </li>
-                        <li className="right__item">
-                          <a className="item__link" href="/#">
-                            <div className="item__img">
-                              <img
-                                src="http://s3img.vcdn.vn/123phim/2017/06/ddc-xem-phim-gia-re-truoc-10h-va-sau-22h-14968911599222.jpg"
-                                alt="ddc-morgana"
-                              />
-                            </div>
-                            <div className="item__title">
-                              [123Phim] NHẬP MÃ 'PSM30K' - Giảm ngay 30k khi đặt
-                              vé Pháp Sư Mù: Ai Chết Giơ Tay
-                            </div>
-                          </a>
-                        </li>
-                        <li className="right__item">
-                          <a className="item__link" href="/#">
-                            <div className="item__img">
-                              <img
-                                src="http://s3img.vcdn.vn/123phim/2017/06/ff4a2d1afce265cae66b8872197f1e5e.png"
-                                alt="hinhgido"
-                              />
-                            </div>
-                            <div className="item__title">
-                              [Mega GS] Một đoá hoa thay ngàn lời yêu
+                            [Mega GS] Một đoá hoa thay ngàn lời yêu
                             </div>
                           </a>
                         </li>
