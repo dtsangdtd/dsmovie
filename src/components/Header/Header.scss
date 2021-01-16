@@ -72,12 +72,14 @@ header {
         .login__link {
           text-decoration: none;
           img {
+        
             @include responsive_mobile--stiny {
               width: 20px;
             }
             @include responsive_mobile--tiny {
               width: 20px;
             }
+            background:white;
             width: 30px;
             border-radius: 999px;
             margin: 10px;

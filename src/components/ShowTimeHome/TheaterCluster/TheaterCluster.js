@@ -1,12 +1,13 @@
 import React, { Fragment } from "react";
 import ShowTime from "../ShowTimes/ShowTime";
+
 export default function TheaterCluster(props) {
   let { cumRap } = props;
   const renderCum = () => {
     return cumRap.map((cumRap, index) => {
       return (
         <div
-          className="tab-pane fade show"
+          className="tab-pane fade show "
           id={cumRap.maHeThongRap}
           role="tabpanel"
           aria-labelledby="v-pills-home-tab"
