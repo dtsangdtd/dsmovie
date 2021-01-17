@@ -4,7 +4,7 @@ import "../Register/Register.scss";
 import { qlyNguoiDung } from "../../services/QuanLyNguoiDungServices";
 import { groupID } from "../../config/setting";
 import swal from "sweetalert";
-import Logo_sign_up from "../../images/Logo_sign_up.png"
+import Logo_sign_up from "../../images/Logo_sign_up.png";
 export default class Register extends Component {
   state = {
     values: {
@@ -24,6 +24,7 @@ export default class Register extends Component {
       soDT: "",
     },
   };
+
   handleChangeInput = (event) => {
     var { value, name } = event.target;
     //tạo ra object this.state.values mới
@@ -31,20 +32,46 @@ export default class Register extends Component {
       ...this.state.values,
       [name]: value,
     };
-
     //set trường hợp rỗng
     //tạo ra object this.state.errors mới
     let newErrors = {
       ...this.state.errors,
       [name]: value === "" ? "Thông tin không được để trống!" : "",
     };
-
+    // Lỗi email
     if (name === "email") {
       let regexEmail = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/;
       if (value.match(regexEmail)) {
         newErrors.email = "";
       } else {
         newErrors.email = "Email không hợp lệ";
+      }
+    }
+    //Lỗi mật khẩu
+    if (name === "matKhau") {
+      let regexMatKhau = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+      if (value.match(regexMatKhau)) {
+        newErrors.matKhau = "";
+      } else {
+        newErrors.matKhau = "Mật khẩu không hợp lệ";
+      }
+    }
+    //Lỗi tên
+    if (name === "hoTen") {
+      let regexHoTen = /[^a-z0-9A-Z_ÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ]/u;
+      if (value.match(regexHoTen)) {
+        newErrors.hoTen = "";
+      } else {
+        newErrors.hoTen = "Tên không hợp lệ";
+      }
+    }
+    //Lỗi số điện thoại
+    if (name === "soDT") {
+      let regexPhone = /(03|05|07|08|09|01[2|6|8|9])+([0-9]{8})\b/;
+      if (value.match(regexPhone)) {
+        newErrors.soDT = "";
+      } else {
+        newErrors.soDT = "Số điện thoại không hợp lệ";
       }
     }
     //setState lại values và errors
@@ -99,18 +126,13 @@ export default class Register extends Component {
           <div className="registerForm">
             <div className="img__logo">
               <NavLink className="img__link" to="/">
-                <img
-                  src={Logo_sign_up}
-                  alt="logo"
-             
-                />
+                <img src={Logo_sign_up} alt="logo" />
               </NavLink>
             </div>
             <div className="formSocial">
               <form className="formRegister">
                 <div className="form-group">
                   <input
-             
                     className="input"
                     name="taiKhoan"
                     placeholder="Tên tài khoản"
@@ -159,9 +181,7 @@ export default class Register extends Component {
                     placeholder="Số điện thoại"
                     onChange={this.handleChangeInput}
                   />
-                  <span className="text-danger">
-                    {this.state.errors.soDienThoai}
-                  </span>
+                  <span className="text-danger">{this.state.errors.soDT}</span>
                 </div>
                 <div className="form-group">
                   <button
