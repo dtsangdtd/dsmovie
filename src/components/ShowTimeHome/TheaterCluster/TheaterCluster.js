@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import ShowTime from "../ShowTimes/ShowTime";
 
 export default function TheaterCluster(props) {
-  let { cumRap } = props;
+  let { cumRap } = props
   const renderCum = () => {
     return cumRap.map((cumRap, index) => {
       return (
@@ -31,6 +31,7 @@ export default function TheaterCluster(props) {
             </div>
           </div>
         </div>
+        
       );
     });
   };
@@ -69,7 +70,7 @@ export default function TheaterCluster(props) {
           <div className="img__theater">
             <img
               src="https://cdn2.iconfinder.com/data/icons/cinema-hall-and-movie-making/50/21-512.png"
-              alt="sdsd"
+              alt="iconmovie"
             />
           </div>
           <div className="text__theater">

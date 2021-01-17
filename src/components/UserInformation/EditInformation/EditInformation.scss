@@ -1,9 +1,14 @@
 .form-group{
- 
+    .text__input{
+        margin-left: 0.5rem;
+    color: #000;
+    font-weight: 500;
+    }
+ .block__input{
+     background: darkgrey !important;
+ }
     .input{
-        background: white !important;
-        border: solid black !important;
-       
+        background: white ;
     }
     .btnChange.btn-block{
         color: white;

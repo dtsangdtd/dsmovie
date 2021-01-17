@@ -148,9 +148,11 @@ export default function EditInformation() {
         <div className="card-body">
           <form className="formRegister" onSubmit={handleSubmit}>
             <div className="form-group">
+              <label className="text__input" for ="taiKhoan" >Tên tài khoản</label>
               <input
-                className="input "
+                className="input block__input"
                 name="taiKhoan"
+                id="taiKhoan"
                 placeholder="Tên tài khoản"
                 value={state.values.taiKhoan}
                 onChange={handleChangeInput}
@@ -159,7 +161,9 @@ export default function EditInformation() {
               <span className="text-danger">{state.errors.taiKhoan}</span>
             </div>
             <div className="form-group">
+            <label className="text__input" for ="matKhau" >Mật khẩu</label>
               <input
+              id="matKhau"
                 className="input"
                 name="matKhau"
                 type="password"
@@ -170,8 +174,10 @@ export default function EditInformation() {
               <span className="text-danger">{state.errors.matKhau}</span>
             </div>
             <div className="form-group">
+            <label className="text__input" for ="hoTen" >Họ tên</label>
               <input
                 className="input"
+                id="hoTen"
                 name="hoTen"
                 type="text"
                 placeholder="Họ tên"
@@ -181,7 +187,9 @@ export default function EditInformation() {
               <span className="text-danger">{state.errors.hoTen}</span>
             </div>
             <div className="form-group">
+            <label className="text__input" for ="taiKhoan" >Email</label>
               <input
+              id="email"
                 className="input"
                 name="email"
                 placeholder="Email"
@@ -191,7 +199,9 @@ export default function EditInformation() {
               <span className="text-danger">{state.errors.email}</span>
             </div>
             <div className="form-group">
+            <label className="text__input" for ="taiKhoan" >Số điện thoại</label>
               <input
+              id="soDT"
                 className="input"
                 name="soDT"
                 type="text"

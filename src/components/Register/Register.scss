@@ -1,7 +1,9 @@
 @import "../connect";
-
+.text-danger{
+  float: left;
+}
 .background__user {
-  background: url("https://i.ibb.co/Ybnw70Q/homeappbg.jpg");
+  background: url("../../images/background/home__bg.jpg");
   display: flex;
   justify-content: center;
   background-repeat: no-repeat;
@@ -120,4 +122,5 @@
     transform: translateY(0);
     opacity: 1;
   }
+ 
 }

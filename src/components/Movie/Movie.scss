@@ -117,6 +117,7 @@
               padding: 24px;
               position: relative;
               .movie-name {
+                margin-top: 0;
                 @include Text($fs-2, $fw-regular);
                 text-transform: capitalize;
               }

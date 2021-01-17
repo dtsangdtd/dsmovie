@@ -21,6 +21,9 @@
   }
   .container {
     #listMovieTab {
+      .slick-prev:before, .slick-next:before{
+        color: #25aae1;
+      }
       .nav {
         position: relative;
         justify-content: center;
