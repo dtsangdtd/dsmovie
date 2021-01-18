@@ -6,6 +6,8 @@ import { qLyPhimService } from '../../services/QuanLyPhimServices';
 import LazyLoad from 'react-lazyload';
 import { CSSTransition } from 'react-transition-group';
 import Loader from '../Loader';
+import Scroll from "../../components/Scroll/ScrollBackToTop"
+
 export default function AllMovie() {
   var moment = require('moment');
   let [danhSachPhim, setDanhSachPhim] = useState([]);
@@ -37,6 +39,7 @@ export default function AllMovie() {
     return danhSachPhimSearch.map((phim, index) => {
       return (
         <div className='movie-card col-md-6 col-sm-12' key={index}>
+            <Scroll showBelow={250} />
           <NavLink className='card-link' to={`/moviedetail/${phim.maPhim}`}>
             <div className='card-content'>
               <div className='content-left'>
