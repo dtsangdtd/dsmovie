@@ -31,6 +31,9 @@ const drawerWidth = 240;
 // https://www.codota.com/code/javascript/functions/%2540material-ui%252Fcore/Theme/transitions
 const useStyles = makeStyles((theme) => ({
   root: {
+    position: 'absolute',
+    width: '100%',
+    height: '100%',
     display: 'flex',
     backgroundColor: 'honeydew',
   },
@@ -103,9 +106,10 @@ const AdminLayout = (props) => {
   const handleDrawerClose = () => {
     setOpen(false);
   };
+ 
   return (
     <Fragment>
-      <div className={classes.root}>
+      <div style={{background: '#fff !important'}} className={classes.root}>
         <CssBaseline />
         <AppBar
           position='fixed'
@@ -113,6 +117,7 @@ const AdminLayout = (props) => {
             [classes.appBarShift]: open,
           })}
           style={{
+
             zIndex: '100',
           }}
         >
@@ -153,6 +158,7 @@ const AdminLayout = (props) => {
             }),
           }}
           style={{
+            background: '#fff',
             zIndex: '99',
           }}
         >
