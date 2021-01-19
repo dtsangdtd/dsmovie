@@ -138,7 +138,7 @@ export default class AddMovieModal extends Component {
                         name="hinhAnh"
                         onChange={this.handleChangeInput}
                       />
-                      <div className="placeholder" style={{ top: "-20px" }}>
+                      <div className="placeholder" style={{ top: "-60%" }}>
                         Hình ảnh
                       </div>
                       <span className="text-danger">
@@ -217,7 +217,7 @@ export default class AddMovieModal extends Component {
                       />
                       <div
                         className="placeholder"
-                        style={{ left: "10px", top: "-20px" }}
+                        style={{ left: "1%", top: "-60%" }}
                       >
                         Ngày khởi chiếu
                       </div>

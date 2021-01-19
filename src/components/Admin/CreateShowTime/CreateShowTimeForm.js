@@ -172,7 +172,7 @@ export default function CreateShowTimeForm(props) {
       <div className="container-fluid showtime-content">
         <div className="showtime-row row">
           <div className="left-col col-md-9 col-sm-12">
-            <h2>Thêm lịch chiếu phim</h2>
+            <h2 style={{color:'#25aae1', fontSize: '26px'}}>Thêm lịch chiếu phim</h2>
             <form className="addshowtime-form">
               <div className="row">
                 <div className="col-md-6 col-sm-12">
@@ -216,7 +216,7 @@ export default function CreateShowTimeForm(props) {
                     />
                     <div
                       className="placeholder"
-                      style={{ left: "10px", top: "-20px" }}
+                      style={{ left: "10px", top: "-30px" }}
                     >
                       Ngày Chiếu
                     </div>

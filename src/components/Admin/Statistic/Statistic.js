@@ -1,40 +1,87 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./Statistic.scss";
-import { qLyPhimService } from "../../../services/QuanLyPhimServices";
-export default function Statistic() {
-  let [listHeThongRap, setHeThongRap] = useState([]);
+import { NavLink } from "react-router-dom";
+import Logo_dashboard from "../../../images/Logo_dashboard.png";
 
-  useEffect(() => {
-    qLyPhimService
-      .layHeThongRap()
-      .then((result) => {
-        setHeThongRap(result.data);
-      })
-      .catch((err) => {
-        console.log(err.response.data);
-      });
-  }, []);
-  const renderRap = () => {
-    return listHeThongRap.map((rap, index) => {
-      return (
-        <dd className={`percentage percentage-${index + 50}`} key={index}>
-          <span className="text">
-            {rap.tenHeThongRap}
-            <img
-              src={rap.logo}
-              style={{ width: 41, height: 41 }}
-              alt={rap.logo}
-            />
-          </span>
-        </dd>
-        
-      );
-    });
-  };
+export default function Statistic() {
+  const info = JSON.parse(localStorage.getItem("userLogin"));
   return (
-    <dl>
-      <dt>Thống kê người tiêu dùng trong năm 2021</dt>
-      {renderRap()}
-    </dl>
+    <div className="home__dashboard">
+      <div className="container">
+        <div className="row">
+          <div className="col col__info">
+            <div className="dashboard-info">Admin: {info.hoTen}</div>
+          <img alt="avt" src={Logo_dashboard} />
+
+          </div>
+          <div className="col col__moviemanagement">
+            <h2>MOVIE MANAGEMENT</h2>
+            <NavLink to={`/moviemanagement`}>
+              <button className="btn btn-success">
+                Quản lý danh sách phim
+              </button>
+            </NavLink>
+            <NavLink to={`/moviemanagement`}>
+              <button
+                data-toggle="modal"
+                data-target="#addMovieModal"
+                className="btn btn-warning"
+              >
+                Thêm phim
+              </button>
+            </NavLink>
+
+            <NavLink to={`/allmovie`}>
+              <button className="btn btn-primary">Danh sách phim</button>
+            </NavLink>
+          </div>
+          <div className="col col__newsmanagement">
+            <h2>NEWS MANAGEMENT</h2>
+            <NavLink to={`/newsmanagement`}>
+              <button className="btn btn-success">Quản lý danh sách tin</button>
+            </NavLink>
+            <NavLink to={`/newsmanagement`}>
+              <button
+                data-toggle="modal"
+                data-target="#addNewsModal"
+                className="btn btn-warning"
+              >
+                Thêm tin tức
+              </button>
+            </NavLink>
+            <NavLink to={`/news`}>
+              <button className="btn btn-primary">Danh sách tin tức</button>
+            </NavLink>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col col__usermanagement">
+            <h2>USER MANAGEMENT</h2>
+            <NavLink to={`/usermanagement`}>
+              <button className="btn btn-success">Quản lý user</button>
+            </NavLink>
+            <NavLink to={`/profile`}>
+              <button className="btn btn-danger">Profile</button>
+            </NavLink>
+          </div>
+          <div className="col col__showtimes">
+            <h2>SHOWTIMES MANAGEMENT</h2>
+            <NavLink to={`/createshowtime`}>
+              <button className="btn btn-success">Quản lý lịch chiếu</button>
+            </NavLink>
+          </div>
+          <div className="col col__webmanagement">
+            {" "}
+            <h2>WEB MANAGEMENT</h2>
+            <NavLink to={`/`}>
+              <button className="btn btn-danger">Trang chủ</button>
+            </NavLink>
+            <NavLink to={`/clustercinema`}>
+              <button className="btn btn-success">Quản lý rạp</button>
+            </NavLink>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }

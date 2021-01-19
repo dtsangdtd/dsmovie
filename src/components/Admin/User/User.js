@@ -143,7 +143,7 @@ export default function User() {
               <th scope="col">Hành động</th>
             </tr>
           </thead>
-          <tbody>{renderDanhSachNguoiDung()}</tbody>
+          <tbody style={{background:'#fff'}}>{renderDanhSachNguoiDung()}</tbody>
         </table>
       </div>
       <ModalUser />

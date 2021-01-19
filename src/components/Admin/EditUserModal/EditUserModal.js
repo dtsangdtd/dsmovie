@@ -154,7 +154,7 @@ export default class EditUserModal extends Component {
                   />
                   <div
                     className="placeholder"
-                    style={{ left: "10px", top: "-15px" }}
+                    style={{ left: "1%", top: "-72%" }}
                   >
                     Tài khoản
                   </div>
