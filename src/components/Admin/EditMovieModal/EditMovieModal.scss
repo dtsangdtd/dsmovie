@@ -1,8 +1,4 @@
 @import "../../connect";
-
-.editUserModal {
-  .modal-dialog {
-    z-index: 9999;
     .modal-content {
       .modal-body {
         .user-form {
@@ -27,10 +23,12 @@
             }
             & input:focus ~ .placeholder,
             & input:valid ~ .placeholder {
-              left: 10px;
-              top: -16px;
+              left: 4%;
+              top: -49%;
             }
             .placeholder {
+              margin-top: 5% ;
+              margin-bottom: 2% ;
               text-transform: uppercase;
               font-size: 14px;
               font-weight: 700;
@@ -65,14 +63,11 @@
           }
           .btn {
             display: block;
+            float: right;
             width: 150px;
-            height: 80px;
-            margin: 10px auto;
-            background-color: $color-green;
-            color: #fff;
-            font-size: 40px;
-            border: none;
-            border-radius: 30px;
+            height: 50px;
+            margin: 10px 36px;
+            font-size: 25px;
             cursor: pointer;
             transition: 0.3s linear;
             &:hover {
@@ -82,5 +77,3 @@
         }
       }
     }
-  }
-}

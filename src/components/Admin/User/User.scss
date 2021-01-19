@@ -1,6 +1,10 @@
 @import "../../connect";
 
 .title {
+  h2{
+    color: #25aae1;
+    font-size: 200%;
+  }
   display: flex;
   justify-content: space-between;
   margin: spacing(1);
@@ -77,8 +81,8 @@
         width: 63px;
         display: inline-block;
         color: red;
-        background: url(https://i.ibb.co/3C5MH50/search.png)
-          center center no-repeat;
+        background: url(https://i.ibb.co/3C5MH50/search.png);
+        background-size: cover;
         text-indent: -10000px;
         border: none;
         position: absolute;

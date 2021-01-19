@@ -27,8 +27,8 @@
             }
             & input:focus ~ .placeholder,
             & input:valid ~ .placeholder {
-              left: 10px;
-              top: -16px;
+              left: 1%;
+              top: -72%;
             }
             .placeholder {
               text-transform: uppercase;

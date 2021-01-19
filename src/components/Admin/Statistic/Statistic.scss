@@ -1,70 +1,53 @@
 @import "../../connect";
-
-dl {
-  display: flex;
-  background-color: white;
-  flex-direction: column;
-  width: 100%;
-  position: relative;
-  padding: 10px;
-}
-
-dt {
-  align-self: flex-start;
-  max-width: 100%;
-  font-weight: 700;
-  display: block;
-  text-align: center;
-  font-size: 1.4em;
-  font-weight: 700;
-  margin-bottom: 20px;
-  margin-left: 0px;
-}
-
-.text {
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  height: 40px;
-  width: 200px;
-  background-color: white;
-  position: absolute;
-  left: 0;
-  justify-content: flex-end;
-}
-
-.percentage {
-  font-size: 0.8em;
-  line-height: 1;
-  text-transform: uppercase;
-  height: 40px;
-  margin-left: 200px;
-  &:after {
-    content: "";
-    display: block;
-    background-color: #25aae1;
-    width: 50px;
-    margin-bottom: 10px;
-    height: 90%;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-  }
-  &:hover,
-  &:focus {
-    &:after {
-      background: linear-gradient(to right, #25aae1, #2bb673);
+.home__dashboard {
+    background: azure;
+    h2 {
+        color: #25aae1;
     }
-  }
-}
-
-@for $i from 1 through 100 {
-  .percentage-#{$i} {
-    &:after {
-      $value: ($i * 1%);
-      width: $value;
+    .col__info {
+        .dashboard-info {
+            margin-left: 1.5%;
+            font-size: 20px;
+        }
     }
-  }
+    .col__moviemanagement {
+        .btn {
+            width: 200px;
+            margin-top: 10px;
+            height: 40px;
+        }
+    }
+    .col__newsmanagement{
+        .btn {
+            width: 200px;
+            margin-top: 10px;
+            height: 40px;
+        }
+    }
+    .col__usermanagement{
+        h2{
+            margin-bottom: 10px;
+        }
+        .btn{
+            height: 40px;
+            width: 160px;
+            margin-right: 10px;
+        }
+    }
+    .col__showtimes{
+     
+        .btn {
+            width: 200px;
+            margin-top: 10px;
+            height: 40px;
+        }
+    }
+    .col__webmanagement{
+    
+        .btn {
+            width: 200px;
+            margin-top: 10px;
+            height: 40px;
+        }  
+    }
 }

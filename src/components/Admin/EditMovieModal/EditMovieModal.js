@@ -149,7 +149,7 @@ export default function EditMovieModal(props) {
                       />
                       <div
                         className="placeholder"
-                        style={{ left: "10px", top: "-15px" }}
+                        style={{ left: "4%", top: "-49%" }}
                       >
                         Mã phim
                       </div>
@@ -250,7 +250,9 @@ export default function EditMovieModal(props) {
                     </div>
                   </div>
                 </div>
-                <button className="btn fas fa-check" />
+                <button data-dismiss="modal" aria-label="Close" className="btn btn-danger">Thoát</button>
+               <button className="btn btn-success">Lưu</button>
+               
               </form>
             </div>
           </div>

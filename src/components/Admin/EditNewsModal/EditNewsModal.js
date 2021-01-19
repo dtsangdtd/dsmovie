@@ -233,7 +233,7 @@ export default function EditNewsModal(props) {
                     />
                     <div
                       className="placeholder"
-                      style={{ left: "10px", top: "-20px" }}
+                      style={{ left: "10px", top: "-50px" }}
                     >
                       Ngày đăng
                     </div>
@@ -252,7 +252,7 @@ export default function EditNewsModal(props) {
                     />
                     <div
                       className="placeholder"
-                      style={{ left: "10px", top: "-20px" }}
+                      style={{ left: "10px", top: "-50px" }}
                     >
                       Lượt like
                     </div>
@@ -271,7 +271,7 @@ export default function EditNewsModal(props) {
                     />
                     <div
                       className="placeholder"
-                      style={{ left: "10px", top: "-20px" }}
+                      style={{ left: "10px", top: "-50px" }}
                     >
                       Lượt share
                     </div>

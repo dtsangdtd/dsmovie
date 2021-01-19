@@ -159,6 +159,32 @@ header {
           }
         }
       }
+      .dropdown__country{
+        @include responsive_mobile {
+          display: none;
+        }
+        @include responsive_tablet {
+          display: none;
+        }
+        @include responsive_laptop--mini {
+          display: none;
+        }
+        padding-bottom: 14px;
+        padding-left: 10px;
+        .MuiNativeSelect-select:not([multiple]) option, .MuiNativeSelect-select:not([multiple]) optgroup{
+          color: #000;
+        }
+        .MuiInput-underline:before, .MuiInput-underline:after{
+          content: none;
+        }
+        .MuiNativeSelect-icon{
+          color:#fff;
+        }
+        .MuiNativeSelect-select.MuiNativeSelect-select{
+      
+        }
+       
+      }
       .header__login {
         @include responsive_mobile {
           display: none;
