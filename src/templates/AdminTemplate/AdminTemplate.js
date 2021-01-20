@@ -22,7 +22,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import LocalMoviesIcon from '@material-ui/icons/LocalMovies';
-import DashboardIcon from '@material-ui/icons/Dashboard';
+import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
 import LibraryAddIcon from '@material-ui/icons/LibraryAdd';
 import NoteAddIcon from '@material-ui/icons/NoteAdd';
 import Logo_admin from '../../images/Logo_admin.png';
@@ -106,10 +106,10 @@ const AdminLayout = (props) => {
   const handleDrawerClose = () => {
     setOpen(false);
   };
- 
+
   return (
     <Fragment>
-      <div style={{background: '#fff !important'}} className={classes.root}>
+      <div style={{ background: '#fff !important' }} className={classes.root}>
         <CssBaseline />
         <AppBar
           position='fixed'
@@ -117,12 +117,10 @@ const AdminLayout = (props) => {
             [classes.appBarShift]: open,
           })}
           style={{
-
             zIndex: '100',
           }}
         >
-          <Toolbar
-          >
+          <Toolbar>
             <IconButton
               color='inherit'
               aria-label='open drawer'
@@ -178,7 +176,10 @@ const AdminLayout = (props) => {
               style={{ textDecoration: 'none', color: 'black' }}
             >
               <ListItem button key='Dashboard'>
-                <DashboardIcon style={{ marginRight: 32 }} />
+                <AssignmentIndIcon
+                  color='secondary'
+                  style={{ marginRight: 32 }}
+                />
                 <ListItemText primary='Dashboard' />
               </ListItem>
             </NavLink>
