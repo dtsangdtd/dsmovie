@@ -1,12 +1,19 @@
 import React, { Fragment } from "react";
 export default function TheaterSystem(props) {
+  function renderClassActive(index) {
+    if (index === 0) {
+      return "nav-link active";
+    } else {
+      return "nav-link";
+    }
+  }
+
   let { heThongRap } = props;
   const renderHeThongRap = () => {
-
     return heThongRap?.map((rap, index) => {
       return (
         <a
-          className="nav-link" 
+          className={renderClassActive(index)}
           id="v-pills-home-tab"
           data-toggle="pill"
           href={`#${rap.maHeThongRap}`}

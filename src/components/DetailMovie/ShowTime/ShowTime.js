@@ -6,12 +6,26 @@ import Comment from "../Comment/Comment";
 export default function ShowTime(props) {
   let { phim, maPhim } = props;
   var moment = require("moment");
+  function renderClass(index) {
+    if (index === 0) {
+      return "tab-pane fade show active";
+    } else {
+      return "tab-pane fade show";
+    }
+  }
+  function renderClassActive(index) {
+    if (index === 0) {
+      return "nav-link active";
+    } else {
+      return "nav-link";
+    }
+  }
   const renderRap = () => {
     return phim.heThongRapChieu?.map((heThongRap, index) => {
       return (
         <a
           key={index}
-          className="nav-link"
+          className={renderClassActive(index)}
           id="v-pills-cgv-tab"
           data-toggle="pill"
           href={`#${heThongRap.maHeThongRap}`}
@@ -40,9 +54,7 @@ export default function ShowTime(props) {
           >
             <div className="time__begin mb-2">
               {moment(lichChieu.ngayChieuGioChieu).format("DD/MM/yyyy")}
-              <p>
-                {moment(lichChieu.ngayChieuGioChieu).format("hh:mm A")}
-              </p>
+              <p>{moment(lichChieu.ngayChieuGioChieu).format("hh:mm A")}</p>
             </div>
           </NavLink>
         </div>
@@ -62,7 +74,10 @@ export default function ShowTime(props) {
           >
             <div className="row">
               <div className="theater__img col-2">
-                <img src="https://s7d2.scene7.com/is/image/TWCNews/getty_movie_theaterjpg" alt="hinhrap" />
+                <img
+                  src="https://s7d2.scene7.com/is/image/TWCNews/getty_movie_theaterjpg"
+                  alt="hinhrap"
+                />
               </div>
               <div className="theater__title col-10">
                 <span className="theater__name cgv-color">
@@ -88,7 +103,7 @@ export default function ShowTime(props) {
       return (
         <div
           key={index}
-          className="tab-pane fade show"
+          className={renderClass(index)}
           id={heThongRap.maHeThongRap}
           role="tabpanel"
         >
@@ -99,6 +114,7 @@ export default function ShowTime(props) {
       );
     });
   };
+
   return (
     <section className="tabBookMovie">
       <div className="container-fluid">

@@ -20,6 +20,9 @@ export default function MovieInfo(props) {
     }
     return content;
   };
+  function handleClick () {
+   alert("Vui lòng chọn rạp bạn muốn xem!");
+  }
   const countRatingMark = (rating) => {
     return rating * 0.5 + 10 * 0.5;
   };
@@ -70,7 +73,7 @@ export default function MovieInfo(props) {
             <span className="name">{phim.tenPhim}</span>
             <p className="during">120 phút</p>
             <a href="#movieTheater">
-              <button className="bookTicket-btn">Mua Vé</button>
+              <button onClick={handleClick} className="bookTicket-btn">Mua Vé</button>
             </a>
           </div>
           <div className="movie__rating col-2">

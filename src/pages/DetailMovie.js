@@ -9,11 +9,12 @@ const DetailMovie = (props) => {
       setPhim(result.data);
     });
   }, [props.match.params.maphim]);
-
+ 
   return (
     <Fragment>
       <MovieInfo phim={phim} />
       <ShowTime phim={phim} maPhim={props.match.params.maphim} />
+    
     </Fragment>
   );
 };
