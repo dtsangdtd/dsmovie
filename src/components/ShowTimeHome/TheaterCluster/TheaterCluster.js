@@ -2,45 +2,26 @@ import React, { Fragment } from "react";
 import ShowTime from "../ShowTimes/ShowTime";
 
 export default function TheaterCluster(props) {
-  let { cumRap } = props
-  const renderCum = () => {
-    return cumRap.map((cumRap, index) => {
-      return (
-        <div
-          className="tab-pane fade show "
-          id={cumRap.maHeThongRap}
-          role="tabpanel"
-          aria-labelledby="v-pills-home-tab"
-          key={index}
-        >
-          <div className="secondary__row row">
-            <div className="secondary__tab col-md-5 col-sm-12">
-              <div
-                className="nav flex-column nav-pills"
-                id="v-pills-tab"
-                role="tablist"
-                aria-orientation="vertical"
-              >
-                {renderCumRap(cumRap)}
-              </div>
-            </div>
-            <div className="secondary__tabContent col-md-7 col-sm-12">
-              <div className="tab-content" id="v-pills-tabContent">
-                {renderShowTime(cumRap)}
-              </div>
-            </div>
-          </div>
-        </div>
-        
-      );
-    });
-  };
-
+  let { cumRap } = props;
+  function renderClass(index) {
+    if(index === 0){
+      return "tab-pane fade show active"
+    } else {
+      return "tab-pane fade show"
+    }
+  }
+  function renderClassActive(index){
+    if(index === 0){
+      return "nav-link active"
+    } else {
+      return "nav-link"
+    }
+  }
   const renderShowTime = (cumRap) => {
     return cumRap.lstCumRap?.map((rap, index) => {
       return (
         <div
-          className="tab-pane fade show"
+          className={renderClass(index)}
           id={rap.maCumRap}
           role="tabpanel"
           aria-labelledby="v-pills-home-tab"
@@ -55,11 +36,12 @@ export default function TheaterCluster(props) {
       );
     });
   };
+
   const renderCumRap = (cumRap) => {
     return cumRap.lstCumRap?.map((rap, index) => {
       return (
         <a
-          className="nav-link"
+          className= {renderClassActive(index)}
           data-toggle="pill"
           href={`#${rap.maCumRap}`}
           role="tab"
@@ -84,5 +66,37 @@ export default function TheaterCluster(props) {
       );
     });
   };
+  const renderCum = () => {
+    return cumRap.map((cumRap, index) => {
+      return (
+        <div
+          className={renderClass(index)}
+          id={cumRap.maHeThongRap}
+          role="tabpanel"
+          aria-labelledby="v-pills-home-tab"
+          key={index}
+        >
+          <div className="secondary__row row">
+            <div className="secondary__tab col-md-5 col-sm-12">
+              <div
+                className="nav flex-column nav-pills"
+                id="v-pills-tab"
+                role="tablist"
+                aria-orientation="vertical"
+              >
+                {renderCumRap(cumRap)}
+              </div>
+            </div>
+            <div className="secondary__tabContent col-md-7 col-sm-12">
+              <div className="tab-content" id="v-pills-tabContent">
+                {renderShowTime(cumRap)}
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    });
+  };
+
   return <Fragment>{renderCum()}</Fragment>;
 }

@@ -61,6 +61,7 @@ export default function MovieCarousel() {
       },
     ],
   };
+  
   const renderPhim = () => {
     if (loading) {
       return (
@@ -110,6 +111,7 @@ export default function MovieCarousel() {
                       <NavLink
                         className="play__button"
                         to={`/moviedetail/${phim.maPhim}`}
+                    
                       >
                         <i className="fa fa-info play__icon" />
                       </NavLink>
