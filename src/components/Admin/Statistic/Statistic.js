@@ -60,8 +60,8 @@ export default function Statistic() {
             <NavLink to={`/usermanagement`}>
               <button className="btn btn-success">Quản lý user</button>
             </NavLink>
-            <NavLink to={`/profile`}>
-              <button className="btn btn-danger">Profile</button>
+            <NavLink to={`/usermanagement`}>
+              <button data-target="#UserModal" data-toggle="modal" className="btn btn-danger">Thêm user</button>
             </NavLink>
           </div>
           <div className="col col__showtimes">
@@ -78,6 +78,9 @@ export default function Statistic() {
             </NavLink>
             <NavLink to={`/clustercinema`}>
               <button className="btn btn-success">Quản lý rạp</button>
+            </NavLink>
+            <NavLink to={`/profile`}>
+              <button className="btn btn-danger">Profile</button>
             </NavLink>
           </div>
         </div>
