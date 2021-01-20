@@ -17,7 +17,9 @@ import DetailNews from './../pages/DetailNews';
 import NewsManagement from './../pages/NewsManagement';
 // PageNotFound
 
+
 const routesHome = [
+
   {
     exact: true,
     path: '/',
@@ -71,6 +73,7 @@ const routesHome = [
   },
 ];
 const routesAdmin = [
+  
   {
     exact: true,
     path: '/dashboard',
