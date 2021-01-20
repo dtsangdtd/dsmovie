@@ -24,9 +24,11 @@ header {
 
       @include responsive_mobile {
         flex-grow: 15;
+    
       }
       @include responsive_tablet {
         flex-grow: 15;
+      
       }
       @include responsive_laptop--medium {
         flex-grow: 4;
@@ -37,10 +39,10 @@ header {
         top: 3%;
         left: 2%;
         @include responsive_mobile--stiny {
-          width: 35px;
+          width: 75px
         }
         @include responsive_mobile--tiny {
-          width: 40px;
+          width: 75px
         }
         &:hover {
           transition: 0.3s linear;

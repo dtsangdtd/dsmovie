@@ -13,10 +13,11 @@ import Paper from "@material-ui/core/Paper";
 import Popper from "@material-ui/core/Popper";
 import MenuItem from "@material-ui/core/MenuItem";
 import MenuList from "@material-ui/core/MenuList";
-import { makeStyles } from '@material-ui/core/styles';
-import FormControl from '@material-ui/core/FormControl';
-import NativeSelect from '@material-ui/core/NativeSelect';
+import { makeStyles } from "@material-ui/core/styles";
+import FormControl from "@material-ui/core/FormControl";
+import NativeSelect from "@material-ui/core/NativeSelect";
 import Logo_branch from "../../images/Logo_branch.png";
+
 
 const useStyles = makeStyles((theme) => ({
   formControl: {
@@ -28,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
   selectEmpty: {
     color: "#fff",
     marginTop: theme.spacing(2),
-    fontSize: "14px"
+    fontSize: "14px",
   },
 }));
 export default function Header(props) {
@@ -36,8 +37,8 @@ export default function Header(props) {
   const anchorRef = React.useRef(null);
   const classes = useStyles();
   const [state, setState] = React.useState({
-    age: '',
-    name: 'hai',
+    age: "",
+    name: "hai",
   });
 
   const handleChange = (event) => {
@@ -94,6 +95,7 @@ export default function Header(props) {
       return null;
     }
   };
+ 
   const renderLogin = () => {
     if (taiKhoan) {
       return (
@@ -190,7 +192,10 @@ export default function Header(props) {
           <span className="navbar-toggler-icon" />
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul style={{ marginLeft: '13%', float: 'right'}} className="navbar-nav mr-auto">
+          <ul
+            style={{ marginLeft: "13%", float: "right" }}
+            className="navbar-nav mr-auto"
+          >
             <li className="nav-item active">
               <a className="nav-item__icon" href="#listMovie">
                 <i className="fa fa-film"></i>
@@ -227,19 +232,28 @@ export default function Header(props) {
           <div className="dropdown__country">
             <i style={{ color: "#fff" }} className="fas fa-map-marker-alt" />
             <FormControl className={classes.formControl}>
-        <NativeSelect
-          value={state.age}
-          onChange={handleChange}
-          name="age"
-          className={classes.selectEmpty}
-          inputProps={{ 'aria-label': 'age' }}
-        >
-          <option value="">Hồ Chí Minh</option>
-          <option value={10}>Vũng Tàu</option>
-          <option value={20}>Hà Nội</option>
-          <option value={30}>Đà Nẵng</option>
-        </NativeSelect>
-      </FormControl>
+              <NativeSelect
+                id="dropdownCountry"
+                value={state.age}
+                onChange={handleChange}
+                name="age"
+                className={classes.selectEmpty}
+                inputProps={{ "aria-label": "age" }}
+              >
+                <option className="drop__item" value="">
+                  Hồ Chí Minh
+                </option>
+                <option className="drop__item" value={1}>
+                  Vũng Tàu
+                </option>
+                <option className="drop__item" value={2}>
+                  Hà Nội
+                </option>
+                <option className="drop__item" value={3}>
+                  Đà Nẵng
+                </option>
+              </NativeSelect>
+            </FormControl>
           </div>
         </div>
       </nav>
