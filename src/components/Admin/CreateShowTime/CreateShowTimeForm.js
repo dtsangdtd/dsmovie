@@ -1,9 +1,9 @@
-import React, { useState, useEffect, Fragment } from "react";
-import "./CreateShowTimeForm.scss";
-import { qLyPhimService } from "../../../services/QuanLyPhimServices";
-import { qLyAdminService } from "../../../services/QuanLyAdminService";
-import TableShowTimeList from "../TableShowTimeList/TableShowTimeList";
-import swal from "sweetalert";
+import React, { useState, useEffect, Fragment } from 'react';
+import './CreateShowTimeForm.scss';
+import { qLyPhimService } from '../../../services/QuanLyPhimServices';
+import { qLyAdminService } from '../../../services/QuanLyAdminService';
+import TableShowTimeList from '../TableShowTimeList/TableShowTimeList';
+import swal from 'sweetalert';
 export default function CreateShowTimeForm(props) {
   let [danhSachPhim, setDanhSachPhim] = useState([]);
   useEffect(() => {
@@ -28,7 +28,7 @@ export default function CreateShowTimeForm(props) {
         console.log(err.response.data);
       });
   }, []);
-  var moment = require("moment");
+  var moment = require('moment');
   let [maPhim, setMaPhim] = useState();
   const layMaPhim = (event) => {
     let maPhim = parseInt(event.target.value);
@@ -55,7 +55,7 @@ export default function CreateShowTimeForm(props) {
 
   let [ngayChieu, setNgayChieu] = useState();
   const layNgayChieu = (event) => {
-    let ngayChieu = moment(event.target.value).format("DD/MM/yyyy");
+    let ngayChieu = moment(event.target.value).format('DD/MM/yyyy');
     setNgayChieu(ngayChieu);
   };
 
@@ -125,7 +125,7 @@ export default function CreateShowTimeForm(props) {
   };
 
   const renderRap = () => {
-    return cumRap?.map((item) => {
+    return cumRap.map((item) => {
       if (maCumRap === item.maCumRap) {
         return item.danhSachRap.map((rap, index) => {
           return (
@@ -150,9 +150,9 @@ export default function CreateShowTimeForm(props) {
       .taoLichChieu(thongTinLichChieu)
       .then((res) => {
         swal({
-          title: "Thêm lịch chiếu thành công",
-          icon: "success",
-          button: "OK",
+          title: 'Thêm lịch chiếu thành công',
+          icon: 'success',
+          button: 'OK',
         });
         setTimeout(() => {
           window.location.reload();
@@ -162,92 +162,94 @@ export default function CreateShowTimeForm(props) {
         swal({
           title: err.response.data,
           // text: "Điền lại thông tin!",
-          icon: "warning",
-          button: "OK",
+          icon: 'warning',
+          button: 'OK',
         });
       });
   };
   return (
     <Fragment>
-      <div className="container-fluid showtime-content">
-        <div className="showtime-row row">
-          <div className="left-col col-md-9 col-sm-12">
-            <h2 style={{color:'#25aae1', fontSize: '26px'}}>Thêm lịch chiếu phim</h2>
-            <form className="addshowtime-form">
-              <div className="row">
-                <div className="col-md-6 col-sm-12">
-                  <div className="textb">
-                    <select name="phim" onChange={layMaPhim} id="selection">
-                      <option value="#">--Chọn phim--</option>
+      <div className='container-fluid showtime-content'>
+        <div className='showtime-row row'>
+          <div className='left-col col-md-9 col-sm-12'>
+            <h2 style={{ color: '#25aae1', fontSize: '26px' }}>
+              Thêm lịch chiếu phim
+            </h2>
+            <form className='addshowtime-form'>
+              <div className='row'>
+                <div className='col-md-6 col-sm-12'>
+                  <div className='textb'>
+                    <select name='phim' onChange={layMaPhim} id='selection'>
+                      <option value='#'>--Chọn phim--</option>
                       {renderPhim()}
                     </select>
                   </div>
-                  <div className="textb">
+                  <div className='textb'>
                     <select
-                      name="heThongRap"
+                      name='heThongRap'
                       onChange={layMaHeThongRap}
-                      id="selection"
+                      id='selection'
                     >
-                      <option value="#">--Chọn hệ thống rạp--</option>
+                      <option value='#'>--Chọn hệ thống rạp--</option>
                       {renderHeThongRap()}
                     </select>
                   </div>
-                  <div className="textb">
-                    <select name="cumRap" onChange={layMaCumRap} id="selection">
-                      <option value="#">--Chọn cụm rạp--</option>
+                  <div className='textb'>
+                    <select name='cumRap' onChange={layMaCumRap} id='selection'>
+                      <option value='#'>--Chọn cụm rạp--</option>
                       {renderCumRap()}
                     </select>
                   </div>
-                  <div className="textb">
-                    <select name="rap" onChange={layMaRap} id="selection">
-                      <option value="#">--Chọn rạp--</option>
+                  <div className='textb'>
+                    <select name='rap' onChange={layMaRap} id='selection'>
+                      <option value='#'>--Chọn rạp--</option>
                       {renderRap()}
                     </select>
                   </div>
                 </div>
-                <div className="col-md-6 col-sm-12">
-                  <div className="textb">
+                <div className='col-md-6 col-sm-12'>
+                  <div className='textb'>
                     <input
-                      type="date"
-                      name="ngayChieu"
-                      min="today"
+                      type='date'
+                      name='ngayChieu'
+                      min='today'
                       onChange={layNgayChieu}
                       required
                     />
                     <div
-                      className="placeholder"
-                      style={{ left: "10px", top: "-30px" }}
+                      className='placeholder'
+                      style={{ left: '10px', top: '-30px' }}
                     >
                       Ngày Chiếu
                     </div>
                   </div>
-                  <div className="textb">
+                  <div className='textb'>
                     <input
-                      type="text"
-                      name="giochieu"
+                      type='text'
+                      name='giochieu'
                       onChange={layGioChieu}
                       required
                     />
-                    <div className="placeholder">Giờ chiếu (giờ:phút:giây)</div>
+                    <div className='placeholder'>Giờ chiếu (giờ:phút:giây)</div>
                   </div>
-                  <div className="textb">
-                    <select name="giave" onChange={layGiaVe} id="selection">
-                      <option value="#">--Chọn giá vé--</option>
-                      <option value="75000">75.000đ</option>
-                      <option value="95000">90.000đ</option>
-                      <option value="112000">112.000đ</option>
-                      <option value="205000">205.000đ</option>
+                  <div className='textb'>
+                    <select name='giave' onChange={layGiaVe} id='selection'>
+                      <option value='#'>--Chọn giá vé--</option>
+                      <option value='75000'>75.000đ</option>
+                      <option value='95000'>90.000đ</option>
+                      <option value='112000'>112.000đ</option>
+                      <option value='205000'>205.000đ</option>
                     </select>
                   </div>
                 </div>
               </div>
             </form>
             <button
-              className="btn fas fa-arrow-right"
+              className='btn fas fa-arrow-right'
               onClick={() => {
                 swal({
-                  title: "Tạo lịch chiếu này?",
-                  icon: "warning",
+                  title: 'Tạo lịch chiếu này?',
+                  icon: 'warning',
                   buttons: true,
                   dangerMode: true,
                 }).then((willDelete) => {
@@ -258,7 +260,7 @@ export default function CreateShowTimeForm(props) {
               }}
             />
           </div>
-          <div className="right-col col-md-3 col-sm-12">
+          <div className='right-col col-md-3 col-sm-12'>
             {renderHinhAnhPhim()}
           </div>
         </div>

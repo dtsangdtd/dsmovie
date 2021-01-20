@@ -2,21 +2,13 @@ import React, { useState, useEffect, Fragment } from 'react';
 import ShowTime from '../ShowTimes/ShowTime';
 import { qLyPhimService } from '../../../services/QuanLyPhimServices';
 export default function TheaterCluster(props) {
-  // let { cumRap } = props
-  let [cumRap, setCumRap] = useState([
-    {
-      biDanh: 'bhd-star-cineplex',
-      logo: 'http://movie0706.cybersoft.edu.vn/hinhanh/bhd-star-cineplex.png',
-      maHeThongRap: 'BHDStar',
-      tenHeThongRap: 'BHD Star Cineplex',
-    },
-  ]);
+  let [cumRap, setCumRap] = useState([]);
   useEffect(() => {
     qLyPhimService
       .layCumRapTheoHeThong()
       .then((result) => {
         setCumRap(result.data);
-        // console.log(result.data);
+    
       })
       .catch((err) => {
         console.log(err.response.data);
