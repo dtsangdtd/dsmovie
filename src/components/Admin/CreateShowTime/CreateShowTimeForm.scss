@@ -1,4 +1,4 @@
-@import "../../connect";
+@import '../../connect';
 
 .showtime-content {
   background: #fff;
@@ -11,7 +11,7 @@
           margin-bottom: 12px;
           position: relative;
           input {
-           margin-top: 10px;
+            margin-top: 10px;
             width: 100%;
             height: 50px;
             border: none;
@@ -67,7 +67,7 @@
         width: 150px;
         height: 80px;
         margin: 10px auto;
-        background-color: #25aae1;
+        background-color: $color-blue-movie-0;
         color: #fff;
         font-size: 40px;
         border: none;
@@ -84,7 +84,8 @@
         border-radius: 0 0 20px 20px;
         width: 100%;
         height: 50vh;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+          0 6px 6px rgba(0, 0, 0, 0.23);
         animation: showoff 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
       }
     }

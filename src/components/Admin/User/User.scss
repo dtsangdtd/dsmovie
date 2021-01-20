@@ -1,8 +1,8 @@
-@import "../../connect";
+@import '../../connect';
 
 .title {
-  h2{
-    color: #25aae1;
+  h2 {
+    color: $color-blue-movie-0;
     font-size: 200%;
   }
   display: flex;
@@ -12,7 +12,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    color: #25aae1;
+    color: $color-blue-movie-0;
     outline: none;
     transition: all 0.3s ease;
     position: fixed;
@@ -22,10 +22,10 @@
     border: 2px solid rgba(50, 50, 50, 0.9);
     z-index: 105;
     &:hover {
-      border: 2px solid #25aae1;
-      background: #25aae1;
+      border: 2px solid$color-blue-movie-0;
+      background: $color-blue-movie-0;
       color: whitesmoke;
-      box-shadow: 0 5px 12px 0 rgba($color: #25aae1, $alpha: 0.5);
+      box-shadow: 0 5px 12px 0 rgba($color: $color-blue-movie-0, $alpha: 0.5);
     }
   }
   .search {
@@ -35,7 +35,7 @@
       position: relative;
       height: 60px;
       padding: 0;
-      input[type="text"] {
+      input[type='text'] {
         height: 60px;
         font-size: 30px;
         display: inline-block;
@@ -68,7 +68,7 @@
           }
         }
         &::placeholder {
-          font-family: "Maven Pro", sans-serif;
+          font-family: 'Maven Pro', sans-serif;
           color: #bbb;
           @include Text($fs-4, $fw-regular);
           @include responsive_mobile {
@@ -76,7 +76,7 @@
           }
         }
       }
-      input[type="submit"] {
+      input[type='submit'] {
         height: 67px;
         width: 63px;
         display: inline-block;
@@ -107,7 +107,7 @@
       tr {
         td {
           .edit-action {
-            color: #25aae1;
+            color: $color-blue-movie-0;
             cursor: pointer;
           }
           .delete-action {

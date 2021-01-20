@@ -1,3 +1,8 @@
+@import './../../components/connect';
 .MuiAppBar-colorPrimary {
-  background-image: linear-gradient(to right, #2bb673, #25aae1) !important;
+  background-image: linear-gradient(
+    to right,
+    $color-green-movie-0,
+    $color-blue-movie-0
+  ) !important;
 }

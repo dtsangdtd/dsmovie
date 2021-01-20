@@ -8,6 +8,11 @@
   margin: 10px;
 }
 
+.title h2 {
+  color: #25aae1;
+  font-size: 200%;
+}
+
 .title .btnAdd {
   width: 50px;
   height: 50px;
@@ -43,7 +48,7 @@
   padding: 0;
 }
 
-.title .search #wrap input[type="text"] {
+.title .search #wrap input[type='text'] {
   height: 60px;
   font-size: 30px;
   display: inline-block;
@@ -64,17 +69,17 @@
 }
 
 @media only screen and (max-width: 575px) {
-  .title .search #wrap input[type="text"] {
+  .title .search #wrap input[type='text'] {
     font-size: 30px;
     font-weight: 400;
   }
 }
 
-.title .search #wrap input[type="text"]:focus:hover {
+.title .search #wrap input[type='text']:focus:hover {
   border-bottom: 1px solid #bbb;
 }
 
-.title .search #wrap input[type="text"]:focus {
+.title .search #wrap input[type='text']:focus {
   width: 600px;
   z-index: 1;
   border-bottom: 1px solid #bbb;
@@ -82,64 +87,65 @@
 }
 
 @media only screen and (max-width: 575px) {
-  .title .search #wrap input[type="text"]:focus {
+  .title .search #wrap input[type='text']:focus {
     width: 450px;
   }
 }
 
-.title .search #wrap input[type="text"]::-webkit-input-placeholder {
-  font-family: "Maven Pro", sans-serif;
+.title .search #wrap input[type='text']::-webkit-input-placeholder {
+  font-family: 'Maven Pro', sans-serif;
   color: #bbb;
   font-size: 40px;
   font-weight: 400;
 }
 
-.title .search #wrap input[type="text"]:-ms-input-placeholder {
-  font-family: "Maven Pro", sans-serif;
+.title .search #wrap input[type='text']:-ms-input-placeholder {
+  font-family: 'Maven Pro', sans-serif;
   color: #bbb;
   font-size: 40px;
   font-weight: 400;
 }
 
-.title .search #wrap input[type="text"]::-ms-input-placeholder {
-  font-family: "Maven Pro", sans-serif;
+.title .search #wrap input[type='text']::-ms-input-placeholder {
+  font-family: 'Maven Pro', sans-serif;
   color: #bbb;
   font-size: 40px;
   font-weight: 400;
 }
 
-.title .search #wrap input[type="text"]::placeholder {
-  font-family: "Maven Pro", sans-serif;
+.title .search #wrap input[type='text']::placeholder {
+  font-family: 'Maven Pro', sans-serif;
   color: #bbb;
   font-size: 40px;
   font-weight: 400;
 }
 
 @media only screen and (max-width: 575px) {
-  .title .search #wrap input[type="text"]::-webkit-input-placeholder {
+  .title .search #wrap input[type='text']::-webkit-input-placeholder {
     font-size: 30px;
     font-weight: 400;
   }
-  .title .search #wrap input[type="text"]:-ms-input-placeholder {
+  .title .search #wrap input[type='text']:-ms-input-placeholder {
     font-size: 30px;
     font-weight: 400;
   }
-  .title .search #wrap input[type="text"]::-ms-input-placeholder {
+  .title .search #wrap input[type='text']::-ms-input-placeholder {
     font-size: 30px;
     font-weight: 400;
   }
-  .title .search #wrap input[type="text"]::placeholder {
+  .title .search #wrap input[type='text']::placeholder {
     font-size: 30px;
     font-weight: 400;
   }
 }
 
-.title .search #wrap input[type="submit"] {
+.title .search #wrap input[type='submit'] {
   height: 67px;
   width: 63px;
   display: inline-block;
   color: red;
-  background: url(https://i.ibb.co/3C5MH50/search.png) center center no-repeat;
+  background: url(https://i.ibb.co/3C5MH50/search.png);
+  background-size: cover;
   text-indent: -10000px;
   border: none;
   position: absolute;
@@ -152,7 +158,7 @@
   cursor: pointer;
 }
 
-.title .search #wrap input[type="submit"]:hover {
+.title .search #wrap input[type='submit']:hover {
   opacity: 0.8;
 }
 

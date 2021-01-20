@@ -1,23 +1,27 @@
-.form-group{
-    .text__input{
-        margin-left: 0.5rem;
+@import './../../connect';
+.form-group {
+  .text__input {
+    margin-left: 0.5rem;
     color: #000;
     font-weight: 500;
+  }
+  .block__input {
+    background: darkgrey !important;
+  }
+  .input {
+    background: white;
+  }
+  .btnChange.btn-block {
+    color: white;
+    background-color: darkgray;
+    border-radius: 5px;
+    padding: 15px;
+    &:hover {
+      background: linear-gradient(
+        to right,
+        $color-blue-movie-0,
+        $color-green-movie-0
+      );
     }
- .block__input{
-     background: darkgrey !important;
- }
-    .input{
-        background: white ;
-    }
-    .btnChange.btn-block{
-        color: white;
-       background-color: darkgray;
-        border-radius : 5px;
-        padding: 15px;
-        &:hover{
-            background: linear-gradient(to right, #25aae1, #2bb673);
-        }
-
-    }
+  }
 }

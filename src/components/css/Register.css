@@ -1,5 +1,9 @@
+.text-danger {
+  float: left;
+}
+
 .background__user {
-  background: url("https://i.ibb.co/Ybnw70Q/homeappbg.jpg");
+  background: url("../../images/background/home__bg.jpg");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,7 +50,7 @@
 
 .background__user .container-fluid .registerForm .img__logo .img__link .text-logo {
   color: #60c5ef;
-  font-family: "Metal Mania", cursive;
+  font-family: 'Metal Mania', cursive;
   font-size: 29px;
   font-weight: 400;
 }
@@ -72,19 +76,19 @@
 }
 
 .background__user .container-fluid .registerForm .formSocial .formRegister .form-group .input::-webkit-input-placeholder {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .background__user .container-fluid .registerForm .formSocial .formRegister .form-group .input:-ms-input-placeholder {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .background__user .container-fluid .registerForm .formSocial .formRegister .form-group .input::-ms-input-placeholder {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .background__user .container-fluid .registerForm .formSocial .formRegister .form-group .input::placeholder {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .background__user .container-fluid .registerForm .formSocial .formRegister .form-group .btnLogin {
@@ -107,7 +111,7 @@
 
 .background__user .container-fluid .registerForm .close__btn {
   position: absolute;
-  content: "";
+  content: '';
   top: -18px;
   right: -18px;
   width: 36px;
@@ -121,7 +125,7 @@
 
 .background__user .container-fluid .registerForm .close__btn::before {
   position: absolute;
-  content: "";
+  content: '';
   display: block;
   border-left: 2px solid #455570;
   width: 2px;
@@ -133,7 +137,7 @@
 }
 
 .background__user .container-fluid .registerForm .close__btn::after {
-  content: "";
+  content: '';
   display: block;
   border-left: 2px solid #455570;
   width: 2px;

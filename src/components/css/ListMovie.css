@@ -31,6 +31,11 @@
   }
 }
 
+.listMovie .container #listMovieTab .slick-prev:before,
+.listMovie .container #listMovieTab .slick-next:before {
+  color: #25aae1;
+}
+
 .listMovie .container #listMovieTab .nav {
   position: relative;
   -webkit-box-pack: center;

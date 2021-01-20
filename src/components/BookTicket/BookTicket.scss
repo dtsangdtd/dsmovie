@@ -1,4 +1,4 @@
-@import "../connect";
+@import '../connect';
 
 .bookMovie {
   z-index: 18;
@@ -49,7 +49,6 @@
         text-align: center;
       }
       .select__form {
-    
         position: relative;
         // display: flex;
         width: 100%;
@@ -84,7 +83,7 @@
           right: 0;
           width: 100px;
           height: 100%;
-          content: "";
+          content: '';
           background: linear-gradient(to right, transparent, white);
           pointer-events: none;
         }
@@ -129,7 +128,7 @@
         &::after {
           border: 0 solid transparent;
           box-sizing: border-box;
-          content: "";
+          content: '';
           pointer-events: none;
           position: absolute;
           width: 0;
@@ -140,14 +139,14 @@
         }
 
         &::before {
-          $h-side: if($horizontal == "left", "right", "left");
+          $h-side: if($horizontal == 'left', 'right', 'left');
 
           border-#{$vertical}-width: $width;
           border-#{$h-side}-width: $width;
         }
 
         &::after {
-          $v-side: if($vertical == "top", "bottom", "top");
+          $v-side: if($vertical == 'top', 'bottom', 'top');
 
           border-#{$v-side}-width: $width;
           border-#{$horizontal}-width: $width;
@@ -176,15 +175,15 @@
 
       .draw-border {
         @include btn-border-drawing(
-          #25aae1,
-          #2bb673,
+          $color-blue-movie-0,
+          $color-green-movie-0,
           2px,
           bottom,
           right
         );
-        &:hover{
-          background: linear-gradient(to right,#25aae1,#2bb673);
-         color: white
+        &:hover {
+          background: linear-gradient(to right, #25aae1, $color-green-movie-0);
+          color: white;
         }
       }
 
@@ -194,7 +193,7 @@
         border: none;
         cursor: pointer;
         line-height: 1.5;
-        font: 700 1.2rem "Roboto Slab", sans-serif;
+        font: 700 1.2rem 'Roboto Slab', sans-serif;
         letter-spacing: 0.05rem;
         width: 100%;
         height: 100%;
@@ -228,7 +227,7 @@
         border: none;
         cursor: no-drop;
         line-height: 1.5;
-        font: 700 1.2rem "Roboto Slab", sans-serif;
+        font: 700 1.2rem 'Roboto Slab', sans-serif;
         letter-spacing: 0.05rem;
         width: 100%;
         height: 100%;

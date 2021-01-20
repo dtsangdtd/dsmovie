@@ -1,9 +1,9 @@
-@import "../connect";
-.text-danger{
+@import '../connect';
+.text-danger {
   float: left;
 }
 .background__user {
-  background: url("../../images/background/home__bg.jpg");
+  background: url('../../images/background/home__bg.jpg');
   display: flex;
   justify-content: center;
   background-repeat: no-repeat;
@@ -14,7 +14,11 @@
       animation-name: slidedown;
       animation-duration: 2s;
       position: relative;
-      background:linear-gradient(to right, #25aae1, #2bb673);
+      background: linear-gradient(
+        to right,
+        $color-blue-movie-0,
+        $color-green-movie-0
+      );
       text-align: center;
       padding: spacing(3);
       .img__logo {
@@ -24,7 +28,7 @@
           text-decoration: none;
           color: $color-white-0;
           img {
-            pointer-events:none;
+            pointer-events: none;
             position: absolute;
             width: 204px;
             top: -3.4%;
@@ -32,7 +36,7 @@
           }
           .text-logo {
             color: $color-blue;
-            font-family: "Metal Mania", cursive;
+            font-family: 'Metal Mania', cursive;
             @include Text($fs-3 + 5, $fw-regular);
           }
         }
@@ -41,9 +45,9 @@
         .formRegister {
           border-radius: 10px;
           .form-group {
-            .text-light{
+            .text-light {
               color: #ffffff !important;
-              &:hover{
+              &:hover {
                 color: black !important;
               }
             }
@@ -54,7 +58,7 @@
               border: 0;
               color: #3e3e3e;
               &::placeholder {
-                font-family: "Lato", sans-serif;
+                font-family: 'Lato', sans-serif;
               }
             }
             .btnLogin {
@@ -77,18 +81,18 @@
       }
       .close__btn {
         position: absolute;
-        content: "";
+        content: '';
         top: -18px;
         right: -18px;
         width: 36px;
         height: 36px;
         border-radius: 50%;
-        background-color: #25aae1;
+        background-color: $color-blue-movie-0;
         box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
         cursor: pointer;
         &::before {
           position: absolute;
-          content: "";
+          content: '';
           display: block;
           border-left: 2px solid #455570;
           width: 2px;
@@ -98,7 +102,7 @@
           transform: rotate(-45deg);
         }
         &::after {
-          content: "";
+          content: '';
           display: block;
           border-left: 2px solid #455570;
           width: 2px;
@@ -122,5 +126,4 @@
     transform: translateY(0);
     opacity: 1;
   }
- 
 }

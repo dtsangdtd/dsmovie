@@ -29,8 +29,8 @@
 
 #addMovieModal .modal-dialog .modal-content .modal-body .row .col-md-6 .textb input:focus ~ .placeholder,
 #addMovieModal .modal-dialog .modal-content .modal-body .row .col-md-6 .textb input:valid ~ .placeholder {
-  left: 10px;
-  top: -16px;
+  top: -60%;
+  left: 1%;
 }
 
 #addMovieModal .modal-dialog .modal-content .modal-body .row .col-md-6 .textb .placeholder {

@@ -1,37 +1,55 @@
-import React, { Fragment } from "react";
-import ShowTime from "../ShowTimes/ShowTime";
-
+import React, { useState, useEffect, Fragment } from 'react';
+import ShowTime from '../ShowTimes/ShowTime';
+import { qLyPhimService } from '../../../services/QuanLyPhimServices';
 export default function TheaterCluster(props) {
-  let { cumRap } = props
+  // let { cumRap } = props
+  let [cumRap, setCumRap] = useState([
+    {
+      biDanh: 'bhd-star-cineplex',
+      logo: 'http://movie0706.cybersoft.edu.vn/hinhanh/bhd-star-cineplex.png',
+      maHeThongRap: 'BHDStar',
+      tenHeThongRap: 'BHD Star Cineplex',
+    },
+  ]);
+  useEffect(() => {
+    qLyPhimService
+      .layCumRapTheoHeThong()
+      .then((result) => {
+        setCumRap(result.data);
+        // console.log(result.data);
+      })
+      .catch((err) => {
+        console.log(err.response.data);
+      });
+  }, []);
   const renderCum = () => {
     return cumRap.map((cumRap, index) => {
       return (
         <div
-          className="tab-pane fade show "
+          className='tab-pane fade show'
           id={cumRap.maHeThongRap}
-          role="tabpanel"
-          aria-labelledby="v-pills-home-tab"
+          role='tabpanel'
+          aria-labelledby='v-pills-home-tab'
           key={index}
         >
-          <div className="secondary__row row">
-            <div className="secondary__tab col-md-5 col-sm-12">
+          <div className='secondary__row row'>
+            <div className='secondary__tab col-md-5 col-sm-12'>
               <div
-                className="nav flex-column nav-pills"
-                id="v-pills-tab"
-                role="tablist"
-                aria-orientation="vertical"
+                className='nav flex-column nav-pills'
+                id='v-pills-tab'
+                role='tablist'
+                aria-orientation='vertical'
               >
                 {renderCumRap(cumRap)}
               </div>
             </div>
-            <div className="secondary__tabContent col-md-7 col-sm-12">
-              <div className="tab-content" id="v-pills-tabContent">
+            <div className='secondary__tabContent col-md-7 col-sm-12'>
+              <div className='tab-content' id='v-pills-tabContent'>
                 {renderShowTime(cumRap)}
               </div>
             </div>
           </div>
         </div>
-        
       );
     });
   };
@@ -40,13 +58,13 @@ export default function TheaterCluster(props) {
     return cumRap.lstCumRap?.map((rap, index) => {
       return (
         <div
-          className="tab-pane fade show"
+          className='tab-pane fade show'
           id={rap.maCumRap}
-          role="tabpanel"
-          aria-labelledby="v-pills-home-tab"
+          role='tabpanel'
+          aria-labelledby='v-pills-home-tab'
           key={index}
         >
-          <div className="tab__list">
+          <div className='tab__list'>
             <ul>
               <ShowTime rap={rap} maCumRap={rap.maCumRap} />
             </ul>
@@ -59,26 +77,26 @@ export default function TheaterCluster(props) {
     return cumRap.lstCumRap?.map((rap, index) => {
       return (
         <a
-          className="nav-link"
-          data-toggle="pill"
+          className='nav-link'
+          data-toggle='pill'
           href={`#${rap.maCumRap}`}
-          role="tab"
-          aria-controls="v-pills-home"
-          aria-selected="true"
+          role='tab'
+          aria-controls='v-pills-home'
+          aria-selected='true'
           key={index}
         >
-          <div className="img__theater">
+          <div className='img__theater'>
             <img
-              src="https://cdn2.iconfinder.com/data/icons/cinema-hall-and-movie-making/50/21-512.png"
-              alt="iconmovie"
+              src='https://cdn2.iconfinder.com/data/icons/cinema-hall-and-movie-making/50/21-512.png'
+              alt='iconmovie'
             />
           </div>
-          <div className="text__theater">
-            <span className="name__theater">
-              <span className="name__aftertheater">{rap.tenCumRap}</span>
+          <div className='text__theater'>
+            <span className='name__theater'>
+              <span className='name__aftertheater'>{rap.tenCumRap}</span>
             </span>
-            <p className="address__theater">{rap.diaChi}</p>
-            <span className="detail__theater">[chi tiết]</span>
+            <p className='address__theater'>{rap.diaChi}</p>
+            <span className='detail__theater'>[chi tiết]</span>
           </div>
         </a>
       );

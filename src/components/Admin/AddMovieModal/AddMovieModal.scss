@@ -1,4 +1,4 @@
-@import "../../connect";
+@import '../../connect';
 
 #addMovieModal {
   .modal-dialog {
@@ -62,7 +62,7 @@
           width: 150px;
           height: 80px;
           margin: 10px auto;
-          background-color: #25aae1;
+          background-color: $color-blue-movie-0;
           color: #fff;
           font-size: 40px;
           border: none;

@@ -1,53 +1,51 @@
-@import "../../connect";
+@import '../../connect';
 .home__dashboard {
-    background: azure;
+  background: azure;
+  h2 {
+    color: $color-blue-movie-0;
+  }
+  .col__info {
+    .dashboard-info {
+      margin-left: 1.5%;
+      font-size: 20px;
+    }
+  }
+  .col__moviemanagement {
+    .btn {
+      width: 200px;
+      margin-top: 10px;
+      height: 40px;
+    }
+  }
+  .col__newsmanagement {
+    .btn {
+      width: 200px;
+      margin-top: 10px;
+      height: 40px;
+    }
+  }
+  .col__usermanagement {
     h2 {
-        color: #25aae1;
+      margin-bottom: 10px;
     }
-    .col__info {
-        .dashboard-info {
-            margin-left: 1.5%;
-            font-size: 20px;
-        }
+    .btn {
+      height: 40px;
+      width: 160px;
+      margin-right: 10px;
     }
-    .col__moviemanagement {
-        .btn {
-            width: 200px;
-            margin-top: 10px;
-            height: 40px;
-        }
+  }
+  .col__showtimes {
+    .btn {
+      width: 200px;
+      margin-top: 10px;
+      height: 40px;
     }
-    .col__newsmanagement{
-        .btn {
-            width: 200px;
-            margin-top: 10px;
-            height: 40px;
-        }
+  }
+  .col__webmanagement {
+    .btn {
+      width: 200px;
+      margin-top: 10px;
+      height: 40px;
     }
-    .col__usermanagement{
-        h2{
-            margin-bottom: 10px;
-        }
-        .btn{
-            height: 40px;
-            width: 160px;
-            margin-right: 10px;
-        }
-    }
-    .col__showtimes{
-     
-        .btn {
-            width: 200px;
-            margin-top: 10px;
-            height: 40px;
-        }
-    }
-    .col__webmanagement{
-    
-        .btn {
-            width: 200px;
-            margin-top: 10px;
-            height: 40px;
-        }  
-    }
+  }
 }

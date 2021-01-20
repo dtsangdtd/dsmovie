@@ -121,7 +121,7 @@
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .card .menu-content::before, .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .card .menu-content::after {
-  content: "";
+  content: '';
   display: table;
 }
 
@@ -144,14 +144,14 @@
   top: 0;
   font-size: 10px;
   font-weight: 700;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .card .wrapper {
   background-color: #fff;
-  min-height: 540px;
+  min-height: 460px;
   position: relative;
   overflow: hidden;
   -webkit-box-shadow: 0 19px 38px rgba(41, 48, 59, 0.3), 0 15px 12px rgba(41, 48, 59, 0.2);
@@ -194,11 +194,11 @@
   margin: 0;
 }
 
-.news .container #newsTab .tab-content .tab-pane .tab__content .card-content .card input[type="checkbox"] {
+.news .container #newsTab .tab-content .tab-pane .tab__content .card-content .card input[type='checkbox'] {
   display: none;
 }
 
-.news .container #newsTab .tab-content .tab-pane .tab__content .card-content .card input[type="checkbox"]:checked + .menu-content {
+.news .container #newsTab .tab-content .tab-pane .tab__content .card-content .card input[type='checkbox']:checked + .menu-content {
   -webkit-transform: translateY(-60px);
           transform: translateY(-60px);
 }
@@ -274,7 +274,7 @@
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .example-1 .menu-button span::after, .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .example-1 .menu-button span::before {
-  content: "";
+  content: '';
   display: block;
   width: 5px;
   height: 5px;
@@ -346,7 +346,7 @@
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .example-2 .header-post::before, .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .example-2 .header-post::after {
-  content: "";
+  content: '';
   display: table;
 }
 
@@ -402,7 +402,7 @@
 }
 
 .news .container #newsTab .tab-content .tab-pane .tab__content .card-content .example-2 .button-watch::after {
-  content: "\2192";
+  content: '\2192';
   opacity: 0;
   position: absolute;
   right: 0;

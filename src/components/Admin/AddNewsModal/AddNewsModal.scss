@@ -1,4 +1,4 @@
-@import "../../connect";
+@import '../../connect';
 
 #addNewsModal {
   .modal-dialog {
@@ -40,12 +40,12 @@
                 padding: 14px 60px 0 10px;
                 margin-top: 20px;
               }
-              & input:focus  .placeholder,
-              & input:valid  .placeholder {
+              & input:focus .placeholder,
+              & input:valid .placeholder {
                 left: 10px;
                 top: -16px;
               }
-              & textarea:focus  .placeholder,
+              & textarea:focus .placeholder,
               & textarea:valid .placeholder {
                 left: 10px;
                 top: -16px;
@@ -79,7 +79,7 @@
           width: 150px;
           height: 80px;
           margin: 10px auto;
-          background-color: #25aae1;
+          background-color: $color-blue-movie-0;
           color: #fff;
           font-size: 40px;
           border: none;

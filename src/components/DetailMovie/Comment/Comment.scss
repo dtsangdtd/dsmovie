@@ -1,4 +1,4 @@
-@import "../../connect";
+@import '../../connect';
 .youthink {
   margin-bottom: spacing(2);
   .youthink__items {
@@ -32,7 +32,7 @@
     .items__stars {
       i {
         @include Text($fs-2, $fw-bold);
-        color: #25aae1;
+        color: $color-blue-movie-0;
         opacity: 0.7;
         @include responsive_mobile {
           @include Text($fs-0, $fw-bold);
@@ -80,7 +80,7 @@
           i {
             @include Text($fs-1 - 6, $fw-bold);
             margin-left: 0;
-            color: #25aae1;
+            color: $color-blue-movie-0;
           }
         }
       }
@@ -119,8 +119,8 @@
     padding: spacing(0.5) spacing(2);
     box-shadow: none;
     &:hover {
-      border: 1px solid #25aae1;
-      background-color: #25aae1;
+      border: 1px solid$color-blue-movie-0;
+      background-color: $color-blue-movie-0;
       color: $color-white-0;
     }
   }

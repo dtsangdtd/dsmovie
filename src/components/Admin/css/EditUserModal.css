@@ -28,8 +28,8 @@
 
 .editUserModal .modal-dialog .modal-content .modal-body .user-form .textb input:focus ~ .placeholder,
 .editUserModal .modal-dialog .modal-content .modal-body .user-form .textb input:valid ~ .placeholder {
-  left: 10px;
-  top: -16px;
+  left: 1%;
+  top: -72%;
 }
 
 .editUserModal .modal-dialog .modal-content .modal-body .user-form .textb .placeholder {

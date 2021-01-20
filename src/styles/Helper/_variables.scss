@@ -26,6 +26,9 @@ $color-pink: rgb(200, 29, 82);
 $color-blue: #60c5ef;
 $color-navy-0: rgba(20, 50, 93, 0.9);
 $color-navy-1: rgba(8, 22, 48, 0.9);
+$color-blue-movie-0: #25aae1;
+$color-green-movie-0: #2bb673;
+
 // variable font-size
 $fs-0: 15px; //default
 $fs-1: 13px;
@@ -63,10 +66,10 @@ $fw-light: 300;
 
 //break points
 $breakpoints: (
-  "extra-large": 1200px,
-  "large": 992px,
-  "medium": 768px,
-  "small": 576px,
-  "tiny": 420px,
-  "super-tiny": 320px,
+  'extra-large': 1200px,
+  'large': 992px,
+  'medium': 768px,
+  'small': 576px,
+  'tiny': 420px,
+  'super-tiny': 320px,
 );

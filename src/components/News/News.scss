@@ -1,15 +1,15 @@
-@import "../connect";
+@import '../connect';
 $regal-blue: #034378;
 $san-juan: #2d4e68;
 $bermuda: #77d7b9;
 $white: #fff;
 $black: #000;
-$open-sans: "Open Sans", sans-serif;
+$open-sans: 'Open Sans', sans-serif;
 
 @mixin cf {
   &::before,
   &::after {
-    content: "";
+    content: '';
     display: table;
   }
   &::after {
@@ -59,7 +59,7 @@ $open-sans: "Open Sans", sans-serif;
             }
             &.active {
               background: none;
-              color: #25aae1;
+              color: $color-blue-movie-0;
             }
             &:hover {
               transform: scale(1.1);
@@ -102,7 +102,7 @@ $open-sans: "Open Sans", sans-serif;
                     top: 0;
                     font-size: 10px;
                     font-weight: 700;
-                    font-family: "Open Sans";
+                    font-family: 'Open Sans';
                     transform: translate(-50%, 0);
                   }
                 }
@@ -111,7 +111,8 @@ $open-sans: "Open Sans", sans-serif;
                   min-height: 460px;
                   position: relative;
                   overflow: hidden;
-                  box-shadow: 0 19px 38px rgba($color-black-0, 0.3), 0 15px 12px rgba($color-black-0, 0.2);
+                  box-shadow: 0 19px 38px rgba($color-black-0, 0.3),
+                    0 15px 12px rgba($color-black-0, 0.2);
                   &:hover {
                     .datanews {
                       transform: translateY(0);
@@ -140,10 +141,10 @@ $open-sans: "Open Sans", sans-serif;
                   height: 70px;
                   margin: 0;
                 }
-                input[type="checkbox"] {
+                input[type='checkbox'] {
                   display: none;
                 }
-                input[type="checkbox"]:checked + .menu-content {
+                input[type='checkbox']:checked + .menu-content {
                   transform: translateY(-60px);
                 }
               }
@@ -151,7 +152,7 @@ $open-sans: "Open Sans", sans-serif;
               // First example styles
               .example-1 {
                 .wrapper {
-                  background: url("../../images/news/news1.jpg");
+                  background: url('../../images/news/news1.jpg');
                   background-size: 500px 338px;
                   background-repeat: no-repeat;
                 }
@@ -159,7 +160,7 @@ $open-sans: "Open Sans", sans-serif;
                   position: absolute;
                   top: 0;
                   left: 0;
-                  background-color: #2bb673;
+                  background-color: $color-green-movie-0;
                   color: $white;
                   padding: 0.8em;
                   span {
@@ -188,7 +189,7 @@ $open-sans: "Open Sans", sans-serif;
                     color: lighten($color-black-0, 50%);
                     text-decoration: none;
                     &:hover {
-                      color: #25aae1;
+                      color: $color-blue-movie-0;
                     }
                   }
                 }
@@ -210,7 +211,7 @@ $open-sans: "Open Sans", sans-serif;
                     border-radius: 50%;
                     &::after,
                     &::before {
-                      content: "";
+                      content: '';
                       display: block;
                       width: 5px;
                       height: 5px;
@@ -238,7 +239,7 @@ $open-sans: "Open Sans", sans-serif;
                   .menu-content-item {
                     width: 33.333333%;
                     float: left;
-                    background-color: #2bb673;
+                    background-color: $color-green-movie-0;
                     height: 60px;
                     position: relative;
                   }
@@ -259,9 +260,9 @@ $open-sans: "Open Sans", sans-serif;
               // Second example styles
               .example-2 {
                 .wrapper {
-                  background: url("../../images/news/news2.png");
+                  background: url('../../images/news/news2.png');
                   background-repeat: no-repeat;
-    background-size: 500px 338px;
+                  background-size: 500px 338px;
                   &:hover {
                     .menu-content {
                       span {
@@ -300,7 +301,7 @@ $open-sans: "Open Sans", sans-serif;
                   .title__link {
                     color: $color-white-0;
                     &:hover {
-                      color: #25aae1;
+                      color: $color-blue-movie-0;
                     }
                   }
                 }
@@ -315,7 +316,7 @@ $open-sans: "Open Sans", sans-serif;
                   position: relative;
                   font-weight: 700;
                   &::after {
-                    content: "\2192";
+                    content: '\2192';
                     opacity: 0;
                     position: absolute;
                     right: 0;
@@ -361,7 +362,7 @@ $open-sans: "Open Sans", sans-serif;
                     text-overflow: ellipsis;
                     margin-bottom: spacing(0.7);
                     &:hover {
-                      color: #25aae1;
+                      color: $color-blue-movie-0;
                     }
                   }
                   .item__description {
@@ -418,7 +419,7 @@ $open-sans: "Open Sans", sans-serif;
                       text-overflow: ellipsis;
                       margin-bottom: spacing(0.7);
                       &:hover {
-                        color:#25aae1;
+                        color: #25aae1;
                       }
                     }
                     .item__description {
@@ -480,7 +481,7 @@ $open-sans: "Open Sans", sans-serif;
                       transition: all 0.3s;
                       @include Text($fs-0 + 1, $fw-regular);
                       &:hover {
-                        color: #25aae1;
+                        color: $color-blue-movie-0;
                       }
                     }
                   }
@@ -498,8 +499,12 @@ $open-sans: "Open Sans", sans-serif;
                 padding: spacing(0.5) spacing(2);
                 box-shadow: none;
                 &:hover {
-                  border: 1px solid #25aae1;
-                  background: linear-gradient(to right,#2bb673, #25aae1);
+                  border: 1px solid$color-blue-movie-0;
+                  background: linear-gradient(
+                    to right,
+                    $color-green-movie-0,
+                    $color-blue-movie-0
+                  );
                   color: $color-white-0;
                 }
               }

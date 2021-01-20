@@ -385,7 +385,7 @@
   border: 0 solid transparent;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  content: "";
+  content: '';
   pointer-events: none;
   position: absolute;
   width: 0;

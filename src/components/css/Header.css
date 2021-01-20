@@ -10,6 +10,11 @@ header {
   transition: all 0.2s;
 }
 
+header .fa-mobile-alt {
+  height: 24px;
+  padding-top: 5px;
+}
+
 header .bg-nav {
   background-color: rgba(19, 22, 24, 0.35) !important;
   background: none;
@@ -125,6 +130,7 @@ header .navbar .header__mobile .header__login .login__link {
 }
 
 header .navbar .header__mobile .header__login .login__link img {
+  background: white;
   width: 30px;
   border-radius: 999px;
   margin: 10px;
@@ -249,6 +255,43 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
   color: #fff;
   font-size: 14px;
   font-weight: 600;
+}
+
+header .navbar .navbar-collapse .dropdown__country {
+  padding-bottom: 14px;
+  padding-left: 10px;
+}
+
+@media only screen and (max-width: 575px) {
+  header .navbar .navbar-collapse .dropdown__country {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  header .navbar .navbar-collapse .dropdown__country {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  header .navbar .navbar-collapse .dropdown__country {
+    display: none;
+  }
+}
+
+header .navbar .navbar-collapse .dropdown__country .MuiNativeSelect-select:not([multiple]) option,
+header .navbar .navbar-collapse .dropdown__country .MuiNativeSelect-select:not([multiple]) optgroup {
+  color: #000;
+}
+
+header .navbar .navbar-collapse .dropdown__country .MuiInput-underline:before,
+header .navbar .navbar-collapse .dropdown__country .MuiInput-underline:after {
+  content: none;
+}
+
+header .navbar .navbar-collapse .dropdown__country .MuiNativeSelect-icon {
+  color: #fff;
 }
 
 @media only screen and (max-width: 575px) {

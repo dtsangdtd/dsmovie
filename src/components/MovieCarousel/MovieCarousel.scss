@@ -1,4 +1,4 @@
-@import "../connect";
+@import '../connect';
 
 .item__inrow {
   margin: 0 5px;
@@ -8,7 +8,7 @@
   }
   &:hover .item__link .item__info .item__button {
     opacity: 1;
-    background: linear-gradient(to right,#2bb673,#25aae1);
+    background: linear-gradient(to right, $color-green-movie-0, #25aae1);
   }
   &:hover .item__link .item__info .film__name + .film__during {
     opacity: 0;
@@ -234,38 +234,38 @@
           color: $color;
           transition: color $duration $duration/3;
           position: relative;
-  
+
           &::before,
           &::after {
             border: 0 solid transparent;
             box-sizing: border-box;
-            content: "";
+            content: '';
             pointer-events: none;
             position: absolute;
             width: 0;
             height: 0;
-  
+
             #{$vertical}: 0;
             #{$horizontal}: 0;
           }
-  
+
           &::before {
-            $h-side: if($horizontal == "left", "right", "left");
-  
+            $h-side: if($horizontal == 'left', 'right', 'left');
+
             border-#{$vertical}-width: $width;
             border-#{$h-side}-width: $width;
           }
-  
+
           &::after {
-            $v-side: if($vertical == "top", "bottom", "top");
-  
+            $v-side: if($vertical == 'top', 'bottom', 'top');
+
             border-#{$v-side}-width: $width;
             border-#{$horizontal}-width: $width;
           }
-  
+
           &:hover {
             color: $hover;
-  
+
             &::before,
             &::after {
               border-color: $hover;
@@ -273,31 +273,35 @@
               width: 100%;
               height: 100%;
             }
-  
+
             &::before {
               transition-delay: 0s, 0s, $duration;
             }
-  
+
             &::after {
               transition-delay: 0s, $duration, 0s;
             }
           }
         }
         @include btn-border-drawing(
-          #25aae1,
-          #2bb673,
+          $color-blue-movie-0,
+          $color-green-movie-0,
           2px,
           bottom,
           right
         );
-        &:hover{
-          background: linear-gradient(to right,#25aae1,#2bb673);
-         color: white
+        &:hover {
+          background: linear-gradient(to right, #25aae1, $color-green-movie-0);
+          color: white;
         }
         position: absolute;
         width: 100%;
         top: 0;
-        background-color: linear-gradient(to right,#25aae1,#2bb673);
+        background-color: linear-gradient(
+          to right,
+          #25aae1,
+          $color-green-movie-0
+        );
         text-align: center;
         border-radius: 5px;
         opacity: 0;

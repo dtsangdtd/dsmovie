@@ -1,4 +1,4 @@
-@import "../connect";
+@import '../connect';
 
 .all-movie {
   margin-top: spacing(10);
@@ -10,15 +10,15 @@
       position: relative;
       height: 60px;
       padding: 0;
-      input[type="text"] {
+      input[type='text'] {
         height: 60px;
         font-size: 40px;
         display: inline-block;
-        font-family: "Lato";
+        font-family: 'Lato';
         font-weight: 100;
         border: none;
         outline: none;
-        color: #25aae1;
+        color: $color-blue-movie-0;
         padding: 3px;
         padding-right: 60px;
         width: 0px;
@@ -51,8 +51,8 @@
           }
         }
         &::placeholder {
-          font-family: "Maven Pro", sans-serif;
-          color: #25aae1;
+          font-family: 'Maven Pro', sans-serif;
+          color: $color-blue-movie-0;
           @include responsive_mobile {
             @include Text($fs-4 - 10, $fw-regular);
           }
@@ -61,12 +61,12 @@
           }
         }
       }
-      input[type="submit"] {
+      input[type='submit'] {
         height: 300px;
         width: 300px;
         transform: scale(0.4);
         display: inline-block;
-        background: url("../../images/Logo_search.png") center center no-repeat;
+        background: url('../../images/Logo_search.png') center center no-repeat;
         text-indent: -10000px;
         border: none;
         position: absolute;
@@ -97,7 +97,8 @@
           transition: all 0.4s;
           border-radius: 10px;
           background-color: rgba(255, 255, 255, 0.5);
-          box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.2), 0px 20px 31px 3px rgba(0, 0, 0, 0.14),
+          box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.2),
+            0px 20px 31px 3px rgba(0, 0, 0, 0.14),
             0px 8px 38px 7px rgba(0, 0, 0, 0.12);
           &:hover {
             transform: scale(1.02);
@@ -108,7 +109,11 @@
             height: 100%;
             z-index: 2;
             position: relative;
-            background: linear-gradient(to right, #0d0d0c 50%, transparent 100%);
+            background: linear-gradient(
+              to right,
+              #0d0d0c 50%,
+              transparent 100%
+            );
             border-radius: 10px;
             background-blend-mode: multiply;
             .left-header-movie {
@@ -122,7 +127,7 @@
                 text-transform: capitalize;
               }
               .group-id {
-                color: #25aae1;
+                color: $color-blue-movie-0;
                 @include Text($fs-2, $fw-medium);
                 margin-top: spacing(0.8);
               }

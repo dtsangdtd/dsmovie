@@ -1,4 +1,4 @@
-@import "../connect";
+@import '../connect';
 
 .listMovie {
   padding: spacing(6) spacing(15);
@@ -21,14 +21,14 @@
   }
   .container {
     #listMovieTab {
-      .slick-prev:before, .slick-next:before{
-        color: #25aae1;
+      .slick-prev:before,
+      .slick-next:before {
+        color: $color-blue-movie-0;
       }
       .nav {
         position: relative;
         justify-content: center;
 
-    
         .nav-item {
           transition: all 0.2s;
           border: none;
@@ -40,11 +40,10 @@
             border: none;
             transform: scale(1);
             &.active {
-              color: #25aae1;
+              color: $color-blue-movie-0;
               @include Text($fs-3, $fw-medium);
             }
             &:hover {
-
               transform: scale(1.1);
             }
           }

@@ -411,6 +411,10 @@
   margin-top: 20px;
 }
 
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .collapse .collapse__content .film__timeshow ul {
+  padding-left: 0;
+}
+
 .schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .collapse .collapse__content .film__timeshow ul .timeshow__item {
   margin-bottom: 25px;
 }

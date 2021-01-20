@@ -14,11 +14,11 @@
   padding: 0;
 }
 
-.all-movie .search #wrap input[type="text"] {
+.all-movie .search #wrap input[type='text'] {
   height: 60px;
   font-size: 40px;
   display: inline-block;
-  font-family: "Lato";
+  font-family: 'Lato';
   font-weight: 100;
   border: none;
   outline: none;
@@ -37,17 +37,17 @@
 }
 
 @media only screen and (max-width: 575px) {
-  .all-movie .search #wrap input[type="text"] {
+  .all-movie .search #wrap input[type='text'] {
     font-size: 30px;
     font-weight: 400;
   }
 }
 
-.all-movie .search #wrap input[type="text"]:focus:hover {
+.all-movie .search #wrap input[type='text']:focus:hover {
   border-bottom: 1px solid #bbb;
 }
 
-.all-movie .search #wrap input[type="text"]:focus {
+.all-movie .search #wrap input[type='text']:focus {
   width: 700px;
   z-index: 1;
   border-bottom: 1px solid #bbb;
@@ -55,82 +55,82 @@
 }
 
 @media only screen and (max-width: 575px) {
-  .all-movie .search #wrap input[type="text"]:focus {
+  .all-movie .search #wrap input[type='text']:focus {
     width: 450px;
   }
 }
 
 @media only screen and (min-width: 421px) and (max-width: 575px) {
-  .all-movie .search #wrap input[type="text"]:focus {
+  .all-movie .search #wrap input[type='text']:focus {
     width: 390px;
   }
 }
 
 @media only screen and (max-width: 419px) {
-  .all-movie .search #wrap input[type="text"]:focus {
+  .all-movie .search #wrap input[type='text']:focus {
     width: 360px;
   }
 }
 
-.all-movie .search #wrap input[type="text"]::-webkit-input-placeholder {
-  font-family: "Maven Pro", sans-serif;
+.all-movie .search #wrap input[type='text']::-webkit-input-placeholder {
+  font-family: 'Maven Pro', sans-serif;
   color: #25aae1;
 }
 
-.all-movie .search #wrap input[type="text"]:-ms-input-placeholder {
-  font-family: "Maven Pro", sans-serif;
+.all-movie .search #wrap input[type='text']:-ms-input-placeholder {
+  font-family: 'Maven Pro', sans-serif;
   color: #25aae1;
 }
 
-.all-movie .search #wrap input[type="text"]::-ms-input-placeholder {
-  font-family: "Maven Pro", sans-serif;
+.all-movie .search #wrap input[type='text']::-ms-input-placeholder {
+  font-family: 'Maven Pro', sans-serif;
   color: #25aae1;
 }
 
-.all-movie .search #wrap input[type="text"]::placeholder {
-  font-family: "Maven Pro", sans-serif;
+.all-movie .search #wrap input[type='text']::placeholder {
+  font-family: 'Maven Pro', sans-serif;
   color: #25aae1;
 }
 
 @media only screen and (max-width: 575px) {
-  .all-movie .search #wrap input[type="text"]::-webkit-input-placeholder {
+  .all-movie .search #wrap input[type='text']::-webkit-input-placeholder {
     font-size: 30px;
     font-weight: 400;
   }
-  .all-movie .search #wrap input[type="text"]:-ms-input-placeholder {
+  .all-movie .search #wrap input[type='text']:-ms-input-placeholder {
     font-size: 30px;
     font-weight: 400;
   }
-  .all-movie .search #wrap input[type="text"]::-ms-input-placeholder {
+  .all-movie .search #wrap input[type='text']::-ms-input-placeholder {
     font-size: 30px;
     font-weight: 400;
   }
-  .all-movie .search #wrap input[type="text"]::placeholder {
+  .all-movie .search #wrap input[type='text']::placeholder {
     font-size: 30px;
     font-weight: 400;
   }
 }
 
 @media only screen and (max-width: 419px) {
-  .all-movie .search #wrap input[type="text"]::-webkit-input-placeholder {
+  .all-movie .search #wrap input[type='text']::-webkit-input-placeholder {
     font-size: 24px;
     font-weight: 400;
   }
-  .all-movie .search #wrap input[type="text"]:-ms-input-placeholder {
+  .all-movie .search #wrap input[type='text']:-ms-input-placeholder {
     font-size: 24px;
     font-weight: 400;
   }
-  .all-movie .search #wrap input[type="text"]::-ms-input-placeholder {
+  .all-movie .search #wrap input[type='text']::-ms-input-placeholder {
     font-size: 24px;
     font-weight: 400;
   }
-  .all-movie .search #wrap input[type="text"]::placeholder {
+  .all-movie .search #wrap input[type='text']::placeholder {
     font-size: 24px;
     font-weight: 400;
   }
 }
 
-.all-movie .search #wrap input[type="submit"] {
+.all-movie .search #wrap input[type='submit'] {
   height: 300px;
   width: 300px;
   -webkit-transform: scale(0.4);
@@ -151,7 +151,7 @@
   outline: none;
 }
 
-.all-movie .search #wrap input[type="submit"]:hover {
+.all-movie .search #wrap input[type='submit']:hover {
   opacity: 0.8;
 }
 
@@ -201,6 +201,7 @@
 }
 
 .all-movie .movielist-content .movie-card .card-link .card-content .content-left .left-header-movie .movie-name {
+  margin-top: 0;
   font-size: 20px;
   font-weight: 400;
   text-transform: capitalize;

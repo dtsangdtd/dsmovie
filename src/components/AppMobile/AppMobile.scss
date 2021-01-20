@@ -1,4 +1,4 @@
-@import "../connect";
+@import '../connect';
 
 .forMobile {
   padding: spacing(5) spacing(15);
@@ -37,8 +37,8 @@
           }
           .btn__app {
             color: $color-white-cream;
-            background-color: #25aae1;
-            border: 1px solid #25aae1;
+            background-color: $color-blue-movie-0;
+            border: 1px solid$color-blue-movie-0;
             border-radius: 5px;
             @include Text($fs-2 - 2, $fw-regular);
             padding: spacing(0.7) spacing(1.5);
@@ -85,6 +85,6 @@
 }
 
 .background__homeapp {
-  background: url("https://i.ibb.co/R0MPTqS/background.jpg");
+  background: url('https://i.ibb.co/R0MPTqS/background.jpg');
   background-size: contain;
 }
