@@ -16,6 +16,7 @@
     "antd": "^4.10.0",
     "axios": "^0.21.1",
     "dayjs": "^1.10.1",
+    "env-cmd": "^10.1.0",
     "express": "^4.17.1",
     "express-favicon": "^2.0.1",
     "jquery": "^3.5.1",
@@ -48,9 +49,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build",
+    "winBuild": "set \"GENERATE_SOURCEMAP=false\" && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+    
   },
   "eslintConfig": {
     "extends": [
