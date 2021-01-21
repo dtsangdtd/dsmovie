@@ -4,6 +4,27 @@ Project Cuối Khóa
 Link: https://dsmovie.vercel.app/
 Mail liên hệ: hohuynhdung@gmail.com
 ------------------------- Sơ lược 1 vài nội dung web ----------------------------
+_Hệ thống gồm có các chức năng cơ bản như :
+       
+      I/ Page Admin
+         Chức năng Login
+         Thêm,Tìm ,Xóa,Sửa Phim Hiển thị thông tin phim
+         Quản lý người dùng
+      II/Page User
+         Hiện thị thông tin tất cả phim đang hiện có
+         Chức năng Login
+         Chức năng Register account
+         Xem thông tin cá nhân
+         Xem lịch sử đặt vé
+         Cập nhật thông tin cá nhân
+         Lấy thông tin hệ thống rạp
+         Lấy thông tin lịch chiếu theo phim và hệ thống rạp
+         Lấy thông tin lịch chiếu theo cụm rạp và hệ thống rạp
+         Lấy chi tiết phòng vé
+         Chức năng Tìm phim
+         View detail phim 
+         Chức năng đặt vé
+         
 - Tương thích với hầu hết các thiết bị điện tử
 - Dưới đây chỉ là sơ lược về đồ án
        ------------------------- User ------------------------------------
@@ -37,10 +58,10 @@ Mail liên hệ: hohuynhdung@gmail.com
                                  + Sửa thông tin thành viên
                  - Search nhanh
                  - Thêm tài khoản
-3. Quản lí phim: Tương tự
-4. Quản lí tin tức: Tương tự
-5. Quản lí lịch chiếu: Tương tự
-
-....v...v...v....
+3. Quản lí phim: 
+       hiển thị ra thông tin phim 
+4. Quản lí tin tức
+5. Quản lí lịch chiếu 
+Trang web được deploy trên vercel : https://foxmv.vercel.app/
                          
               
