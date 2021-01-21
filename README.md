@@ -62,6 +62,6 @@ _Hệ thống gồm có các chức năng cơ bản như :
        hiển thị ra thông tin phim 
 4. Quản lí tin tức
 5. Quản lí lịch chiếu 
-Trang web được deploy trên vercel : https://foxmv.vercel.app/
+Trang web được deploy trên vercel : https://dsmovie.vercel.app/
                          
               
