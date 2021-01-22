@@ -1,8 +1,9 @@
 Project Cuối Khóa 
 - Hồ Huỳnh Dũng
 - Dương Thanh Sang
-Link: https://dsmovie.vercel.app/
+
 Mail liên hệ: hohuynhdung@gmail.com
+              dtsangdtd@gmail.
 ------------------------- Sơ lược 1 vài nội dung web ----------------------------
 _Hệ thống gồm có các chức năng cơ bản như :
        
