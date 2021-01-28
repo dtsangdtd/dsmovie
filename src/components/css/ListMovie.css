@@ -31,15 +31,16 @@
   }
 }
 
+.listMovie .container #listMovieTab .slick-prev:before, .listMovie .container #listMovieTab .slick-next:before {
+  color: #25aae1;
+}
+
 .listMovie .container #listMovieTab .nav {
   position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .listMovie .container #listMovieTab .nav .nav-item {
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
   border: none;
 }
@@ -49,11 +50,9 @@
   background: none;
   font-size: 24px;
   font-weight: 500;
-  -webkit-transition: all 0.1s;
   transition: all 0.1s;
   border: none;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 
 .listMovie .container #listMovieTab .nav .nav-item .nav-link.active {
@@ -63,7 +62,6 @@
 }
 
 .listMovie .container #listMovieTab .nav .nav-item .nav-link:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 /*# sourceMappingURL=ListMovie.css.map */

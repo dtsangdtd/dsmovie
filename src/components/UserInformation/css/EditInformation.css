@@ -1,6 +1,15 @@
+.form-group .text__input {
+  margin-left: 0.5rem;
+  color: #000;
+  font-weight: 500;
+}
+
+.form-group .block__input {
+  background: darkgrey !important;
+}
+
 .form-group .input {
-  background: white !important;
-  border: solid black !important;
+  background: white;
 }
 
 .form-group .btnChange.btn-block {
@@ -11,7 +20,6 @@
 }
 
 .form-group .btnChange.btn-block:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#25aae1), to(#2bb673));
   background: linear-gradient(to right, #25aae1, #2bb673);
 }
 /*# sourceMappingURL=EditInformation.css.map */

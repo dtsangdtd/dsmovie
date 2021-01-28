@@ -42,13 +42,13 @@ export class QuanLyPhimServices {
   };
   layTinTuc = () => {
     return axios({
-      url: "https://5e9829e75eabe7001681bbfb.mockapi.io/news",
+      url: "https://6012814854044a00172dc0ee.mockapi.io/news",
       method: "GET",
     });
   };
   layChiTietTinTuc = (maTinTuc) => {
     return axios({
-      url: `https://5e9829e75eabe7001681bbfb.mockapi.io/news/${maTinTuc}`,
+      url: `https://6012814854044a00172dc0ee.mockapi.io/news/${maTinTuc}`,
       method: "GET",
     });
   };

@@ -1,20 +1,16 @@
-.editUserModal .modal-dialog {
-  z-index: 9999;
-}
-
-.editUserModal .modal-dialog .modal-content .modal-body .user-form {
+.modal-content .modal-body .user-form {
   width: calc(100% - 20px);
   max-width: 500px;
   background-color: #fff;
   z-index: 300;
 }
 
-.editUserModal .modal-dialog .modal-content .modal-body .user-form .textb {
+.modal-content .modal-body .user-form .textb {
   margin-bottom: 12px;
   position: relative;
 }
 
-.editUserModal .modal-dialog .modal-content .modal-body .user-form .textb input {
+.modal-content .modal-body .user-form .textb input {
   width: 100%;
   height: 50px;
   border: none;
@@ -26,13 +22,15 @@
   padding: 14px 60px 0 10px;
 }
 
-.editUserModal .modal-dialog .modal-content .modal-body .user-form .textb input:focus ~ .placeholder,
-.editUserModal .modal-dialog .modal-content .modal-body .user-form .textb input:valid ~ .placeholder {
-  left: 10px;
-  top: -16px;
+.modal-content .modal-body .user-form .textb input:focus ~ .placeholder,
+.modal-content .modal-body .user-form .textb input:valid ~ .placeholder {
+  left: 4%;
+  top: -49%;
 }
 
-.editUserModal .modal-dialog .modal-content .modal-body .user-form .textb .placeholder {
+.modal-content .modal-body .user-form .textb .placeholder {
+  margin-top: 5%;
+  margin-bottom: 2%;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
@@ -41,16 +39,12 @@
   top: 0;
   left: 20px;
   color: #9d9d9d;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
   pointer-events: none;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
-.editUserModal .modal-dialog .modal-content .modal-body .user-form .textb .show-password {
+.modal-content .modal-body .user-form .textb .show-password {
   position: absolute;
   right: 20px;
   line-height: 70px;
@@ -59,7 +53,7 @@
   cursor: pointer;
 }
 
-.editUserModal .modal-dialog .modal-content .modal-body .user-form .textb #loaiNguoiDung {
+.modal-content .modal-body .user-form .textb #loaiNguoiDung {
   width: 100%;
   height: 50px;
   color: #9d9d9d;
@@ -71,22 +65,18 @@
   font-weight: 700;
 }
 
-.editUserModal .modal-dialog .modal-content .modal-body .user-form .btn {
+.modal-content .modal-body .user-form .btn {
   display: block;
+  float: right;
   width: 150px;
-  height: 80px;
-  margin: 10px auto;
-  background-color: #00ac4d;
-  color: #fff;
-  font-size: 40px;
-  border: none;
-  border-radius: 30px;
+  height: 50px;
+  margin: 10px 36px;
+  font-size: 25px;
   cursor: pointer;
-  -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
 }
 
-.editUserModal .modal-dialog .modal-content .modal-body .user-form .btn:hover {
+.modal-content .modal-body .user-form .btn:hover {
   opacity: 0.85;
 }
 /*# sourceMappingURL=EditMovieModal.css.map */

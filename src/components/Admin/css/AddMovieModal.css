@@ -29,8 +29,8 @@
 
 #addMovieModal .modal-dialog .modal-content .modal-body .row .col-md-6 .textb input:focus ~ .placeholder,
 #addMovieModal .modal-dialog .modal-content .modal-body .row .col-md-6 .textb input:valid ~ .placeholder {
-  left: 10px;
-  top: -16px;
+  top: -60%;
+  left: 1%;
 }
 
 #addMovieModal .modal-dialog .modal-content .modal-body .row .col-md-6 .textb .placeholder {
@@ -42,12 +42,8 @@
   top: 0;
   left: 20px;
   color: #9d9d9d;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
   pointer-events: none;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -71,7 +67,6 @@
   border: none;
   border-radius: 30px;
   cursor: pointer;
-  -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
 }
 

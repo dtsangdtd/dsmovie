@@ -28,21 +28,21 @@ export class QuanLyNguoiDung {
       method: "POST",
       data: thongTinDatVe,
       headers: {
-        Authorization: "Bearer " + localStorage.getItem(token),
+        Authorization: "DSer " + localStorage.getItem(token),
       },
     });
   };
 
   layBinhLuan = () => {
     return axios({
-      url: "https://5e9829e75eabe7001681bbfb.mockapi.io/comment",
+      url: "https://6012814854044a00172dc0ee.mockapi.io/comment",
       method: "GET",
     });
   };
 
   themBinhLuan = (binhLuan) => {
     return axios({
-      url: "https://5e9829e75eabe7001681bbfb.mockapi.io/comment",
+      url: "https://6012814854044a00172dc0ee.mockapi.io/comment",
       method: "POST",
       data: binhLuan,
     });

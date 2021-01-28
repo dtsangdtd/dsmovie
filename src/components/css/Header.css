@@ -4,10 +4,13 @@ header {
   z-index: 25;
   width: 100%;
   top: -1%;
-  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-  -webkit-transition: all 0.2s;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   transition: all 0.2s;
+}
+
+header .fa-mobile-alt {
+  height: 24px;
+  padding-top: 5px;
 }
 
 header .bg-nav {
@@ -20,32 +23,24 @@ header .navbar {
 }
 
 header .navbar .navbar-brand {
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
+  flex-grow: 2;
 }
 
 @media only screen and (max-width: 575px) {
   header .navbar .navbar-brand {
-    -webkit-box-flex: 15;
-        -ms-flex-positive: 15;
-            flex-grow: 15;
+    flex-grow: 15;
   }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 767px) {
   header .navbar .navbar-brand {
-    -webkit-box-flex: 15;
-        -ms-flex-positive: 15;
-            flex-grow: 15;
+    flex-grow: 15;
   }
 }
 
 @media only screen and (min-width: 993px) and (max-width: 1199px) {
   header .navbar .navbar-brand {
-    -webkit-box-flex: 4;
-        -ms-flex-positive: 4;
-            flex-grow: 4;
+    flex-grow: 4;
   }
 }
 
@@ -58,21 +53,19 @@ header .navbar .navbar-brand img {
 
 @media only screen and (max-width: 419px) {
   header .navbar .navbar-brand img {
-    width: 35px;
+    width: 75px;
   }
 }
 
 @media only screen and (min-width: 421px) and (max-width: 575px) {
   header .navbar .navbar-brand img {
-    width: 40px;
+    width: 75px;
   }
 }
 
 header .navbar .navbar-brand img:hover {
-  -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 header .navbar .header__mobile {
@@ -112,12 +105,8 @@ header .navbar .header__mobile {
 }
 
 header .navbar .header__mobile .header__login {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 header .navbar .header__mobile .header__login .login__link {
@@ -125,11 +114,11 @@ header .navbar .header__mobile .header__login .login__link {
 }
 
 header .navbar .header__mobile .header__login .login__link img {
+  background: white;
   width: 30px;
   border-radius: 999px;
   margin: 10px;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 @media only screen and (max-width: 419px) {
@@ -179,9 +168,7 @@ header .navbar .navbar-toggler {
 }
 
 header .navbar .navbar-collapse {
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
+  flex-grow: 2;
 }
 
 @media only screen and (max-width: 575px) {
@@ -203,20 +190,12 @@ header .navbar .navbar-collapse {
 }
 
 header .navbar .navbar-collapse .navbar-nav .nav-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
   margin-right: 10px;
   margin-left: 30px;
   padding-top: 10px;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
   border-bottom: none;
 }
@@ -229,8 +208,7 @@ header .navbar .navbar-collapse .navbar-nav .nav-item:hover i {
   background: -webkit-linear-gradient(#25aae1, #2bb673);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-transform: scale(2.5);
-          transform: scale(2.5);
+  transform: scale(2.5);
 }
 
 header .navbar .navbar-collapse .navbar-nav .nav-item:hover .nav-link {
@@ -249,6 +227,41 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
   color: #fff;
   font-size: 14px;
   font-weight: 600;
+}
+
+header .navbar .navbar-collapse .dropdown__country {
+  padding-bottom: 14px;
+  padding-left: 10px;
+}
+
+@media only screen and (max-width: 575px) {
+  header .navbar .navbar-collapse .dropdown__country {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  header .navbar .navbar-collapse .dropdown__country {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  header .navbar .navbar-collapse .dropdown__country {
+    display: none;
+  }
+}
+
+header .navbar .navbar-collapse .dropdown__country .MuiNativeSelect-select:not([multiple]) option, header .navbar .navbar-collapse .dropdown__country .MuiNativeSelect-select:not([multiple]) optgroup {
+  color: #000;
+}
+
+header .navbar .navbar-collapse .dropdown__country .MuiInput-underline:before, header .navbar .navbar-collapse .dropdown__country .MuiInput-underline:after {
+  content: none;
+}
+
+header .navbar .navbar-collapse .dropdown__country .MuiNativeSelect-icon {
+  color: #fff;
 }
 
 @media only screen and (max-width: 575px) {
@@ -277,8 +290,7 @@ header .navbar .navbar-collapse .header__login .login__link img {
   width: 30px;
   border-radius: 999px;
   margin: 10px;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 header .navbar .navbar-collapse .header__login .login__link .login__text {
@@ -301,13 +313,11 @@ header .navbar .navbar-collapse .header__login .logOut__btn {
   padding: 7px;
   border-radius: 20px;
   cursor: pointer;
-  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
 header .navbar .navbar-collapse .header__login .logOut__btn:hover {
-  -webkit-box-shadow: 2px 2px 4px 1px #fff;
-          box-shadow: 2px 2px 4px 1px #fff;
+  box-shadow: 2px 2px 4px 1px #fff;
 }
 
 @media only screen and (max-width: 575px) {
@@ -362,7 +372,6 @@ header .navbar .navbar-collapse .header__login #province__dropdown .dropdown-men
 }
 
 header .navbar .navbar-collapse .header__login #province__dropdown .dropdown-menu .dropdown-item {
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
   font-size: 14px;
   font-weight: 400;
@@ -372,25 +381,12 @@ header .navbar .navbar-collapse .header__login #province__dropdown .dropdown-men
   background-color: #60c5ef;
 }
 
-@-webkit-keyframes spin {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
 @keyframes spin {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 /*# sourceMappingURL=Header.css.map */
