@@ -3,18 +3,15 @@
 }
 
 .profile .row {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .profile .row .col-avt {
-  -webkit-box-shadow: 1px 1px 9px 1px #949494;
-          box-shadow: 1px 1px 9px 1px #949494;
+  box-shadow: 1px 1px 9px 1px #949494;
 }
 
 .profile .row .col-avt .img-avt {
-  background: url("https://www.crushpixel.com/big-static15/preview4/cinema-background-concept-movie-theater-1838165.jpg");
+  background: url("../../images/background/prof__bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -30,10 +27,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  -webkit-box-shadow: 1px 1px 9px 1px #29303b;
-          box-shadow: 1px 1px 9px 1px #29303b;
+  transform: translateX(-50%);
+  box-shadow: 1px 1px 9px 1px #29303b;
 }
 
 .profile .row .col-avt .tableInfo {
@@ -41,12 +36,10 @@
 }
 
 .profile .row .col-avt .tableInfo .row .col-left {
-  -webkit-box-shadow: 0 10px 40px 0 rgba(16, 36, 94, 0.2);
-          box-shadow: 0 10px 40px 0 rgba(16, 36, 94, 0.2);
+  box-shadow: 0 10px 40px 0 rgba(16, 36, 94, 0.2);
   border-radius: 5px;
   padding: 20px;
-  -webkit-animation: slideToRight 1s linear;
-          animation: slideToRight 1s linear;
+  animation: slideToRight 1s linear;
 }
 
 @media only screen and (max-width: 575px) {
@@ -91,7 +84,6 @@
 }
 
 .profile .row .col-avt .tableInfo .row .col-left .btn__admin:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#25aae1), to(#2bb673));
   background: linear-gradient(to right, #25aae1, #2bb673);
   color: white;
 }
@@ -106,13 +98,11 @@
 }
 
 .profile .row .col-avt .tableInfo .row .col-right {
-  -webkit-box-shadow: 0 10px 40px 0 rgba(16, 36, 94, 0.2);
-          box-shadow: 0 10px 40px 0 rgba(16, 36, 94, 0.2);
+  box-shadow: 0 10px 40px 0 rgba(16, 36, 94, 0.2);
   border-radius: 5px;
   min-width: 65%;
   padding: 20px;
-  -webkit-animation: slideToLeft 1s linear;
-          animation: slideToLeft 1s linear;
+  animation: slideToLeft 1s linear;
   color: rgba(20, 23, 28, 0.05);
 }
 
@@ -201,18 +191,6 @@
   background-color: rgba(20, 23, 28, 0.05);
 }
 
-.profile .row .col-avt .tableInfo .row .col-right #accordion .card .collapse .formRegister .form-group .input::-webkit-input-placeholder {
-  font-family: "Lato", sans-serif;
-}
-
-.profile .row .col-avt .tableInfo .row .col-right #accordion .card .collapse .formRegister .form-group .input:-ms-input-placeholder {
-  font-family: "Lato", sans-serif;
-}
-
-.profile .row .col-avt .tableInfo .row .col-right #accordion .card .collapse .formRegister .form-group .input::-ms-input-placeholder {
-  font-family: "Lato", sans-serif;
-}
-
 .profile .row .col-avt .tableInfo .row .col-right #accordion .card .collapse .formRegister .form-group .input::placeholder {
   font-family: "Lato", sans-serif;
 }
@@ -225,7 +203,6 @@
   padding: 14px;
   border-radius: 4px;
   color: white;
-  -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
@@ -239,47 +216,21 @@
   border-radius: 10px;
 }
 
-@-webkit-keyframes slideToRight {
-  from {
-    -webkit-transform: translateX(-250px);
-            transform: translateX(-250px);
-  }
-  to {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
 @keyframes slideToRight {
   from {
-    -webkit-transform: translateX(-250px);
-            transform: translateX(-250px);
+    transform: translateX(-250px);
   }
   to {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-@-webkit-keyframes slideToLeft {
-  from {
-    -webkit-transform: translateX(350px);
-            transform: translateX(350px);
-  }
-  to {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
 @keyframes slideToLeft {
   from {
-    -webkit-transform: translateX(350px);
-            transform: translateX(350px);
+    transform: translateX(350px);
   }
   to {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
 }
 /*# sourceMappingURL=UserInformation.css.map */

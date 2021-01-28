@@ -1,12 +1,7 @@
 .checkOut__left .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-shadow: -5px 5px 11px -2px #cacbcc;
-          box-shadow: -5px 5px 11px -2px #cacbcc;
+  justify-content: space-between;
+  box-shadow: -5px 5px 11px -2px #cacbcc;
 }
 
 @media only screen and (max-width: 575px) {

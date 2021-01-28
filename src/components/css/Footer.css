@@ -90,29 +90,17 @@ footer .footer__content {
 
 @media only screen and (max-width: 575px) {
   footer .footer__content .footer__above .above__row .above__item.foxmovie__security .above__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-evenly;
+    align-items: center;
   }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 767px) {
   footer .footer__content .footer__above .above__row .above__item.foxmovie__security .above__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-evenly;
+    align-items: center;
   }
 }
 
@@ -175,7 +163,6 @@ footer .footer__content .footer__above .above__row .above__item .above__list .li
   font-size: 12px;
   font-weight: 400;
   color: #fff;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -190,8 +177,6 @@ footer .footer__content .footer__above .above__row .above__item .img__list {
 }
 
 footer .footer__content .footer__above .above__row .above__item .img__list .img__item {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   margin: 0 15px 15px 0;
 }
@@ -214,12 +199,8 @@ footer .footer__content .footer__above .above__row .above__item .img__list .img_
 
 footer .footer__content .footer__above .above__row .above__item .logo__list {
   margin-left: -40px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   list-style: none;
 }
 

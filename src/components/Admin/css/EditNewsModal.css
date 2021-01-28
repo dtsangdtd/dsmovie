@@ -11,7 +11,7 @@
 }
 
 .editNewsModal .modal-dialog .modal-content .modal-body .row .col-md-6 .textb {
-  margin-bottom: 12px;
+  margin-top: 30px;
   position: relative;
 }
 
@@ -29,7 +29,7 @@
 
 .editNewsModal .modal-dialog .modal-content .modal-body .row .col-md-6 .textb textarea {
   width: 100%;
-  height: 100px;
+  height: 126px;
   border: none;
   background-color: #ededed;
   border-radius: 4px;
@@ -42,13 +42,13 @@
 .editNewsModal .modal-dialog .modal-content .modal-body .row .col-md-6 .textb input:focus ~ .placeholder,
 .editNewsModal .modal-dialog .modal-content .modal-body .row .col-md-6 .textb input:valid ~ .placeholder {
   left: 10px;
-  top: -16px;
+  top: -50px;
 }
 
 .editNewsModal .modal-dialog .modal-content .modal-body .row .col-md-6 .textb textarea:focus ~ .placeholder,
 .editNewsModal .modal-dialog .modal-content .modal-body .row .col-md-6 .textb textarea:valid ~ .placeholder {
   left: 10px;
-  top: -16px;
+  top: -50px;
 }
 
 .editNewsModal .modal-dialog .modal-content .modal-body .row .col-md-6 .textb .placeholder {
@@ -60,12 +60,8 @@
   top: 0;
   left: 20px;
   color: #9d9d9d;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
   pointer-events: none;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -101,7 +97,6 @@
   border: none;
   border-radius: 30px;
   cursor: pointer;
-  -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
 }
 

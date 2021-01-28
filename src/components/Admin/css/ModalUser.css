@@ -28,8 +28,8 @@
 
 #UserModal .modal-dialog .modal-content .modal-body .user-form .textb input:focus ~ .placeholder,
 #UserModal .modal-dialog .modal-content .modal-body .user-form .textb input:valid ~ .placeholder {
-  left: 10px;
-  top: -16px;
+  top: -75%;
+  left: 1%;
 }
 
 #UserModal .modal-dialog .modal-content .modal-body .user-form .textb .placeholder {
@@ -38,15 +38,11 @@
   font-weight: 700;
   position: absolute;
   line-height: 50px;
-  top: 0;
+  top: -40%;
   left: 20px;
   color: #9d9d9d;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
   pointer-events: none;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -82,7 +78,6 @@
   border: none;
   border-radius: 30px;
   cursor: pointer;
-  -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
 }
 

@@ -64,19 +64,13 @@
 
 @media only screen and (max-width: 575px) {
   .schedule .schedule__content .container .schedule__row .main__tab .nav {
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-            flex-direction: row !important;
+    flex-direction: row !important;
   }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 767px) {
   .schedule .schedule__content .container .schedule__row .main__tab .nav {
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-            flex-direction: row !important;
+    flex-direction: row !important;
   }
 }
 
@@ -86,7 +80,6 @@
   border-bottom: 1px solid #fff;
   display: inline;
   max-width: 100%;
-  -webkit-transition: linear 0.2s;
   transition: linear 0.2s;
 }
 
@@ -118,35 +111,27 @@
 
 .schedule .schedule__content .container .schedule__row .main__tabContent {
   max-width: 90.9%;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
+  flex: 0 0 100%;
 }
 
 @media only screen and (max-width: 575px) {
   .schedule .schedule__content .container .schedule__row .main__tabContent {
     max-width: 100%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
+    flex: 0 0 100%;
   }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 767px) {
   .schedule .schedule__content .container .schedule__row .main__tabContent {
     max-width: 100%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
+    flex: 0 0 100%;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .schedule .schedule__content .container .schedule__row .main__tabContent {
     max-width: 87.9%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
+    flex: 0 0 100%;
   }
 }
 
@@ -169,13 +154,10 @@
 
 .schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab .nav .nav-link {
   color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border-bottom: 1px solid #949494;
   padding: 15px;
   opacity: 0.5;
-  -webkit-transition: linear 0.3s;
   transition: linear 0.3s;
   padding-bottom: 2px;
 }
@@ -236,7 +218,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
 }
 
 .schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tab .nav .nav-link .text__theater .name__theater.theater--BHD {
@@ -259,7 +240,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
   margin: 0;
 }
 
@@ -301,7 +281,6 @@
   padding: 15px;
   padding-bottom: 14px;
   border-bottom: 1px solid #d8d8d8;
-  -webkit-transition: linear 0.5s;
   transition: linear 0.5s;
 }
 
@@ -402,13 +381,15 @@
 }
 
 .schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .collapse .collapse__content {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
 .schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .collapse .collapse__content .film__timeshow {
   margin-top: 20px;
+}
+
+.schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .collapse .collapse__content .film__timeshow ul {
+  padding-left: 0;
 }
 
 .schedule .schedule__content .container .schedule__row .main__tabContent .tab-content .tab-pane .secondary__row .secondary__tabContent .tab-content .tab-pane .tab__list ul .film__item .collapse .collapse__content .film__timeshow ul .timeshow__item {
@@ -428,7 +409,6 @@
   color: #00ac4d;
   font-size: 16px;
   font-weight: 500;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 

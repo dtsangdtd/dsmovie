@@ -13,7 +13,7 @@ export class QuanLyAdmin {
       method: "POST",
       data: thongTinNguoiDung,
       headers: {
-        Authorization: "Bearer " + localStorage.getItem(token),
+        Authorization: "DSer " + localStorage.getItem(token),
       },
     });
   };
@@ -23,7 +23,7 @@ export class QuanLyAdmin {
       method: "PUT",
       data: thongTinNguoiDung,
       headers: {
-        Authorization: "Bearer " + localStorage.getItem(token),
+        Authorization: "DSer " + localStorage.getItem(token),
       },
     });
   };
@@ -32,7 +32,7 @@ export class QuanLyAdmin {
       url: `${domain}/QuanLyNguoiDung/XoaNguoiDung?TaiKhoan=${taiKhoan}`,
       method: "DELETE",
       headers: {
-        Authorization: "Bearer " + localStorage.getItem(token),
+        Authorization: "DSer " + localStorage.getItem(token),
       },
     });
   };
@@ -58,7 +58,7 @@ export class QuanLyAdmin {
       method: "POST",
       data: phim,
       headers: {
-        Authorization: "Bearer " + localStorage.getItem(token),
+        Authorization: "DSer " + localStorage.getItem(token),
       },
     });
   };
@@ -68,7 +68,7 @@ export class QuanLyAdmin {
       url: `${domain}/QuanLyPhim/XoaPhim?MaPhim=${maPhim}`,
       method: "DELETE",
       headers: {
-        Authorization: "Bearer " + localStorage.getItem(token),
+        Authorization: "DSer " + localStorage.getItem(token),
       },
     });
   };
@@ -79,27 +79,27 @@ export class QuanLyAdmin {
       method: "POST",
       data: thongTin,
       headers: {
-        Authorization: "Bearer " + localStorage.getItem(token),
+        Authorization: "DSer " + localStorage.getItem(token),
       },
     });
   };
   themTinTuc = (tinTuc) => {
     return axios({
-      url: "https://5e9829e75eabe7001681bbfb.mockapi.io/news",
+      url: "https://6012814854044a00172dc0ee.mockapi.io/news",
       method: "POST",
       data: tinTuc,
     });
   };
   suaTinTuc = (id, tinTuc) => {
     return axios({
-      url: `https://5e9829e75eabe7001681bbfb.mockapi.io/news/${id}`,
+      url: `https://6012814854044a00172dc0ee.mockapi.io/news/${id}`,
       method: "PUT",
       data: tinTuc,
     });
   };
   xoaTinTuc = (id) => {
     return axios({
-      url: `https://5e9829e75eabe7001681bbfb.mockapi.io/news/${id}`,
+      url: `https://6012814854044a00172dc0ee.mockapi.io/news/${id}`,
       method: "DELETE",
     });
   };
