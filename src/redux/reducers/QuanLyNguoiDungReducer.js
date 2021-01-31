@@ -8,7 +8,7 @@ if (localStorage.getItem("userLogin")) {
 }
 const initialState = {
   taiKhoan: taiKhoan,
-  binhluan: "",
+  binhLuan: "",
   rating: "",
 };
 
