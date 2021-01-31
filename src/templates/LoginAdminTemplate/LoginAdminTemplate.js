@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { Route } from "react-router-dom";
 import LoginAdmin from "../../pages/LoginAdmin";
-const LoginAdminLayout = (props) => {
+const LoginAdminLayout = () => {
   return (
     <Fragment>
       <LoginAdmin />

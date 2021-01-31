@@ -18,7 +18,6 @@ import FormControl from "@material-ui/core/FormControl";
 import NativeSelect from "@material-ui/core/NativeSelect";
 import Logo_branch from "../../images/Logo_branch.png";
 
-
 const useStyles = makeStyles((theme) => ({
   formControl: {
     margin: theme.spacing(1),
@@ -95,7 +94,7 @@ export default function Header(props) {
       return null;
     }
   };
- 
+
   const renderLogin = () => {
     if (taiKhoan) {
       return (
@@ -197,29 +196,22 @@ export default function Header(props) {
             className="navbar-nav mr-auto"
           >
             <li className="nav-item active">
-              <a className="nav-item__icon" href="#listMovie">
-                <i className="fa fa-film"></i>
-              </a>
-              <NavLink className="nav-link" to="/allmovie">
+              <i className="fa fa-film"></i>
+              <a className="nav-link" href="#listMovie">
                 Phim
-              </NavLink>
+              </a>
             </li>
             <li className="nav-item">
-              <a className="nav-item__icon" href="#schedule">
-                <i class="fas fa-layer-group"></i>
-              </a>
-              <NavLink className="nav-link" to="/clustercinema">
+              <i class="fas fa-layer-group"></i>
+              <a className="nav-link" href="#schedule">
                 Cụm Rạp
-              </NavLink>
+              </a>
             </li>
             <li className="nav-item">
-              <a className="nav-item__icon" href="#news">
-                <i class="far fa-newspaper"></i>
-              </a>
-
-              <NavLink className="nav-link" to="/news">
+              <i class="far fa-newspaper"></i>
+              <a className="nav-link" href="#news">
                 Tin Tức
-              </NavLink>
+              </a>
             </li>
             <li className="nav-item">
               <i class="fas fa-mobile-alt"></i>

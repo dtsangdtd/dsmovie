@@ -1,0 +1,30 @@
+.MiniNav {
+    position: fixed;
+    background: white;
+    z-index: 999;
+    right: 0;
+    top: 250px;
+    margin: 0;
+    width: 45px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    .MiniNav__wrapper{
+        width: 100%;
+        height: 100%;
+        .MiniNav__menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            .MiniNav__menu-item{
+                .link__item{
+                    color: #000;
+                    &:hover{
+                        transform: scale(1.2);
+                        transition: .2s linear;
+                    }
+                }
+            }
+        }
+    }
+   
+}
