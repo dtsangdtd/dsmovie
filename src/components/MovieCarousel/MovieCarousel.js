@@ -66,7 +66,7 @@ export default function MovieCarousel() {
     if (loading) {
       return (
         <Slider {...settings}>
-          {danhSachPhim.map((index) => {
+          {danhSachPhim.map(() => {
             return (
               <div className="item__inrow p-2 mb-2">
                 <div className="item__link">
