@@ -66,9 +66,9 @@ export default function MovieCarousel() {
     if (loading) {
       return (
         <Slider {...settings}>
-          {danhSachPhim.map(() => {
+          {danhSachPhim.map((item) => {
             return (
-              <div className="item__inrow p-2 mb-2">
+              <div className="item__inrow p-2 mb-2" key={item}>
                 <div className="item__link">
                   <div className="item__img">
                     <SkeletonTheme color="#202020" highlightColor="#444">
@@ -111,7 +111,6 @@ export default function MovieCarousel() {
                       <NavLink
                         className="play__button"
                         to={`/moviedetail/${phim.maPhim}`}
-                    
                       >
                         <i className="fa fa-info play__icon" />
                       </NavLink>

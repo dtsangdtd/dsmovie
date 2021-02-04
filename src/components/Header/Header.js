@@ -197,24 +197,24 @@ export default function Header(props) {
           >
             <li className="nav-item active">
               <i className="fa fa-film"></i>
-              <a className="nav-link" href="#listMovie">
+              <a className="nav-link" href="/#listMovie">
                 Phim
               </a>
             </li>
             <li className="nav-item">
-              <i class="fas fa-layer-group"></i>
-              <a className="nav-link" href="#schedule">
+              <i className="fas fa-layer-group"></i>
+              <a className="nav-link" href="/#schedule">
                 Cụm Rạp
               </a>
             </li>
             <li className="nav-item">
-              <i class="far fa-newspaper"></i>
-              <a className="nav-link" href="#news">
+              <i className="far fa-newspaper"></i>
+              <a className="nav-link" href="/#news">
                 Tin Tức
               </a>
             </li>
             <li className="nav-item">
-              <i class="fas fa-mobile-alt"></i>
+              <i className="fas fa-mobile-alt"></i>
               <a className="nav-link" href="/#forMobile">
                 Ứng dụng
               </a>
