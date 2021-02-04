@@ -14,6 +14,7 @@ import news13 from "../../images/news/news13.png";
 import news14 from "../../images/news/news14.jpg";
 import news15 from "../../images/news/news15.jpg";
 import news16 from "../../images/news/news16.jpg";
+import doremon from "../../images/news/doremon.jpg"
 
 
 export default class News extends Component {
@@ -229,7 +230,7 @@ export default class News extends Component {
                         <a href="/#">
                           <img
                             className="img-fluid"
-                            src="https://khenphim.com/wp-content/uploads/2020/12/Doraemon-2020-4-banner-e1607620367703.jpg"
+                            src={doremon}
                             alt="hinhAnh"
                           />
                         </a>

@@ -9,17 +9,17 @@ export default function MiniNav() {
         <ul className="MiniNav__menu">
           <li className="MiniNav__menu-item">
             <NavLink target="_blank" title="Danh sách phim" className="nav-link link__item" to="/allmovie">
-            <i class="fas fa-photo-video"></i>
+            <i className="fas fa-photo-video"></i>
             </NavLink>
           </li>
           <li className="MiniNav__menu-item">
             <NavLink target="_blank" title="Danh sách rạp" className="nav-link link__item" to="/clustercinema">
-            <i class="fas fa-layer-group"></i>
+            <i className="fas fa-layer-group"></i>
             </NavLink>
           </li>
           <li className="MiniNav__menu-item">
             <NavLink target="_blank" title="Danh sách tin tức" className="nav-link link__item" to="/news">
-            <i class="far fa-newspaper"></i>
+            <i className="far fa-newspaper"></i>
             </NavLink>
           </li>
         </ul>
